@@ -1,0 +1,24 @@
+[
+  {
+    "file": "labelstock.webp",
+    "title": "Etikettenbasispapier",
+    "description_es": "Papel base para etiquetas",
+    "author": "Mvandemal",
+    "date": "2015-09-09",
+    "source": "https://commons.wikimedia.org/wiki/File:Etikettenbasispapier.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes_es": "Versión web en formato WebP; escala ajustada cuando corresponde."
+  },
+  {
+    "file": "hero-rolls.webp",
+    "title": "Papierlager Buettenpapierfabrik Gmund 1",
+    "description_es": "Bobinas de papel de colores en la fábrica de Gmund, Alemania.",
+    "author": "Stefan Meister",
+    "date": "2016-05-17",
+    "source": "https://commons.wikimedia.org/wiki/File:Papierlager_Buettenpapierfabrik_Gmund_1.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes_es": "El autor ocultó datos de clientes. Versión web recortada, redimensionada y convertida a WebP."
+  }
+]

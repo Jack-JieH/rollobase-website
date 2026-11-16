@@ -1,0 +1,268 @@
+{
+  "services": [
+    {
+      "type": "web",
+      "name": "rollobase-materials",
+      "runtime": "static",
+      "buildCommand": "python3 deploy_build.py",
+      "staticPublishPath": "dist",
+      "routes": [
+        {
+          "type": "rewrite",
+          "source": "/abastecimiento",
+          "destination": "/abastecimiento.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/bopp-film",
+          "destination": "/bopp-film.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/bopp-ru",
+          "destination": "/bopp-ru.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/bopp-zh",
+          "destination": "/bopp-zh.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/calidad-trazabilidad",
+          "destination": "/calidad-trazabilidad.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/catalog-zh",
+          "destination": "/catalog-zh.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/coated-ru",
+          "destination": "/coated-ru.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/coated-zh",
+          "destination": "/coated-zh.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/cotizacion-muestras",
+          "destination": "/cotizacion-muestras.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/direct-thermal-paper",
+          "destination": "/direct-thermal-paper.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/en",
+          "destination": "/en.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/materiales",
+          "destination": "/materiales.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/materials-ru",
+          "destination": "/materials-ru.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/materials",
+          "destination": "/materials.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/papel-no-estucado",
+          "destination": "/papel-no-estucado.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/papel-semibrillante",
+          "destination": "/papel-semibrillante.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/papel-termico-directo",
+          "destination": "/papel-termico-directo.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/pe-film",
+          "destination": "/pe-film.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/pe-ru",
+          "destination": "/pe-ru.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/pe-zh",
+          "destination": "/pe-zh.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/pelicula-bopp",
+          "destination": "/pelicula-bopp.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/pelicula-pe",
+          "destination": "/pelicula-pe.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/pelicula-pet",
+          "destination": "/pelicula-pet.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/pet-film",
+          "destination": "/pet-film.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/pet-ru",
+          "destination": "/pet-ru.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/pet-zh",
+          "destination": "/pet-zh.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/printing-compatibility",
+          "destination": "/printing-compatibility.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/printing-ru",
+          "destination": "/printing-ru.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/printing-zh",
+          "destination": "/printing-zh.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/productos",
+          "destination": "/productos.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/products-ru",
+          "destination": "/products-ru.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/products-zh",
+          "destination": "/products-zh.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/products",
+          "destination": "/products.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/pruebas-impresion",
+          "destination": "/pruebas-impresion.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/quality-ru",
+          "destination": "/quality-ru.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/quality-traceability",
+          "destination": "/quality-traceability.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/quality-zh",
+          "destination": "/quality-zh.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/quote-sample",
+          "destination": "/quote-sample.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/request-ru",
+          "destination": "/request-ru.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/request-zh",
+          "destination": "/request-zh.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/ru",
+          "destination": "/ru.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/semi-gloss-coated-paper",
+          "destination": "/semi-gloss-coated-paper.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/sourcing-ru",
+          "destination": "/sourcing-ru.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/sourcing-zh",
+          "destination": "/sourcing-zh.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/sourcing",
+          "destination": "/sourcing.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/thermal-ru",
+          "destination": "/thermal-ru.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/thermal-zh",
+          "destination": "/thermal-zh.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/uncoated-woodfree",
+          "destination": "/uncoated-woodfree.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/woodfree-ru",
+          "destination": "/woodfree-ru.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/woodfree-zh",
+          "destination": "/woodfree-zh.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/zh",
+          "destination": "/zh.html"
+        }
+      ]
+    }
+  ]
+}
