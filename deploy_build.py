@@ -3,6 +3,7 @@ import os
 from pathlib import Path
 import runpy
 from urllib.parse import urlsplit
+from zipfile import ZipFile
 
 origin = os.environ.get('SITE_ORIGIN') or os.environ.get('RENDER_EXTERNAL_URL')
 if not origin:
@@ -11,5 +12,14 @@ parts = urlsplit(origin)
 if parts.scheme != 'https' or not parts.netloc or parts.path not in ('','/') or parts.query or parts.fragment or parts.username:
     raise SystemExit('The site origin must be an HTTPS origin without a path or credentials.')
 os.environ['SITE_ORIGIN'] = origin.rstrip('/')
-runpy.run_path(str(Path(__file__).with_name('build.py')),run_name='__main__')
+root = Path(__file__).parent
+dist = root/'dist'
+dist.mkdir(exist_ok=True)
+with ZipFile(root/'site-assets.zip') as assets:
+    expected = {'style.css','buyer.js','hero-rolls.webp','labelstock.webp'}
+    if set(assets.namelist()) != expected:
+        raise SystemExit('The site asset bundle does not match the expected files.')
+    for name in expected:
+        (dist/name).write_bytes(assets.read(name))
+runpy.run_path(str(root/'build.py'),run_name='__main__')
 print('Built 52 pages for', os.environ['SITE_ORIGIN'])
