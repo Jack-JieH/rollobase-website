@@ -120,4 +120,7 @@ def publish_update(dist, original_groups, origin):
     groups = {key:paths+[RU_ROUTES[key]] for key,paths in original_groups.items()}
     apply_editorial(dist,groups,origin)
     add_simplified(dist,groups,origin)
-    return finalize_languages(dist,{key:paths+[SC_ROUTES[key]] for key,paths in groups.items()},origin)
+    from design_update import apply_design
+    complete_groups = {key:paths+[SC_ROUTES[key]] for key,paths in groups.items()}
+    apply_design(dist,complete_groups)
+    return finalize_languages(dist,complete_groups,origin)

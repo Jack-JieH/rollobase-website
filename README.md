@@ -9,6 +9,11 @@ Reviewed buyer guidance lives in `seo-content.json`; Simplified Chinese copy is
 checked into `simplified.json`. Builds fail if Chinese source text lacks a translation.
 The asset archive contains the stylesheet, sample-form JavaScript and licensed photos.
 
+`design_update.py` applies the shared application-first layout, the five-part
+product specification format and the user-provided business telephone across
+all five locales. Sample requests remain local TXT downloads; the phone link
+lets visitors arrange how to share them. No email or WhatsApp service is assumed.
+
 ## Deploy
 
 - Service: Render Static Site. This must remain a static site, not a web service.
