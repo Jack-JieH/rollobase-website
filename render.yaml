@@ -24,6 +24,11 @@
         },
         {
           "type": "rewrite",
+          "source": "/bopp-zh-cn",
+          "destination": "/bopp-zh-cn.html"
+        },
+        {
+          "type": "rewrite",
           "source": "/bopp-zh",
           "destination": "/bopp-zh.html"
         },
@@ -34,6 +39,11 @@
         },
         {
           "type": "rewrite",
+          "source": "/catalog-zh-cn",
+          "destination": "/catalog-zh-cn.html"
+        },
+        {
+          "type": "rewrite",
           "source": "/catalog-zh",
           "destination": "/catalog-zh.html"
         },
@@ -41,6 +51,11 @@
           "type": "rewrite",
           "source": "/coated-ru",
           "destination": "/coated-ru.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/coated-zh-cn",
+          "destination": "/coated-zh-cn.html"
         },
         {
           "type": "rewrite",
@@ -61,6 +76,11 @@
           "type": "rewrite",
           "source": "/en",
           "destination": "/en.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/guide-zh-cn",
+          "destination": "/guide-zh-cn.html"
         },
         {
           "type": "rewrite",
@@ -104,6 +124,11 @@
         },
         {
           "type": "rewrite",
+          "source": "/pe-zh-cn",
+          "destination": "/pe-zh-cn.html"
+        },
+        {
+          "type": "rewrite",
           "source": "/pe-zh",
           "destination": "/pe-zh.html"
         },
@@ -134,6 +159,11 @@
         },
         {
           "type": "rewrite",
+          "source": "/pet-zh-cn",
+          "destination": "/pet-zh-cn.html"
+        },
+        {
+          "type": "rewrite",
           "source": "/pet-zh",
           "destination": "/pet-zh.html"
         },
@@ -146,6 +176,11 @@
           "type": "rewrite",
           "source": "/printing-ru",
           "destination": "/printing-ru.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/printing-zh-cn",
+          "destination": "/printing-zh-cn.html"
         },
         {
           "type": "rewrite",
@@ -189,6 +224,11 @@
         },
         {
           "type": "rewrite",
+          "source": "/quality-zh-cn",
+          "destination": "/quality-zh-cn.html"
+        },
+        {
+          "type": "rewrite",
           "source": "/quality-zh",
           "destination": "/quality-zh.html"
         },
@@ -201,6 +241,11 @@
           "type": "rewrite",
           "source": "/request-ru",
           "destination": "/request-ru.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/request-zh-cn",
+          "destination": "/request-zh-cn.html"
         },
         {
           "type": "rewrite",
@@ -224,6 +269,11 @@
         },
         {
           "type": "rewrite",
+          "source": "/sourcing-zh-cn",
+          "destination": "/sourcing-zh-cn.html"
+        },
+        {
+          "type": "rewrite",
           "source": "/sourcing-zh",
           "destination": "/sourcing-zh.html"
         },
@@ -236,6 +286,11 @@
           "type": "rewrite",
           "source": "/thermal-ru",
           "destination": "/thermal-ru.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/thermal-zh-cn",
+          "destination": "/thermal-zh-cn.html"
         },
         {
           "type": "rewrite",
@@ -254,8 +309,18 @@
         },
         {
           "type": "rewrite",
+          "source": "/woodfree-zh-cn",
+          "destination": "/woodfree-zh-cn.html"
+        },
+        {
+          "type": "rewrite",
           "source": "/woodfree-zh",
           "destination": "/woodfree-zh.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/zh-cn",
+          "destination": "/zh-cn.html"
         },
         {
           "type": "rewrite",

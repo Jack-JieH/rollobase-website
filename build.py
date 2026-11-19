@@ -7,7 +7,7 @@ from knowledge import HREFLANG, UPDATED, enrich, metadata, new_pages, structured
 from russian import add_russian
 
 dist = Path(__file__).parent / 'dist'
-origin = os.getenv('SITE_ORIGIN','https://rollobase-materiales.swoonypeach32.chatgpt.site').rstrip('/')
+origin = os.getenv('SITE_ORIGIN','https://rollobase-materials.onrender.com').rstrip('/')
 langs = ['es-419','en','zh-Hant']
 home = ['index.html','en.html','zh.html']
 guide = ['productos.html','products.html','products-zh.html']
@@ -188,3 +188,6 @@ ru_paths = add_russian(dist, {'home':home,'guide':guide,**routes}, origin)
 urls = ''.join(f'<url><loc>{page_url(path)}</loc><lastmod>{UPDATED}</lastmod></url>' for path in home + guide + [p for paths in routes.values() for p in paths] + ru_paths)
 (dist/'sitemap.xml').write_text('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+urls+'</urlset>')
 (dist/'robots.txt').write_text(f'User-agent: *\nAllow: /\n\nSitemap: {origin}/sitemap.xml\n')
+
+from seo_update import publish_update
+publish_update(dist, {'home':home,'guide':guide,**routes}, origin)

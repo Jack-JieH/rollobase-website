@@ -1,7 +1,13 @@
 # RolloBase public sharing copy
 
-This is the complete 2026-11-16 four-language static website: Spanish, English,
-Traditional Chinese and Russian, with 52 pages and the existing A–D sample flow.
+This is the 2026-11-19 five-language static website: Spanish, English,
+Traditional Chinese, Simplified Chinese and Russian, with 65 pages and the A–D sample flow.
+
+Homepages: `/`, `/en`, `/zh` (Traditional), `/zh-cn` (Simplified), `/ru`.
+Chinese pages use independent `zh-Hant` and `zh-Hans` alternate URLs.
+Reviewed buyer guidance lives in `seo-content.json`; Simplified Chinese copy is
+checked into `simplified.json`. Builds fail if Chinese source text lacks a translation.
+The asset archive contains the stylesheet, sample-form JavaScript and licensed photos.
 
 ## Deploy
 
@@ -17,7 +23,7 @@ Traditional Chinese and Russian, with 52 pages and the existing A–D sample flo
 The previous live website remains unchanged. The source in this copy contains
 only website content and build configuration, not research workbooks or credentials.
 
-Before sending the new URL, check the four homepages, mobile comparison table,
+Before sending the new URL, check the five homepages, mobile comparison table,
 sample download, sitemap and robots.txt without authentication. Availability in
 mainland China must be tested from the intended visitor's connection.
 

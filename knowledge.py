@@ -3,7 +3,7 @@ from html import escape
 from html.parser import HTMLParser
 import json
 
-UPDATED = '2026-11-16'
+UPDATED = '2026-11-19'
 HREFLANG = ['es', 'en', 'zh-Hant']
 
 # The site remains a selection/inquiry catalog. No inventory, certification,

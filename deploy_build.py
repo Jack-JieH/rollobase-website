@@ -1,4 +1,4 @@
-"""Build the four-language site using the URL assigned by its host."""
+"""Build the five-language site using the URL assigned by its host."""
 import os
 from pathlib import Path
 import runpy
@@ -22,4 +22,4 @@ with ZipFile(root/'site-assets.zip') as assets:
     for name in expected:
         (dist/name).write_bytes(assets.read(name))
 runpy.run_path(str(root/'build.py'),run_name='__main__')
-print('Built 52 pages for', os.environ['SITE_ORIGIN'])
+print('Built',len(list(dist.glob('*.html'))),'pages for',os.environ['SITE_ORIGIN'])
