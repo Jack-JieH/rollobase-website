@@ -3,6 +3,7 @@ from html import escape, unescape
 import json
 from pathlib import Path
 import re
+from design_update import apply_design, replace_once
 from knowledge import VisibleFAQ, UPDATED
 from localization import LocalizedPage
 from russian import RU_ROUTES
@@ -13,6 +14,33 @@ LABELS = ['ES', 'EN', '繁中', 'RU', '简中']
 FULL_LABELS = ['Español', 'English', '繁體中文', 'Русский', '简体中文']
 SC_ROUTES = {k:('zh-cn.html' if k=='home' else k+'-zh-cn.html') for k in RU_ROUTES}
 CONTENT = json.loads((ROOT/'seo-content.json').read_text())
+
+SPANISH_SEARCH = {
+    'catalog': {
+        'title': 'Catálogo de material autoadhesivo en bobina madre',
+        'description': 'Compare papel y película autoadhesiva en bobinas jumbo sin imprimir para fabricar etiquetas. Elija material, adhesivo y liner antes de solicitar una muestra.',
+        'heading': 'Catálogo de material autoadhesivo en bobina madre',
+        'lead': 'Compare papeles y películas en bobinas jumbo sin imprimir para fabricar etiquetas. Elija el material según la aplicación y confirme el frontal, el adhesivo y el soporte de liberación (liner) antes de pedir una muestra.',
+    },
+    'bopp': {
+        'title': 'BOPP autoadhesivo blanco y transparente en bobina jumbo',
+        'description': 'Elija BOPP autoadhesivo blanco o transparente en bobina jumbo. Compare cobertura, claridad, tinta y adhesivo con una muestra en el envase real.',
+        'heading': 'BOPP autoadhesivo en bobina jumbo',
+        'lead': 'Película de polipropileno biorientado (BOPP) sin imprimir para fabricar etiquetas de envases. Compare el BOPP blanco y el transparente sobre el envase real y confirme el espesor, el adhesivo y el liner por referencia.',
+    },
+    'coated': {
+        'title': 'Papel semibrillante autoadhesivo en bobina jumbo',
+        'description': 'Papel semibrillo (semigloss) autoadhesivo en bobina jumbo para etiquetas a color. Confirme gramaje, adhesivo, soporte y prueba de impresión.',
+        'heading': 'Papel semibrillante autoadhesivo en bobina jumbo',
+        'lead': 'Papel estucado semibrillo (semigloss) sin imprimir para etiquetas a color en cajas y frascos. Si el proveedor usa el término couché, confirme el acabado y la ficha técnica de la referencia antes de comparar muestras.',
+    },
+    'woodfree': {
+        'title': 'Papel autoadhesivo sin estucar en bobina madre: A–D',
+        'description': 'Compare las opciones A–D de papel autoadhesivo sin estucar en bobina madre: frontal, adhesivo hot melt y glassine. Elija una opción para pedir una muestra.',
+        'heading': 'Papel autoadhesivo sin estucar en bobina madre',
+        'lead': 'Compare las opciones A–D para fabricar etiquetas de papel sin estucar. Revise el gramaje del frontal, el adhesivo hot melt y el soporte glassine, y elija una combinación para preparar su solicitud de muestra.',
+    },
+}
 
 
 def traditional(text):
@@ -54,8 +82,9 @@ def apply_editorial(dist, groups, origin):
                 parser = LocalizedPage(traditional, {}, origin, 'zh-Hant')
                 parser.feed(html)
                 html = ''.join(parser.out)
-            title = CONTENT['titles'][key][i]+' | RolloBase'
-            description = CONTENT.get('descriptions',{}).get(key,[None]*4)[i]
+            spanish_search = SPANISH_SEARCH.get(key) if i == 0 else None
+            title = (spanish_search['title'] if spanish_search else CONTENT['titles'][key][i])+' | RolloBase'
+            description = spanish_search['description'] if spanish_search else CONTENT.get('descriptions',{}).get(key,[None]*4)[i]
             if not description:
                 description = unescape(re.search(r'<meta name="description" content="([^"]*)"',html)[1])
             html = re.sub(r'<title>.*?</title>',lambda m:'<title>'+escape(title)+'</title>',html)
@@ -76,6 +105,52 @@ def apply_editorial(dist, groups, origin):
             html = html.replace('style.css?v=20261116-ru','style.css?v=20261119-five')
             html = update_schema(html,LANGUAGES[i],title,description)
             (dist/path).write_text(html)
+
+
+def apply_spanish_search(dist, groups):
+    for key, copy in SPANISH_SEARCH.items():
+        path = dist / groups[key][0]
+        html = path.read_text()
+        lead = '<h1>'+escape(copy['heading'])+'</h1><p>'+escape(copy['lead'])+'</p>'
+        html = replace_once(r'<h1>[^<]*</h1><p>[^<]*</p>', lead, html)
+        if key == 'catalog':
+            for product, label, search_term in [
+                ('bopp', 'BOPP autoadhesivo blanco y transparente', 'autoadhesivo'),
+                ('coated', 'Papel autoadhesivo semibrillo', 'semigloss'),
+                ('woodfree', 'Papel sin estucar · Opciones A–D', 'autoadhesivo'),
+            ]:
+                target = groups[product][0]
+                href = target+'#compare' if product == 'woodfree' else target
+                pattern = r'(<a class="appcard" data-search="[^"]*)" href="'+re.escape(target)+r'">(<span>[^<]*</span>)<h3>[^<]*</h3>'
+                html = replace_once(pattern, lambda m: m[1]+' '+search_term+'" href="'+href+'">'+m[2]+'<h3>'+label+'</h3>', html)
+        elif key in ('bopp', 'coated'):
+            trial = {
+                'bopp': (
+                    '<p><strong>BOPP blanco:</strong> compruebe la cobertura y el contraste sobre el envase lleno. '
+                    'Revise la legibilidad del diseño después de exponer la muestra a la condensación prevista.</p>'
+                    '<p><strong>BOPP transparente:</strong> compruebe la claridad del conjunto, las burbujas y el blanqueamiento '
+                    'del adhesivo antes y después de la exposición. Si el diseño lleva tinta blanca de fondo, evalúe '
+                    'el contraste con la tinta prevista. En ambas opciones, verifique la adherencia de la tinta.</p>'
+                ),
+                'coated': (
+                    '<p>Imprima en el equipo previsto una muestra con texto fino, un área de color sólido y el código de barras '
+                    'si forma parte del diseño. Tras el secado o curado, revise definición, uniformidad, legibilidad y transferencia '
+                    'de tinta por roce. Repita la revisión tras la exposición a la humedad de uso y pruebe el troquelado con el liner '
+                    'de la referencia propuesta.</p>'
+                ),
+            }[key]
+            html = replace_once(r'(<section class="questions"><h2>Prueba recomendada para esta aplicación</h2><div>)<p>[^<]*</p>',
+                                lambda m: m[1]+trial, html)
+        elif key == 'woodfree':
+            test_note = (
+                '<p>Compare A con B o C con D si desea estudiar el cambio de 14 a 20 g/m². Confirme que la formulación '
+                'del adhesivo sea la misma dentro de cada par. Use el mismo envase, presión, temperatura y tiempo de reposo. '
+                'Registre el levantamiento en bordes y el resultado de pelado para cada muestra. Entre A y C también cambian '
+                'el frontal y el glassine. El gramaje del adhesivo por sí solo no determina la adhesión al pelado.</p>'
+            )
+            html = replace_once(r'(<aside><h3>¿14 o 20 g/m² de adhesivo\?</h3>)<p>[^<]*</p>',
+                                lambda m: m[1]+test_note, html)
+        path.write_text(html)
 
 
 def add_simplified(dist, groups, origin):
@@ -120,7 +195,7 @@ def publish_update(dist, original_groups, origin):
     groups = {key:paths+[RU_ROUTES[key]] for key,paths in original_groups.items()}
     apply_editorial(dist,groups,origin)
     add_simplified(dist,groups,origin)
-    from design_update import apply_design
     complete_groups = {key:paths+[SC_ROUTES[key]] for key,paths in groups.items()}
     apply_design(dist,complete_groups)
+    apply_spanish_search(dist,complete_groups)
     return finalize_languages(dist,complete_groups,origin)
