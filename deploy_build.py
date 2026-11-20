@@ -22,4 +22,9 @@ with ZipFile(root/'site-assets.zip') as assets:
     for name in expected:
         (dist/name).write_bytes(assets.read(name))
 runpy.run_path(str(root/'build.py'),run_name='__main__')
+if os.environ['SITE_ORIGIN'] == 'https://rollobase-materials.onrender.com':
+    # Google Search Console checks this public tag on the canonical homepage.
+    homepage = dist/'index.html'
+    verification = '<meta name="google-site-verification" content="BxAOcnRNOY8abPEE5USKcO1PO-CD7UU5JoSyb8Jwb-I">'
+    homepage.write_text(homepage.read_text(encoding='utf-8').replace('</head>', verification + '</head>', 1), encoding='utf-8')
 print('Built',len(list(dist.glob('*.html'))),'pages for',os.environ['SITE_ORIGIN'])
