@@ -14,6 +14,14 @@ LABELS = ['ES', 'EN', '繁中', 'RU', '简中']
 FULL_LABELS = ['Español', 'English', '繁體中文', 'Русский', '简体中文']
 SC_ROUTES = {k:('zh-cn.html' if k=='home' else k+'-zh-cn.html') for k in RU_ROUTES}
 CONTENT = json.loads((ROOT/'seo-content.json').read_text())
+KEYWORD_REVIEW_DATE = '2026-11-20'
+HOME_KEYWORD_LEADS = [
+    'Material autoadhesivo sin imprimir en bobinas jumbo para fabricar etiquetas. Compare papel y película por aplicación, confirme frontal, adhesivo sensible a la presión y liner, y prepare una solicitud de muestra con las medidas de su equipo.',
+    'Unprinted pressure-sensitive labelstock in jumbo rolls for label converters. Compare paper and film by application, confirm the facestock, adhesive and release liner, then prepare a sample request with your machine dimensions.',
+    '供標籤印刷、分條與模切的未印刷壓敏自黏卷材。依用途比較紙類與薄膜母卷，確認面材、膠黏劑與離型底材，再填入設備尺寸準備索樣。',
+    'Самоклеящиеся материалы в джамбо-рулонах без печати для производства этикеток. Выберите бумагу или плёнку по применению, уточните лицевой слой, клей, чувствительный к давлению, и подложку. Укажите размеры рулона, необходимые для вашего оборудования.',
+    '供标签印刷、分切和模切用的未印刷压敏不干胶卷材。按用途比较纸类和薄膜母卷，确认面材、胶粘剂及离型底材，再填写设备尺寸准备索样。',
+]
 
 SPANISH_SEARCH = {
     'catalog': {
@@ -40,6 +48,12 @@ SPANISH_SEARCH = {
         'heading': 'Papel autoadhesivo sin estucar en bobina madre',
         'lead': 'Compare las opciones A–D para fabricar etiquetas de papel sin estucar. Revise el gramaje del frontal, el adhesivo hot melt y el soporte glassine, y elija una combinación para preparar su solicitud de muestra.',
     },
+    'thermal': {
+        'title': 'Papel térmico directo autoadhesivo en bobina jumbo',
+        'description': 'Compare papel térmico directo autoadhesivo Eco y Top en bobina jumbo para fabricar etiquetas. Verifique el adhesivo y la lectura de códigos con una muestra.',
+        'heading': 'Papel térmico directo autoadhesivo en bobina jumbo',
+        'lead': 'Bobinas sin imprimir para fabricar etiquetas térmicas de logística o de balanza. Compare los grados Eco y Top y compruebe la lectura del código con su equipo y en las condiciones de uso previstas.',
+    },
 }
 
 
@@ -49,7 +63,7 @@ def traditional(text):
     return text
 
 
-def update_schema(html, language, title, description):
+def update_schema(html, language, title, description, modified=UPDATED):
     faq = VisibleFAQ()
     faq.feed(html.split('<main>',1)[1].split('</main>',1)[0])
     def replace(match):
@@ -58,7 +72,7 @@ def update_schema(html, language, title, description):
         original = [(q['name'], q['acceptedAnswer']['text']) for n in graph if n['@type']=='FAQPage' for q in n['mainEntity']]
         pairs = list(dict.fromkeys(original+faq.pairs))
         page = next(n for n in graph if n['@type']=='WebPage')
-        page.update(name=title, description=description, inLanguage=language, dateModified=UPDATED)
+        page.update(name=title, description=description, inLanguage=language, dateModified=modified)
         for node in graph:
             if node['@type']=='WebSite':
                 node['inLanguage'] = LANGUAGES
@@ -153,6 +167,58 @@ def apply_spanish_search(dist, groups):
         path.write_text(html)
 
 
+def apply_keyword_research(dist, groups):
+    """Add reviewed buyer answers after all five language versions exist."""
+    topics = json.loads((ROOT/'keyword-content.json').read_text(encoding='utf-8'))
+    changed = set()
+    for key in dict.fromkeys(('home', *topics, 'thermal')):
+        items = topics.get(key, [])
+        for item in items:
+            if any(len(item[field]) != len(LANGUAGES) or not all(item[field]) for field in ('q', 'a')):
+                raise ValueError(f'Incomplete buyer answer translations for {key}')
+        for language_index, page_name in enumerate(groups[key]):
+            if not items and key != 'home' and not (key == 'thermal' and language_index == 0):
+                continue
+            path = dist / page_name
+            html = path.read_text(encoding='utf-8')
+            if key == 'home':
+                html = replace_once(
+                    r'(<div class="hero-copy"><p[^>]*>.*?</p><h1>[^<]*</h1>)<p>[^<]*</p>',
+                    lambda match: match[1] + '<p>' + escape(HOME_KEYWORD_LEADS[language_index]) + '</p>',
+                    html,
+                )
+            if items:
+                answers = ''.join(
+                    '<details><summary>' + escape(item['q'][language_index]) +
+                    '</summary><p>' + escape(item['a'][language_index]) + '</p></details>'
+                    for item in items
+                )
+                if 'id="procurement"' in html:
+                    html = replace_once(
+                        r'(<section class="questions procurement-questions" id="procurement">.*?)</div></section>',
+                        lambda match: match[1] + answers + '</div></section>',
+                        html,
+                    )
+                else:
+                    section = (
+                        '<section class="questions procurement-questions" id="procurement"><h2>' +
+                        escape(CONTENT['section'][language_index] if language_index < 4 else '采购前的材料与规格问答') +
+                        '</h2><div>' + answers + '</div></section>'
+                    )
+                    html = replace_once(r'<p class="updated">', section + '<p class="updated">', html)
+            html = replace_once(
+                r'<time datetime="' + re.escape(UPDATED) + '">' + re.escape(UPDATED) + r'</time>',
+                f'<time datetime="{KEYWORD_REVIEW_DATE}">{KEYWORD_REVIEW_DATE}</time>',
+                html,
+            )
+            title = unescape(re.search(r'<title>(.*?)</title>', html)[1])
+            description = unescape(re.search(r'<meta name="description" content="([^"]*)"', html)[1])
+            html = update_schema(html, LANGUAGES[language_index], title, description, modified=KEYWORD_REVIEW_DATE)
+            path.write_text(html, encoding='utf-8')
+            changed.add(page_name)
+    return changed
+
+
 def add_simplified(dist, groups, origin):
     copy = json.loads((ROOT/'simplified.json').read_text())
     def translate(text):
@@ -172,7 +238,7 @@ def add_simplified(dist, groups, origin):
     (dist/'brief-zh-Hans.txt').write_text(translate(brief),encoding='utf-8-sig')
 
 
-def finalize_languages(dist, groups, origin):
+def finalize_languages(dist, groups, origin, reviewed_pages):
     def url(path):
         return origin+('/' if path=='index.html' else '/'+path.removesuffix('.html'))
     all_paths = []
@@ -186,7 +252,11 @@ def finalize_languages(dist, groups, origin):
             html = re.sub(r'<div class="languages">.*?</div>',lambda m:nav,html,count=1)
             (dist/path).write_text(html)
             all_paths.append(path)
-    entries = ''.join('<url><loc>'+url(p)+'</loc><lastmod>'+UPDATED+'</lastmod></url>' for p in all_paths)
+    entries = ''.join(
+        '<url><loc>' + url(path) + '</loc><lastmod>' +
+        (KEYWORD_REVIEW_DATE if path in reviewed_pages else UPDATED) + '</lastmod></url>'
+        for path in all_paths
+    )
     (dist/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+entries+'</urlset>')
     return all_paths
 
@@ -198,4 +268,5 @@ def publish_update(dist, original_groups, origin):
     complete_groups = {key:paths+[SC_ROUTES[key]] for key,paths in groups.items()}
     apply_design(dist,complete_groups)
     apply_spanish_search(dist,complete_groups)
-    return finalize_languages(dist,complete_groups,origin)
+    reviewed_pages = apply_keyword_research(dist, complete_groups)
+    return finalize_languages(dist,complete_groups,origin,reviewed_pages)

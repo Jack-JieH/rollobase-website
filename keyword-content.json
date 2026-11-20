@@ -1,0 +1,314 @@
+{
+  "bopp": [
+    {
+      "q": [
+        "¿Cómo comparo el BOPP blanco y el BOPP transparente con fondo de tinta blanca en una botella oscura?",
+        "How do I compare white BOPP and clear BOPP with white ink underprint on a dark bottle?",
+        "深色瓶要維持品牌色，如何比較白色 BOPP 與透明 BOPP 白墨打底的遮蓋效果？",
+        "Как сравнить белую БОПП и прозрачную БОПП с подложкой из белой краски на тёмной бутылке?",
+        "深色瓶要保持品牌色，如何比较白色 BOPP 和透明 BOPP 白墨打底的遮盖效果？"
+      ],
+      "a": [
+        "Imprima el mismo diseño sobre BOPP blanco y sobre BOPP transparente con fondo de tinta blanca. Aplique las muestras a botellas llenas del mismo lote y compárelas bajo la misma iluminación con una muestra de color aprobada. Registre la cobertura del color de la botella, la uniformidad de la tinta blanca y el contraste del texto pequeño. Pida por separado el dato de opacidad del frontal blanco, que no representa por sí solo la cobertura de la etiqueta impresa.",
+        "Print the same artwork on white BOPP and on clear BOPP with a white ink underprint. Apply both to filled bottles from the same lot and compare them against the approved colour sample under the same viewing light. Record how well each hides the bottle colour, how even the white ink is, and whether fine text has enough contrast. Ask separately for the white facestock opacity, which does not measure the hiding power of the printed label by itself.",
+        "將同一圖稿分別印在白色 BOPP 和白墨打底的透明 BOPP 上，貼到同批已裝填的瓶身，在同一光源下與核准色樣比對。記錄瓶色遮蓋、白墨均勻度及細字對比。白色面材的不透明度應另向供應商確認，成品遮蓋效果以實瓶打樣為準。",
+        "Напечатайте один макет на белой БОПП и на прозрачной БОПП с белой краской под изображением. Наклейте образцы на наполненные бутылки одной партии и сравните их с утверждённым образцом цвета при одинаковом освещении. Отметьте, насколько хорошо скрыт цвет бутылки, равномерен ли слой белил и достаточно ли контрастен мелкий текст. Непрозрачность белого лицевого материала уточняйте отдельно от укрывистости готовой этикетки.",
+        "将同一图稿分别印在白色 BOPP 和白墨打底的透明 BOPP 上，贴到同批已灌装的瓶身，在同一光源下与确认色样对比。记录瓶色遮盖、白墨均匀度及小字对比。白色面材的不透明度应另向供应商确认，成品遮盖效果以实际瓶身打样为准。"
+      ]
+    },
+    {
+      "q": [
+        "¿Cómo distingo la condensación, las burbujas y el blanqueamiento del adhesivo en una etiqueta de BOPP transparente?",
+        "How can I distinguish condensation, bubbles and adhesive whitening on a clear BOPP label?",
+        "透明 BOPP 瓶標冷藏後看起來泛白，怎麼排查冷凝、氣泡與膠層白化？",
+        "Как различить конденсат, пузырьки и побеление клея на прозрачной этикетке из БОПП?",
+        "透明 BOPP 瓶标冷藏后看起来发白，怎么排查冷凝、气泡和胶层白化？"
+      ],
+      "a": [
+        "Fotografíe la etiqueta antes de enfriar, justo al retirar la botella y después de secar suavemente las gotas de la superficie. Conserve una muestra sin enfriar como control y use la misma luz. Si los defectos ya se veían en seco, revise las burbujas de aplicación y compare la turbidez del frontal por separado. Las zonas que permanecen blancas después de secar la superficie requieren una prueba controlada de humedad con la misma construcción y el mismo envase.",
+        "Photograph the label before cooling, immediately after removing the bottle and after gently drying the surface droplets. Keep a sample at room temperature as a control and use the same light. If the marks were visible before cooling, check for trapped air and compare the facestock haze separately. White patches that persist after surface drying warrant a controlled moisture trial with the same label construction and bottle.",
+        "在冷藏前、取出後和輕輕拭去表面水珠後，用同一光源拍照，另留未冷藏樣作對照。冷藏前已可見的缺陷，先查貼標氣泡，並另比對面材霧度。若拭去水珠後白斑仍在，再用同一構造及瓶身做受控濕度試驗，排查膠層泛白。",
+        "Сфотографируйте этикетку до охлаждения, сразу после извлечения бутылки, затем после аккуратного удаления капель с поверхности. Оставьте неохлаждённый контрольный образец и снимайте при одинаковом свете. Если следы были видны до охлаждения, проверьте наличие пузырьков и отдельно сравните мутность лицевой плёнки. Стойкие белые пятна после удаления капель требуют испытания той же конструкции на той же бутылке при контролируемой влажности.",
+        "在冷藏前、取出后和轻轻擦去表面水珠后，用同一光源拍照，另留未冷藏样品作对照。冷藏前已可见的缺陷，先检查贴标气泡，并单独对比面材雾度。若擦去水珠后白斑仍在，再用同一结构及瓶身做受控湿度试验，排查胶层白化。"
+      ]
+    }
+  ],
+  "pe": [
+    {
+      "q": [
+        "¿Cómo comparo BOPP y PE autoadhesivo cuando se levantan los bordes de una etiqueta en un envase flexible?",
+        "How do I compare BOPP and PE labelstock when edges lift on a squeezable bottle?",
+        "軟瓶標籤擠壓後翹邊，怎麼對照 BOPP 與 PE 自黏面材？",
+        "Как сравнить самоклеящиеся БОПП и ПЭ, если края этикетки поднимаются на сжимаемом флаконе?",
+        "软瓶标签挤压后翘边，怎么对比 BOPP 和 PE 不干胶面材？"
+      ],
+      "a": [
+        "Pruebe la construcción actual de BOPP y la propuesta de PE con el mismo troquel y la misma posición en botellas llenas equivalentes. Documente el adhesivo de cada muestra y fotografíe los bordes antes del primer ciclo y después de que el envase recupere su forma. Distinga arrugas pasajeras de pliegues o bordes que siguen levantados tras la recuperación. Si también cambió el adhesivo, compare las construcciones completas y verifique el efecto del frontal con una prueba independiente.",
+        "Apply the current BOPP and the candidate PE construction in the same label shape and position on comparable filled bottles. Record the adhesive in each sample, and photograph the edges before the first squeeze and after the bottle rebounds. Separate temporary wrinkles from creases or edges that stay lifted after rebound. If the adhesive changes too, compare the whole constructions and check the facestock effect in a separate trial.",
+        "將原用 BOPP 與候選 PE 裁成相同形狀，貼到同批已裝填軟瓶的相同位置。記錄兩款樣品所用膠黏劑，在首次擠壓前和瓶身回彈後拍攝邊角，區分暫時皺摺與回彈後仍在的摺痕或翹邊。如果也換膠，這次比較的是整體構造；要判斷面材本身的影響，再安排單一變因試驗。",
+        "Наклейте образцы текущей конструкции на БОПП и новой на ПЭ одинаковой формы на одно и то же место сопоставимых наполненных флаконов. Запишите клей каждого образца и сфотографируйте края до первого сжатия и после восстановления формы. Отделяйте временные морщины от заломов и отстающих краёв, которые остаются после восстановления. Если изменился и клей, сравнивайте целые конструкции и проверяйте влияние лицевой плёнки отдельным испытанием.",
+        "将原用 BOPP 与候选 PE 裁成相同形状，贴到同批已灌装软瓶的相同位置。记录两款样品使用的胶黏剂，在首次挤压前和瓶身回弹后拍摄边角，区分暂时起皱与回弹后仍在的折痕或翘边。如果也更换胶黏剂，这次比较的是整体结构；要判断面材本身的影响，再安排单变量试验。"
+      ]
+    }
+  ],
+  "pet": [
+    {
+      "q": [
+        "¿Cómo compruebo la compatibilidad de un adhesivo lavable para etiquetas en botellas PET?",
+        "How do I check wash-off adhesive compatibility for labels on PET bottles?",
+        "PET 瓶標換可洗離膠時，如何確認整組標籤的洗滌與分離表現？",
+        "Как проверить совместимость смываемого клея для этикеток на ПЭТ-бутылках?",
+        "PET 瓶标更换可洗脱胶时，如何确认整套标签的清洗和分离表现？"
+      ],
+      "a": [
+        "PET identifica el material del envase o del frontal, según la ficha. La separación durante el lavado depende de la construcción completa y del proceso. Pida al reciclador el protocolo aplicable, incluidos productos químicos, concentración, temperatura y tiempo. Ensaye el envase con la etiqueta impresa final y registre la separación y los residuos de adhesivo, tinta o recubrimiento. Limite la conclusión a la combinación y al proceso ensayados.",
+        "PET may refer to the bottle or to the label facestock, depending on the specification. Wash-off depends on the entire label construction and wash process. Ask the recycler for the applicable protocol, including wash chemistry, concentration, temperature and time. Test the package with the finished printed label and record separation and any adhesive, ink or coating residue. Limit the conclusion to the tested construction and process.",
+        "先分清規格寫的是 PET 瓶身還是 PET 面材。洗離表現取決於整組標籤及洗滌流程。向回收端確認適用的方法、藥劑濃度、溫度與時間，用貼有實際印刷標籤的容器試驗，記錄分離狀況與膠、油墨或塗層殘留。結論限於已測的構造與流程。",
+        "Уточните, относится ли ПЭТ в спецификации к бутылке или к лицевому материалу этикетки. Отделение при мойке зависит от всей конструкции этикетки и параметров процесса. Запросите у переработчика методику, состав и концентрацию моющего раствора, температуру и время. Испытайте упаковку с окончательной печатной этикеткой и запишите результаты отделения и наличие остатков клея, краски или покрытия. Вывод относится к испытанной конструкции и процессу.",
+        "先分清规格写的是 PET 瓶身还是 PET 面材。洗脱表现取决于整套标签及清洗流程。向回收端确认适用的方法、药剂浓度、温度和时间，用贴有实际印刷标签的容器试验，记录分离情况和胶黏剂、油墨或涂层残留。结论仅适用于已测试的结构与流程。"
+      ]
+    }
+  ],
+  "guide": [
+    {
+      "q": [
+        "¿Cómo pruebo el sensor de separación entre etiquetas de BOPP transparente sobre liner PET?",
+        "How do I trial gap detection for clear BOPP labels on a PET liner?",
+        "透明 BOPP 搭 PET 離型底膜，如何確認貼標機能穩定辨識標籤間隙？",
+        "Как проверить обнаружение промежутков между прозрачными этикетками из БОПП на ПЭТ-подложке?",
+        "透明 BOPP 搭 PET 离型底膜，如何确认贴标机能稳定识别标签间隙？"
+      ],
+      "a": [
+        "Use una bobina troquelada de prueba con el liner, la separación y el diseño reales. Confirme con el fabricante del equipo qué detección admite su modelo. Calibre el sensor fotoeléctrico o ultrasónico siguiendo el manual y compruebe la señal en el hueco y sobre la etiqueta. Registre omisiones, dobles disparos y posición al arrancar, a velocidad estable y al reiniciar. Si el sistema usa marcas de registro, valide su posición y contraste con la bobina propuesta.",
+        "Use a die-cut sample roll with the actual liner, gap and artwork. Check which detection methods your machine model supports. Set up the photoelectric or ultrasonic sensor according to its manual and check the signal both in the gap and over the label. Log missed and double triggers and placement during startup, at steady speed and after restarting. If the system reads registration marks, verify mark position and contrast on the proposed roll.",
+        "使用與計畫相同底膜、間隙和圖稿的模切試卷，先向設備商確認機型支援的感測方式。依手冊調校光電或超音波感測器，確認經過標籤和間隙時的訊號。分別記錄啟動、穩速與重啟時的漏判、重複觸發及貼標位置。若設備讀取定位標記，用該試卷驗證標記位置和對比。",
+        "Возьмите вырубленный пробный рулон с фактической подложкой, зазором и макетом. Уточните у поставщика оборудования, какие способы обнаружения поддерживает модель. Настройте фотоэлектрический или ультразвуковой датчик по руководству и проверьте сигнал над этикеткой и в зазоре. Фиксируйте пропуски, двойные срабатывания и позицию этикетки при пуске, на стабильной скорости и при перезапуске. При использовании меток проверьте их положение и контраст на предлагаемом рулоне.",
+        "使用与计划相同底膜、间隙和图稿的模切试卷，先向设备商确认机型支持的感应方式。按手册调试光电或超声波传感器，确认经过标签和间隙时的信号。分别记录启动、稳定运行及重启时的漏检、重复触发和贴标位置。如设备读取定位标记，用该试卷验证标记位置和对比度。"
+      ]
+    },
+    {
+      "q": [
+        "Al pasar de glassine a liner PET, ¿cómo compruebo el troquelado antes de aumentar la velocidad?",
+        "When switching from glassine to a PET liner, how do I check die cutting before increasing line speed?",
+        "格拉辛底紙換成 PET 底膜，如何在加速前確認模切刀痕？",
+        "Как проверить высечку до повышения скорости при переходе с глассина на ПЭТ-подложку?",
+        "格拉辛底纸换成 PET 底膜，如何在提速前确认模切刀痕？"
+      ],
+      "a": [
+        "Confirme con el proveedor del troquel el espesor real del liner y el ajuste recomendado. En una prueba inicial a baja velocidad, retire la matriz y desprenda varias etiquetas en distintos puntos del ancho. Con buena luz o ampliación, revise si el frontal se cortó por completo y si el liner quedó marcado o perforado. Si el resultado es aceptable, repita el muestreo por etapas al aumentar la velocidad y registre el ajuste, la tensión y las roturas de matriz.",
+        "Confirm the actual liner caliper and recommended die settings with the tooling supplier. In an initial low-speed trial, strip the waste matrix and peel labels from several positions across the web. Use good light or magnification to check that the facestock is fully cut and look for scoring or punctures in the liner. Once the cut is acceptable, repeat the checks at each speed step and log the die setting, tension and matrix breaks.",
+        "先向刀模供應商確認底膜實際厚度與建議設定。初次低速試切後排廢，從幅寬不同位置剝取標籤。在良好照明或放大下確認面材切透，並檢查底膜刀痕或穿孔。確認試切可接受後再分段升速抽驗，記錄刀模設定、張力與排廢斷裂。",
+        "Уточните у поставщика оснастки фактическую толщину подложки и рекомендуемые настройки. Начните с пробной высечки на низкой скорости, удалите облой и снимите этикетки в нескольких местах по ширине полотна. При хорошем свете или с увеличением проверьте полный прорез лицевой плёнки, надрезы и проколы подложки. После приемлемого результата повторяйте проверку на каждой ступени разгона и записывайте настройки, натяжение и обрывы облоя.",
+        "先向刀模供应商确认底膜实际厚度和建议设置。首次低速试切后排废，从幅宽不同位置剥取标签。在良好照明或放大下确认面材切透，并检查底膜刀痕或穿孔。确认试切可接受后再分段提速抽检，记录刀模设置、张力和排废断裂。"
+      ]
+    }
+  ],
+  "coated": [
+    {
+      "q": [
+        "¿Cómo pruebo la sobreimpresión de datos variables en papel semibrillo autoadhesivo?",
+        "How do I test variable data overprinting on semi-gloss labelstock?",
+        "半光紙自黏標籤二次加印可變資料時，要怎麼試印？",
+        "Как проверить допечатку переменных данных на полуглянцевой самоклеящейся бумаге?",
+        "半光纸不干胶标签二次加印可变数据时，该怎么试印？"
+      ],
+      "a": [
+        "Pruebe en la zona donde irá el lote, la fecha o el código de barras, con las tintas y el barniz del diseño real. Compare una zona reservada sin barniz con una barnizada si ambas se consideran para producción. Use el equipo previsto y revise legibilidad y transferencia por roce una vez seca o curada la impresión. Si usa transferencia térmica, confirme en la ficha técnica la compatibilidad del papel con la cinta elegida.",
+        "Test in the intended lot number, date, or barcode area using the actual artwork inks and varnish. If both options are under consideration, compare a reserved unvarnished area with a varnished one. Use the production equipment and check legibility and rub-off after drying or curing. For thermal transfer, confirm compatibility between the paper and the chosen ribbon in the technical data sheet.",
+        "用正式圖稿的油墨和光油打樣，在預定的批號、日期或條碼區加印。若考慮兩種做法，可比較預留未上光區與上光區。使用預定量產設備，待印刷乾燥或固化後檢查字碼辨識度及摩擦掉墨。採用熱轉印時，依技術資料表確認紙張與所選碳帶的相容性。",
+        "Используйте краски и лак из рабочего макета. Нанесите номер партии, дату или штрихкод в предназначенной для них зоне. Если рассматриваются оба варианта, сравните участки с лаком и без него. Проведите пробу на рабочем оборудовании, после сушки или отверждения проверьте читаемость и стирание краски. Для термотрансферной печати уточните совместимость бумаги с выбранным риббоном по технической документации.",
+        "用正式图稿的油墨和光油打样，在预定的批号、日期或条码区加印。若考虑两种做法，可对比预留未上光区和上光区。使用预定量产设备，待印刷干燥或固化后检查字码清晰度和摩擦掉墨。采用热转印时，按技术资料表确认纸张与所选碳带的兼容性。"
+      ]
+    }
+  ],
+  "thermal": [
+    {
+      "q": [
+        "¿Cómo elijo la velocidad y el nivel de calor para imprimir códigos 2D en térmico directo?",
+        "How do I choose print speed and heat for 2D codes on direct thermal labelstock?",
+        "直接熱感紙列印二維碼時，怎麼比較印速和熱量設定？",
+        "Как подобрать скорость и нагрев для печати 2D-кодов на термобумаге прямой печати?",
+        "直接热敏纸打印二维条码时，怎么对比打印速度和热量设置？"
+      ],
+      "a": [
+        "Imprima el mismo código 2D en una serie de muestras. En cada velocidad de prueba, cambie por pasos el nivel de oscuridad y registre ambos ajustes dentro de los límites recomendados para el equipo y el material. Evalúe el código sobre el empaque final con el lector previsto. Si la aceptación exige un grado de calidad, use un verificador y registre el grado obtenido.",
+        "Print the same 2D code on a series of samples. At each trial speed, step through darkness settings and record both settings within the limits recommended for the equipment and stock. Check the code on the final package with the intended scanner. If acceptance requires a quality grade, use a barcode verifier and record the grade.",
+        "用同一個二維碼做一系列試印。每個試印速度都逐步調整列印濃度，並在設備與材料建議範圍內記錄兩項設定。將試樣貼在成品包裝上，用實際讀取設備檢查。如果驗收要求條碼品質等級，使用條碼驗證儀並記錄等級。",
+        "Напечатайте один и тот же 2D-код на серии образцов. Для каждой пробной скорости пошагово меняйте настройку плотности печати. Записывайте оба параметра и соблюдайте ограничения для оборудования и материала. Проверьте код на готовой упаковке рабочим сканером. Если приёмка требует класса качества, используйте верификатор штрихкодов и запишите класс.",
+        "用同一个二维条码做一系列试印。每个试印速度都逐步调整打印浓度，并在设备与材料推荐范围内记录两项设置。将试样贴在成品包装上，用实际读取设备检查。如果验收要求条码质量等级，使用条码验证仪并记录等级。"
+      ]
+    },
+    {
+      "q": [
+        "¿Cómo compruebo la legibilidad de una etiqueta térmica directa después de almacenarla con humedad alta?",
+        "How do I check direct thermal label readability after storage at high humidity?",
+        "直接熱感標籤存放在高濕環境後，怎麼檢查字碼可讀性？",
+        "Как проверить читаемость этикетки прямой термопечати после хранения при высокой влажности?",
+        "直接热敏标签在高湿环境存放后，怎么检查字码可读性？"
+      ],
+      "a": [
+        "Imprima muestras con los mismos ajustes y colóquelas sobre el empaque real. Reserve una muestra de control y exponga las demás a la temperatura, humedad y duración previstas, con condensación si se espera en uso. Compare antes y después el contraste de impresión y la lectura con el equipo previsto. Revise por separado si se levantan los bordes de la etiqueta.",
+        "Print samples at the same settings and apply them to the actual package. Keep a control and expose the other samples to the expected temperature, humidity, and duration, including condensation if it occurs in use. Compare print contrast and scanner readability before and after exposure. Record edge lift separately.",
+        "以相同設定列印樣品，貼在實際包裝上，並保留一份對照樣。其餘樣品依預期溫度、濕度和持續時間做測試，實際使用若會冷凝，也納入試驗。比對暴露前後的印面對比與實際讀取設備的掃讀結果，另記錄標籤邊緣是否翹起。",
+        "Напечатайте образцы с одинаковыми настройками и наклейте их на рабочую упаковку. Оставьте контрольный образец, остальные выдержите при ожидаемой температуре и влажности в течение заданного срока. Если в эксплуатации появляется конденсат, учтите его в испытании. Сравните контраст и считывание до и после выдержки. Отдельно зафиксируйте отслоение краёв.",
+        "用相同设置打印样品，贴在实际包装上，并保留一份对照样。其余样品按预计温度、湿度和持续时间测试，实际使用若会出现冷凝，也纳入测试。对比暴露前后的印面反差和实际读取设备的扫码结果，另记录标签边缘是否翘起。"
+      ]
+    }
+  ],
+  "woodfree": [
+    {
+      "q": [
+        "¿Cómo comparo la absorción de tinta y el contraste en papel autoadhesivo sin estucar y semibrillante?",
+        "How do I compare ink absorption and contrast on uncoated and semi-gloss labelstock?",
+        "模造紙與半光銅版紙試印時，怎麼比較吸墨、墨擴和對比？",
+        "Как сравнить впитывание краски и контраст на немелованной и полуглянцевой самоклеящейся бумаге?",
+        "书写纸与半光铜版纸试印时，怎么对比吸墨、油墨扩散和反差？"
+      ],
+      "a": [
+        "Use el mismo arte de prueba, con texto fino, líneas y áreas sólidas. Si las dos fichas técnicas permiten el mismo sistema de impresión, mantenga fijos equipo, tinta y ajustes para la comparación. Revise el ensanchamiento de líneas, la uniformidad y el contraste después de secar bajo la misma iluminación. Identifique la opción A–D en cada muestra de papel sin estucar y registre por separado el comportamiento en el troquelado.",
+        "Use the same test artwork with fine text, lines, and solid patches. If the data sheets support the same printing system, hold the press, ink, and settings constant for the comparison. After drying, compare line spread, uniformity, and contrast under the same lighting. Mark the A–D option on each uncoated sample and record die-cutting performance separately.",
+        "以相同試印稿印製細字、細線與實地色塊。若兩款材料的技術資料表都適用同一印刷系統，就固定機台、油墨與設定。乾燥後在相同照明下比對墨擴、均勻度與對比。每張模造紙樣標記 A～D 組合，另記錄模切表現。",
+        "Используйте один тестовый макет с мелким текстом, линиями и сплошными плашками. Если технические паспорта допускают одну систему печати, сохраните одинаковые оборудование, краски и настройки. После высыхания сравните растискивание линий, равномерность и контраст при одинаковом освещении. На каждом немелованном образце отметьте вариант A–D. Результат высечки запишите отдельно.",
+        "用相同试印稿打印细字、细线和实地色块。若两款材料的技术资料表都适用同一印刷系统，就固定设备、油墨和设置。干燥后在相同照明下对比油墨扩散、均匀度和反差。每张书写纸样标记 A～D 组合，另记录模切表现。"
+      ]
+    }
+  ],
+  "catalog": [
+    {
+      "q": [
+        "¿Cómo compruebo si un papel autoadhesivo opaco cubre una etiqueta anterior?",
+        "How do I check whether opaque self-adhesive paper will cover an existing label?",
+        "要覆貼舊標籤，怎麼驗證自黏紙的遮蔽效果？",
+        "Как проверить, перекроет ли непрозрачная самоклеящаяся бумага старую этикетку?",
+        "需要覆盖旧标签时，怎么验证不干胶纸的遮盖效果？"
+      ],
+      "a": [
+        "Aplique la muestra sobre la etiqueta anterior real y compruebe si aún se distinguen texto, color o códigos. Revise si el código anterior sigue siendo legible para el lector y si el nuevo se lee en uso. Compruebe también el levantamiento de bordes. Pida una ficha técnica de la construcción opaca y confirme la disponibilidad antes de preparar el pedido.",
+        "Apply the sample over the actual old label and check whether text, color, or codes still show through. Check whether the scanner can still read the old code and whether it reliably reads the new one in use. Inspect for edge lift. Ask for a technical data sheet for the opaque construction and confirm availability before ordering.",
+        "將樣品覆貼在實際舊標籤上，檢查是否還看得見原來的文字、顏色或條碼。用實際讀取設備確認舊碼是否仍能讀取、新碼是否可正常掃讀，並檢查邊緣有無翹起。先索取該遮蔽型結構的技術資料表，再確認供貨。",
+        "Наклейте образец поверх настоящей старой этикетки и проверьте, проступают ли текст, цвет или коды. Проверьте рабочим сканером, считывается ли старый код и уверенно ли читается новый. Осмотрите края на отслоение. Запросите технический паспорт непрозрачного материала и уточните наличие перед заказом.",
+        "将样品覆盖在实际旧标签上，检查是否仍能看到原来的文字、颜色或条码。用实际读取设备确认旧码是否仍能读取、新码能否正常扫描，并检查边缘是否翘起。先索取该遮盖型结构的技术资料表，再确认供货。"
+      ]
+    }
+  ],
+  "printing": [
+    {
+      "q": [
+        "¿Cómo comprobar el registro entre la base de tinta blanca y el CMYK en BOPP transparente?",
+        "How do you check white underprint to CMYK register on clear BOPP?",
+        "透明 BOPP 印刷時，如何檢查白墨打底與 CMYK 的套準？",
+        "Как проверить совмещение белой подложки и CMYK на прозрачной плёнке BOPP?",
+        "透明 BOPP 印刷时，如何检查白墨打底与 CMYK 的套印精度？"
+      ],
+      "a": [
+        "Incluya marcas de registro para la tinta blanca y el CMYK. A la velocidad prevista de producción, tome muestras identificadas al inicio, en el centro y al final de la bobina. Mida el desvío longitudinal y transversal, anote velocidad y posición, y compare con la tolerancia acordada para el diseño.",
+        "Add register marks for the white ink and CMYK. At the planned production speed, take labelled samples from the start, middle and end of the roll. Measure the offset along and across the web, log its position and press speed, and compare it with the agreed artwork tolerance.",
+        "在白墨層與 CMYK 設置套準標記。以預定量產機速印刷，在卷頭、卷中、卷尾分別取樣並標記位置。量測走料與橫向的偏移，記錄機速，依該圖稿事先約定的套準允差判定。",
+        "Добавьте метки совмещения для белой краски и CMYK. При плановой тиражной скорости отберите и промаркируйте образцы в начале, середине и конце рулона. Измерьте смещение вдоль и поперёк полотна, запишите скорость печати и положение образца, затем сравните с согласованным допуском для макета.",
+        "在白墨层与 CMYK 设置套印标记。按计划量产速度印刷，在卷头、卷中、卷尾分别取样并标记位置。测量走料方向和横向的偏移，记录机速，按该图稿事先约定的套印公差判定。"
+      ]
+    },
+    {
+      "q": [
+        "¿Qué muestras y ajustes conviene conservar al comparar dos lotes de BOPP en prensa?",
+        "What samples and press settings should you retain when comparing two BOPP lots?",
+        "比較兩批 BOPP 的試印結果時，哪些樣品和機台設定要保留？",
+        "Какие образцы и настройки пресса сохранять при сравнении двух партий BOPP?",
+        "对比两批 BOPP 的试印结果时，需要保留哪些样品和印刷机设置？"
+      ],
+      "a": [
+        "Conserve de cada lote muestras sin imprimir e impresas, identificadas con número de bobina y posición. Use la misma prensa, configuración, tinta y condiciones ambientales. Registre velocidad y tensión, repita la prueba con esos ajustes y conserve los resultados junto con las muestras para poder comparar los lotes.",
+        "Retain unprinted and printed samples from each lot, marked with the roll number and sampling position. Use the same press setup, ink and environment. Log speed and web tension, repeat the trial with those settings, and keep the results with the samples for a meaningful lot comparison.",
+        "各批保留未印與已印樣品，標明卷號、批號及取樣位置。使用相同機台、設定、油墨和環境條件，記錄機速與張力。依同一設定重複試印並將結果與留樣一起保存，才能比較批次差異。",
+        "Сохраните по каждой партии образцы с печатью и без неё, отметьте номер рулона и место отбора. Используйте один пресс, одинаковые настройки, краску и условия среды. Запишите скорость и натяжение полотна, повторите пробную печать с теми же настройками и сохраните результаты вместе с образцами.",
+        "各批保留未印与已印样品，标明卷号、批号和取样位置。使用相同印刷机、设置、油墨和环境条件，记录机速与张力。按同一设置重复试印并将结果与留样一起保存，以便比较批次差异。"
+      ]
+    }
+  ],
+  "request": [
+    {
+      "q": [
+        "¿Cómo vincular la bobina de prueba de BOPP blanco con la referencia de producción?",
+        "How do you match a white BOPP trial roll to the production item code?",
+        "白色 BOPP 試卷通過後，如何與量產報價的料號對照？",
+        "Как сопоставить пробный рулон белой плёнки BOPP с артикулом для тиража?",
+        "白色 BOPP 试卷通过后，如何与量产报价的料号对应？"
+      ],
+      "a": [
+        "Identifique la bobina de prueba por referencia y lote, y registre el frontal, el adhesivo, el liner y la versión de la ficha técnica. Pida que la cotización y la orden de compra indiquen la referencia de producción y su correspondencia con la estructura aprobada. En entregas parciales, acuerde la identificación de cada lote y cómo se aprobará cualquier cambio de estructura.",
+        "Record the trial roll code, lot, facestock, adhesive, liner and technical data sheet revision. Ask the supplier to link the proposed production code to the approved construction in the quote and purchase order. For split deliveries, agree how each lot is identified and how any construction change will be approved.",
+        "記下試卷料號與批號，保留面材、膠黏劑、離型底材及技術資料表版本。請供應商在報價和採購單上列出量產料號，並書面確認其對應核准結構。分批交付時，事先約定各批的識別方式與結構變更的核准流程。",
+        "Запишите артикул и партию пробного рулона, лицевой материал, клей, подложку и версию технической спецификации. Попросите указать в предложении и заказе производственный артикул и подтвердить его соответствие утверждённой конструкции. При частичных поставках согласуйте маркировку каждой партии и порядок утверждения изменений.",
+        "记下试卷料号与批号，保留面材、胶黏剂、离型底材及技术数据表版本。请供应商在报价和采购订单上列出量产料号，并书面确认其对应获批结构。分批交付时，事先约定各批的标识方式与结构变更的审批流程。"
+      ]
+    },
+    {
+      "q": [
+        "¿Cómo cotizar por bobina si el pedido se emite en metros cuadrados?",
+        "How do you compare a per-roll quote with an order in square metres?",
+        "供應商按卷報價、採購單按平方公尺下單時，如何核對數量？",
+        "Как сверить цену за рулон с заказом в квадратных метрах?",
+        "供应商按卷报价、采购单按平方米下单时，如何核对数量？"
+      ],
+      "a": [
+        "Indique el ancho útil y use metros en el cálculo: metros lineales = m² útiles ÷ ancho útil en metros. Para la entrega, acuerde el metraje neto por bobina, el tratamiento de los empalmes, la tolerancia de superficie y el registro de medición. Si importa la orientación, adjunte un esquema del sentido de embobinado y de la cara imprimible.",
+        "State the usable width in metres and divide the usable square metres by that width to get linear metres. Agree the net length per roll, how splices count, the area tolerance and the measurement record for delivery. If orientation matters, attach a sketch showing winding direction and the printable face.",
+        "註明可用幅寬，以公尺為單位，用可用面積（m²）除以可用幅寬（m），即可換算延米。另約定每卷的淨可用長度、接頭如何扣計、面積允差和交貨時採用的量測記錄。如有方向要求，附上捲繞方向與可印刷面朝向的示意圖。",
+        "Укажите рабочую ширину в метрах и разделите полезную площадь в м² на эту ширину, чтобы получить погонные метры. Согласуйте полезную длину рулона, порядок учёта стыков, допустимое отклонение площади и документ с результатами замеров. Если важна ориентация, приложите схему намотки и расположения печатной стороны.",
+        "注明有效门幅，以米为单位，用有效面积（m²）除以有效门幅（m），即可换算延米。另约定每卷的净可用长度、接头如何扣计、面积公差和交货时采用的测量记录。如有方向要求，附上收卷方向与可印刷面朝向的示意图。"
+      ]
+    }
+  ],
+  "sourcing": [
+    {
+      "q": [
+        "¿Qué debe mostrar el diagrama de corte para sacar varios anchos de una bobina madre?",
+        "What should a slitting layout show when one jumbo roll must yield several widths?",
+        "一卷母卷要分條成多種幅寬時，排刀圖要註明什麼？",
+        "Что указать на схеме продольной резки, если из одного джамбо-рулона нужны рулоны разной ширины?",
+        "一卷母卷要分切成多种门幅时，排刀图要注明什么？"
+      ],
+      "a": [
+        "Dibuje el ancho útil de entrada, el recorte previsto de ambos bordes y la secuencia de cortes. Anote ancho, tolerancia y cantidad de cada bobina hija. Identifique el sobrante, confirme si se entrega o se descarta y revise el rendimiento con el proveedor antes de autorizar el corte.",
+        "Show the usable incoming web width, planned trim at both edges and the cutting sequence. List each finished width, its tolerance and roll count. Mark the remainder, agree whether it is supplied or discarded, and confirm the expected yield with the supplier before approving the cut.",
+        "畫出母卷可用幅寬、兩側預計修邊寬度與分條順序，並標明各子卷幅寬、允差和卷數。標出剩邊並確認是否隨貨交付。核准分條前，先與供應商核對可用寬度和各規格的出卷數。",
+        "Покажите рабочую ширину исходного полотна, планируемую обрезку с обеих сторон и последовательность резов. Укажите ширину, допуск и количество рулонов каждого формата. Отметьте остаток, согласуйте его поставку или утилизацию и подтвердите выход рулонов с поставщиком до согласования резки.",
+        "画出母卷有效门幅、两侧预计修边宽度与分切顺序，并注明各子卷门幅、公差和卷数。标出剩边并确认是否随货交付。批准分切前，先与供应商核对可用宽度和各规格的出卷数。"
+      ]
+    },
+    {
+      "q": [
+        "¿Qué muestras deben conservarse ante un reclamo de calidad de una bobina jumbo?",
+        "What samples should you retain when investigating a jumbo roll quality dispute?",
+        "母卷發生品質爭議時，卷頭、卷中、卷尾應如何留樣？",
+        "Какие образцы сохранить для разбирательства по качеству джамбо-рулона?",
+        "母卷发生质量争议时，卷头、卷中、卷尾应怎样留样？"
+      ],
+      "a": [
+        "Separe la bobina afectada e identifique lote, número de bobina y posición de la anomalía. Si es posible y está autorizado, conserve muestras del inicio, centro y final de la bobina afectada y de una bobina de control. Fotografíe embalaje y etiquetas, registre la distancia de cada muestra desde el inicio y acuerde el modo de inspección con el proveedor.",
+        "Set aside the affected roll and record the lot, roll number and defect position. If sampling is feasible and authorised, retain start, middle and end samples from the affected roll and a control roll. Photograph the packaging and roll labels, log each sample's distance from the start and agree how to inspect them with the supplier.",
+        "隔離異常卷，記錄批號、卷號與異常位置。條件允許且取得抽樣授權後，分別保留異常卷與對照卷的卷頭、卷中、卷尾樣品。拍攝原包裝及卷標，記錄各樣品距卷頭的位置，再與供應商確認複驗方式。",
+        "Отложите рулон с дефектом и запишите номер партии, номер рулона и место дефекта. Если отбор возможен и согласован, сохраните образцы из начала, середины и конца дефектного и контрольного рулонов. Сфотографируйте упаковку и маркировку, запишите расстояние до каждого места отбора от начала рулона и согласуйте проверку с поставщиком.",
+        "隔离异常卷，记录批号、卷号与异常位置。条件允许且取得取样授权后，分别保留异常卷与对照卷的卷头、卷中、卷尾样品。拍摄原包装及卷标，记录各样品距卷头的位置，再与供应商确认复验方式。"
+      ]
+    }
+  ],
+  "quality": [
+    {
+      "q": [
+        "¿Cómo evaluar una bobina BOPP que superó el plazo de almacenamiento recomendado?",
+        "How do you evaluate a BOPP labelstock roll past its recommended shelf life?",
+        "BOPP 自黏母卷超過建議保存期限時，應如何複驗？",
+        "Как проверить рулон самоклеящейся плёнки BOPP после рекомендованного срока хранения?",
+        "BOPP 不干胶母卷超过建议储存期限时，应怎样复验？"
+      ],
+      "a": [
+        "Mantenga la bobina retenida y revise la vida útil y condiciones de almacenamiento de la referencia. Compare el historial del lote y el COA, si está disponible, con los resultados de una nueva prueba de impresión, adhesión y desprendimiento del liner para el uso previsto. Solicite revisión del proveedor y documente la decisión de calidad conforme a los límites acordados antes de liberar el material.",
+        "Keep the roll on hold and review the recommended shelf life and storage conditions for its grade. Compare the lot history and certificate of analysis (COA), if available, with fresh print, adhesion and liner release test results for the intended application. Ask the supplier to review and document the quality decision against agreed acceptance limits before release.",
+        "先暫停使用，核對料號的建議保存期限與儲存條件。將批次歷程和可取得的批次檢驗報告（COA），與依預定用途重新做的試印、黏著及離型試驗結果比對。請供應商複核，依約定的允收條件記錄品質決定後再放行。",
+        "Не передавайте рулон в производство до проверки. Уточните рекомендованный срок и условия хранения для артикула. Сопоставьте историю партии и протокол анализа (COA), если он доступен, с результатами повторной проверки печати, адгезии и отделения подложки для предполагаемого применения. Запросите заключение поставщика и зафиксируйте решение службы качества по согласованным критериям до допуска материала.",
+        "先暂停使用，核对料号的建议储存期限和储存条件。将批次记录与可取得的批次检验报告（COA），和按预定用途重新做的试印、黏附及离型试验结果比对。请供应商复核，按约定的验收条件记录质量决定后再放行。"
+      ]
+    }
+  ]
+}
