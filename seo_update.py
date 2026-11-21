@@ -3,6 +3,7 @@ from html import escape, unescape
 import json
 from pathlib import Path
 import re
+from cold_bopp import GUIDE_DATE, GUIDE_FILE, add_cold_bopp_guide
 from design_update import apply_design, replace_once
 from knowledge import VisibleFAQ, UPDATED
 from localization import LocalizedPage
@@ -238,9 +239,30 @@ def add_simplified(dist, groups, origin):
     (dist/'brief-zh-Hans.txt').write_text(translate(brief),encoding='utf-8-sig')
 
 
+def canonical_path(filename):
+    return '/' if filename == 'index.html' else '/' + filename.removesuffix('.html')
+
+
+def normalize_page_links(dist, filenames):
+    """Use public page paths while keeping the original query and fragment."""
+    destinations = {name: canonical_path(name) for name in filenames}
+    anchor = re.compile(r'(<a\b[^>]*?\shref=")(?:\./|/)?([^/"?#]+\.html)([?#][^"]*)?(")')
+
+    def replace_link(match):
+        target = destinations.get(match[2])
+        if target is None:
+            return match[0]
+        return match[1] + target + (match[3] or '') + match[4]
+
+    for filename in filenames:
+        path = dist / filename
+        html = path.read_text(encoding='utf-8')
+        path.write_text(anchor.sub(replace_link, html), encoding='utf-8')
+
+
 def finalize_languages(dist, groups, origin, reviewed_pages):
     def url(path):
-        return origin+('/' if path=='index.html' else '/'+path.removesuffix('.html'))
+        return origin + canonical_path(path)
     all_paths = []
     for paths in groups.values():
         for i,path in enumerate(paths):
@@ -252,9 +274,13 @@ def finalize_languages(dist, groups, origin, reviewed_pages):
             html = re.sub(r'<div class="languages">.*?</div>',lambda m:nav,html,count=1)
             (dist/path).write_text(html)
             all_paths.append(path)
+    add_cold_bopp_guide(dist, groups['bopp'][0], groups['guide'][0], origin)
+    all_paths.append(GUIDE_FILE)
+    normalize_page_links(dist, all_paths)
+    dates = {path: KEYWORD_REVIEW_DATE for path in reviewed_pages}
+    dates[GUIDE_FILE] = GUIDE_DATE
     entries = ''.join(
-        '<url><loc>' + url(path) + '</loc><lastmod>' +
-        (KEYWORD_REVIEW_DATE if path in reviewed_pages else UPDATED) + '</lastmod></url>'
+        '<url><loc>' + url(path) + '</loc><lastmod>' + dates.get(path, UPDATED) + '</lastmod></url>'
         for path in all_paths
     )
     (dist/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+entries+'</urlset>')

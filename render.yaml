@@ -79,6 +79,11 @@
         },
         {
           "type": "rewrite",
+          "source": "/guia-bopp-botellas-refrigeradas",
+          "destination": "/guia-bopp-botellas-refrigeradas.html"
+        },
+        {
+          "type": "rewrite",
           "source": "/guide-zh-cn",
           "destination": "/guide-zh-cn.html"
         },

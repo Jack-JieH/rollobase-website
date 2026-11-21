@@ -1,9 +1,13 @@
 # RolloBase public sharing copy
 
-This is the 2026-11-19 five-language static website: Spanish, English,
-Traditional Chinese, Simplified Chinese and Russian, with 65 pages and the A–D sample flow.
+The static website has 65 pages across Spanish, English, Traditional Chinese,
+Simplified Chinese and Russian, plus a Spanish refrigerated-beverage label guide.
+The A–D sample flow is available in all five languages.
 
 Homepages: `/`, `/en`, `/zh` (Traditional), `/zh-cn` (Simplified), `/ru`.
+The Spanish guide at `/guia-bopp-botellas-refrigeradas` links to the BOPP product
+and the prefilled BOPP sample request. Its trial record is a downloadable CSV.
+Public page links use extensionless canonical paths and keep queries and anchors.
 Chinese pages use independent `zh-Hant` and `zh-Hans` alternate URLs.
 Reviewed buyer guidance lives in `seo-content.json`; Simplified Chinese copy is
 checked into `simplified.json`. Builds fail if Chinese source text lacks a translation.
