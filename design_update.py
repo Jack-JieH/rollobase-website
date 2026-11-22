@@ -58,6 +58,36 @@ def replace_once(pattern, replacement, source):
     return result
 
 
+BOPP_FIELDS = (
+    ('bopp_face', ['Acabado BOPP', 'BOPP finish', 'BOPP 面材外觀', 'Вариант плёнки BOPP', 'BOPP 面材外观'], (
+        ('white', ['Blanco', 'White', '白色', 'Белая', '白色']),
+        ('clear', ['Transparente', 'Clear', '透明', 'Прозрачная', '透明']),
+        ('compare', ['Comparar blanco y transparente', 'Compare white and clear', '比較白色與透明', 'Сравнить белую и прозрачную', '比较白色与透明']),
+    )),
+    ('bopp_container', ['Material del envase (por ejemplo, PET o vidrio)', 'Container material (e.g. PET or glass)', '容器材質（例如 PET 或玻璃）', 'Материал тары (например, ПЭТ или стекло)', '容器材质（例如 PET 或玻璃）'], ()),
+    ('bopp_surface', ['Estado del envase al etiquetar', 'Container condition at application', '貼標當下的容器狀態', 'Состояние тары при этикетировании', '贴标时容器的状态'], (
+        ('dry', ['Seco', 'Dry', '乾燥', 'Сухая', '干燥']),
+        ('condensation', ['Con condensación', 'With condensation', '有結露', 'С конденсатом', '有冷凝水']),
+        ('compare', ['Comparar ambas condiciones', 'Compare both conditions', '比較兩種狀態', 'Сравнить оба условия', '比较两种状态']),
+    )),
+)
+
+
+def bopp_fields(index):
+    fields = []
+    for name, labels, choices in BOPP_FIELDS:
+        attrs = f'name="{name}" data-bopp-field disabled'
+        if choices:
+            options = (('', COPY['unspecified']), *choices)
+            control = f'<select {attrs}>'+''.join(
+                f'<option value="{value}">{escape(text[index])}</option>' for value,text in options
+            )+'</select>'
+        else:
+            control = f'<input {attrs} type="text">'
+        fields.append(f'<label hidden>{escape(labels[index])}{control}</label>')
+    return ''.join(fields)
+
+
 def apply_design(dist, groups):
     for key, paths in groups.items():
         for i, path in enumerate(paths):
@@ -99,6 +129,7 @@ def apply_design(dist, groups):
                 html = replace_once(r'(<section><h1>.*?</h1>)<p>.*?</p>',lambda m:m[1]+'<p>'+escape(t('form_intro'))+'</p><p class="request-steps">'+escape(t('steps'))+'</p>',html)
                 html = html.replace('<form id="inquiry">','<form id="inquiry" data-contact="'+escape(t('contact')+': '+DISPLAY_PHONE,quote=True)+'">',1)
                 html = html.replace('<select name="material">','<select name="material" required>',1)
+                html = replace_once(r'(<label>[^<]*<select name="option">.*?</select></label>)',lambda m:m[1]+bopp_fields(i),html)
                 winding = '<label>'+escape(t('winding'))+'<select name="winding">'+''.join('<option value="'+value+'">'+escape(t(label))+'</option>' for value,label in [('', 'unspecified'),('outside','outside'),('inside','inside'),('drawing','drawing')])+'</select></label>'
                 html = replace_once(r'(<label>[^<]*<input name="core"[^>]*></label>)',lambda m:m[1]+winding,html)
                 status = '<p id="request-status" class="request-status" role="status" aria-live="polite" data-message="'+escape(t('download_status'),quote=True)+'" hidden></p>'
@@ -107,5 +138,5 @@ def apply_design(dist, groups):
                 html = html.replace('</form>','</form>'+contact,1)
             contact = '<div class="footer-contact"><strong>'+escape(t('contact'))+'</strong><a href="tel:'+PHONE+'">'+DISPLAY_PHONE+'</a></div>'
             html = html.replace('</footer>',contact+'</footer>',1)
-            html = html.replace('style.css?v=20261119-five','style.css?v=20261119-latam').replace('src="buyer.js"','src="buyer.js?v=20261119-latam"')
+            html = html.replace('style.css?v=20261119-five','style.css?v=20261119-latam').replace('src="buyer.js"','src="buyer.js?v=20261122-bopp"')
             (dist/path).write_text(html)

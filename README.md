@@ -1,6 +1,6 @@
 # RolloBase public sharing copy
 
-The static website has 65 pages across Spanish, English, Traditional Chinese,
+The static website has 70 pages across Spanish, English, Traditional Chinese,
 Simplified Chinese and Russian, plus a Spanish refrigerated-beverage label guide.
 The A–D sample flow is available in all five languages.
 
@@ -11,7 +11,8 @@ Public page links use extensionless canonical paths and keep queries and anchors
 Chinese pages use independent `zh-Hant` and `zh-Hans` alternate URLs.
 Reviewed buyer guidance lives in `seo-content.json`; Simplified Chinese copy is
 checked into `simplified.json`. Builds fail if Chinese source text lacks a translation.
-The asset archive contains the stylesheet, sample-form JavaScript and licensed photos.
+The asset archive contains the stylesheet and licensed photos. The sample form
+script is maintained as `buyer.js`.
 
 `design_update.py` applies the shared application-first layout, the five-part
 product specification format and the user-provided business telephone across

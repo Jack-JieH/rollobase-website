@@ -3,10 +3,13 @@ from html import escape, unescape
 import json
 from pathlib import Path
 import re
+from brand_contact import add_brand_pages
+from buyer_content import apply_buyer_content
 from cold_bopp import GUIDE_DATE, GUIDE_FILE, add_cold_bopp_guide
 from design_update import apply_design, replace_once
 from knowledge import VisibleFAQ, UPDATED
 from localization import LocalizedPage
+from public_urls import normalize_asset_links
 from russian import RU_ROUTES
 
 ROOT = Path(__file__).parent
@@ -16,6 +19,7 @@ FULL_LABELS = ['Español', 'English', '繁體中文', 'Русский', '简体�
 SC_ROUTES = {k:('zh-cn.html' if k=='home' else k+'-zh-cn.html') for k in RU_ROUTES}
 CONTENT = json.loads((ROOT/'seo-content.json').read_text())
 KEYWORD_REVIEW_DATE = '2026-11-20'
+BUYER_REVIEW_DATE = '2026-11-22'
 HOME_KEYWORD_LEADS = [
     'Material autoadhesivo sin imprimir en bobinas jumbo para fabricar etiquetas. Compare papel y película por aplicación, confirme frontal, adhesivo sensible a la presión y liner, y prepare una solicitud de muestra con las medidas de su equipo.',
     'Unprinted pressure-sensitive labelstock in jumbo rolls for label converters. Compare paper and film by application, confirm the facestock, adhesive and release liner, then prepare a sample request with your machine dimensions.',
@@ -260,7 +264,7 @@ def normalize_page_links(dist, filenames):
         path.write_text(anchor.sub(replace_link, html), encoding='utf-8')
 
 
-def finalize_languages(dist, groups, origin, reviewed_pages):
+def finalize_languages(dist, groups, origin, dates):
     def url(path):
         return origin + canonical_path(path)
     all_paths = []
@@ -277,7 +281,7 @@ def finalize_languages(dist, groups, origin, reviewed_pages):
     add_cold_bopp_guide(dist, groups['bopp'][0], groups['guide'][0], origin)
     all_paths.append(GUIDE_FILE)
     normalize_page_links(dist, all_paths)
-    dates = {path: KEYWORD_REVIEW_DATE for path in reviewed_pages}
+    normalize_asset_links(dist, all_paths)
     dates[GUIDE_FILE] = GUIDE_DATE
     entries = ''.join(
         '<url><loc>' + url(path) + '</loc><lastmod>' + dates.get(path, UPDATED) + '</lastmod></url>'
@@ -295,4 +299,17 @@ def publish_update(dist, original_groups, origin):
     apply_design(dist,complete_groups)
     apply_spanish_search(dist,complete_groups)
     reviewed_pages = apply_keyword_research(dist, complete_groups)
-    return finalize_languages(dist,complete_groups,origin,reviewed_pages)
+    buyer_pages = apply_buyer_content(dist, complete_groups)
+    buyer_pages.update(complete_groups['request'])
+    for page_name in buyer_pages:
+        path = dist/page_name
+        html = path.read_text(encoding='utf-8')
+        html = re.sub(r'<time datetime="\d{4}-\d{2}-\d{2}">\d{4}-\d{2}-\d{2}</time>',
+                      f'<time datetime="{BUYER_REVIEW_DATE}">{BUYER_REVIEW_DATE}</time>', html, count=1)
+        html = re.sub(r'("dateModified":\s*)"\d{4}-\d{2}-\d{2}"',
+                      rf'\g<1>"{BUYER_REVIEW_DATE}"', html, count=1)
+        path.write_text(html, encoding='utf-8')
+    complete_groups['about'] = add_brand_pages(dist, complete_groups, origin)
+    dates = {path: KEYWORD_REVIEW_DATE for path in reviewed_pages}
+    dates.update(dict.fromkeys(buyer_pages | set(complete_groups['about']), BUYER_REVIEW_DATE))
+    return finalize_languages(dist,complete_groups,origin,dates)

@@ -2,6 +2,7 @@
 import os
 from pathlib import Path
 import runpy
+from shutil import copyfile
 from urllib.parse import urlsplit
 from zipfile import ZipFile
 
@@ -16,11 +17,12 @@ root = Path(__file__).parent
 dist = root/'dist'
 dist.mkdir(exist_ok=True)
 with ZipFile(root/'site-assets.zip') as assets:
-    expected = {'style.css','buyer.js','hero-rolls.webp','labelstock.webp'}
+    expected = {'style.css','hero-rolls.webp','labelstock.webp'}
     if set(assets.namelist()) != expected:
         raise SystemExit('The site asset bundle does not match the expected files.')
     for name in expected:
         (dist/name).write_bytes(assets.read(name))
+copyfile(root/'buyer.js', dist/'buyer.js')
 runpy.run_path(str(root/'build.py'),run_name='__main__')
 if os.environ['SITE_ORIGIN'] == 'https://rollobase-materials.onrender.com':
     # Google Search Console checks this public tag on the canonical homepage.

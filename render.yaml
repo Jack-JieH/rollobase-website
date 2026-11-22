@@ -14,6 +14,26 @@
         },
         {
           "type": "rewrite",
+          "source": "/about-ru",
+          "destination": "/about-ru.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/about-zh-cn",
+          "destination": "/about-zh-cn.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/about-zh",
+          "destination": "/about-zh.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/about",
+          "destination": "/about.html"
+        },
+        {
+          "type": "rewrite",
           "source": "/bopp-film",
           "destination": "/bopp-film.html"
         },
@@ -71,6 +91,11 @@
           "type": "rewrite",
           "source": "/direct-thermal-paper",
           "destination": "/direct-thermal-paper.html"
+        },
+        {
+          "type": "rewrite",
+          "source": "/empresa",
+          "destination": "/empresa.html"
         },
         {
           "type": "rewrite",
