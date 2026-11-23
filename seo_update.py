@@ -318,6 +318,9 @@ def finalize_languages(dist, groups, origin, dates, catalog_copy):
     all_paths.append(GUIDE_FILE)
     apply_product_catalog(dist, groups, catalog_copy)
     mark_reviewed(dist, dates, groups['home']+groups['catalog'], CATALOG_REVIEW_DATE)
+    from site_photos import add_site_photos
+
+    add_site_photos(dist, groups)
     normalize_page_links(dist, all_paths)
     normalize_asset_links(dist, all_paths)
     dates[GUIDE_FILE] = GUIDE_DATE

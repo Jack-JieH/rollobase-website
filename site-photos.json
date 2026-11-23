@@ -1,0 +1,148 @@
+{
+  "photos": {
+    "press": {
+      "page": "https://commons.wikimedia.org/wiki/File:Soma_OPTIMA_-_flexographic_printing_press.jpg",
+      "author": "Soma Engineering",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "cropped": true,
+      "file": "press-detail.jpg",
+      "size": [
+        704,
+        396
+      ]
+    },
+    "pack": {
+      "page": "https://commons.wikimedia.org/wiki/File:Papierlager_Buettenpapierfabrik_Gmund_1.jpg",
+      "author": "Stefan Meister",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "file": "hero-rolls.webp",
+      "size": [
+        1680,
+        1120
+      ],
+      "cropped": true
+    },
+    "roll": {
+      "page": "https://www.pexels.com/photo/stack-of-paper-rolls-in-shelf-3720483/",
+      "author": "Brett Sayles",
+      "license": "Pexels License",
+      "license_url": "https://www.pexels.com/license/",
+      "cropped": true,
+      "file": "paper-roll-detail.jpg",
+      "size": [
+        820,
+        520
+      ]
+    },
+    "bottle": {
+      "page": "https://commons.wikimedia.org/wiki/File:Cold_drinking_water_bottle_transparent.png",
+      "author": "Ranch9613",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "file": "cold-bottle.png",
+      "size": [
+        250,
+        802
+      ]
+    },
+    "rigid": {
+      "page": "https://www.pexels.com/photo/set-of-bottles-with-shampoos-reflecting-on-wall-6387876/",
+      "author": "Jill Burrow",
+      "license": "Pexels License",
+      "license_url": "https://www.pexels.com/license/",
+      "position": "lower",
+      "file": "color-bottles.jpg",
+      "size": [
+        900,
+        1350
+      ]
+    },
+    "squeeze": {
+      "page": "https://commons.wikimedia.org/wiki/File:DSC_9967_A_row_of_colorful_squeeze_bottles_and_condiments_lined_up_on_a_food_stall_counter.jpg",
+      "author": "PattayaPatrol",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "cropped": true,
+      "file": "squeeze-detail.jpg",
+      "size": [
+        496,
+        279
+      ]
+    },
+    "parcel": {
+      "page": "https://commons.wikimedia.org/wiki/File:Sticking_a_label_onto_a_parcel_for_shipping.jpg",
+      "author": "Meanwell Packaging",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "file": "use-parcel.jpg",
+      "size": [
+        960,
+        640
+      ]
+    }
+  },
+  "copy": {
+    "es-419": {
+      "source": "Fuente de la foto",
+      "display_only": "Foto ilustrativa",
+      "cropped": "Foto recortada",
+      "photo_press": "Detalle de una prensa flexográfica",
+      "photo_pack": "Bobinas de papel almacenadas",
+      "photo_roll": "Papel en rollo, vista de cerca",
+      "photo_bottle": "Botella fría sin etiqueta, referencia de envase",
+      "photo_rigid": "Envases de champú de colores, sin etiqueta",
+      "photo_squeeze": "Envases flexibles para salsas",
+      "photo_parcel": "Etiqueta de envío sobre una caja de cartón"
+    },
+    "en": {
+      "source": "Photo source",
+      "display_only": "Illustrative photo",
+      "cropped": "Cropped photo",
+      "photo_press": "Detail of a flexographic printing press",
+      "photo_pack": "Paper rolls in storage",
+      "photo_roll": "Close-up of rolled paper",
+      "photo_bottle": "Unlabelled cold bottle, shown as a container reference",
+      "photo_rigid": "Colourful unlabelled shampoo bottles",
+      "photo_squeeze": "Squeezable condiment bottles",
+      "photo_parcel": "Shipping label on a cardboard box"
+    },
+    "zh-Hant": {
+      "source": "照片來源",
+      "display_only": "示意照片",
+      "cropped": "裁切照片",
+      "photo_press": "柔版印刷設備局部",
+      "photo_pack": "倉庫內存放的紙卷",
+      "photo_roll": "紙材捲近照",
+      "photo_bottle": "無標籤的冷藏瓶身，供容器外觀參考",
+      "photo_rigid": "無標籤的彩色洗髮精瓶",
+      "photo_squeeze": "可擠壓的調味料瓶",
+      "photo_parcel": "紙箱上的物流標籤"
+    },
+    "zh-Hans": {
+      "source": "照片来源",
+      "display_only": "示意照片",
+      "cropped": "裁剪照片",
+      "photo_press": "柔版印刷设备局部",
+      "photo_pack": "仓库内存放的纸卷",
+      "photo_roll": "纸材卷近照",
+      "photo_bottle": "无标签的冷藏瓶身，供容器外观参考",
+      "photo_rigid": "无标签的彩色洗发水瓶",
+      "photo_squeeze": "可挤压的调味料瓶",
+      "photo_parcel": "纸箱上的物流标签"
+    },
+    "ru": {
+      "source": "Источник фото",
+      "display_only": "Иллюстративное фото",
+      "cropped": "Кадрированное фото",
+      "photo_press": "Деталь флексографской машины",
+      "photo_pack": "Бумажные рулоны на складе",
+      "photo_roll": "Рулон бумаги крупным планом",
+      "photo_bottle": "Охлаждённая бутылка без этикетки, пример тары",
+      "photo_rigid": "Цветные флаконы для шампуня без этикеток",
+      "photo_squeeze": "Мягкие бутылки для соусов",
+      "photo_parcel": "Транспортная этикетка на картонной коробке"
+    }
+  }
+}

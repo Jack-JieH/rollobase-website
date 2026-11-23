@@ -1,5 +1,6 @@
 """Build the five-language site using the URL assigned by its host."""
 import os
+import json
 from pathlib import Path
 import runpy
 from shutil import copyfile
@@ -16,12 +17,16 @@ os.environ['SITE_ORIGIN'] = origin.rstrip('/')
 root = Path(__file__).parent
 dist = root/'dist'
 dist.mkdir(exist_ok=True)
+photos = json.loads((root/'site-photos.json').read_text(encoding='utf-8'))['photos']
+photo_files = {'photos/' + photo['file'] for key, photo in photos.items() if key != 'pack'}
+(dist/'photos').mkdir(exist_ok=True)
 with ZipFile(root/'site-assets.zip') as assets:
-    expected = {'style.css','hero-rolls.webp','labelstock.webp'}
+    expected = {'style.css','hero-rolls.webp'} | photo_files
     if set(assets.namelist()) != expected:
         raise SystemExit('The site asset bundle does not match the expected files.')
     for name in expected:
         (dist/name).write_bytes(assets.read(name))
+(dist/'labelstock.webp').unlink(missing_ok=True)
 copyfile(root/'buyer.js', dist/'buyer.js')
 runpy.run_path(str(root/'build.py'),run_name='__main__')
 if os.environ['SITE_ORIGIN'] == 'https://rollobase-materials.onrender.com':

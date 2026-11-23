@@ -1,0 +1,99 @@
+.site-photo {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  background: #fcfcf8;
+  border-radius: 8px;
+}
+.site-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.site-photo-rigid img {
+  object-position: center 80%;
+}
+.site-photo-bottle img {
+  background: #eff5f3;
+  object-fit: contain;
+  padding: .7rem;
+}
+.site-photo figcaption {
+  position: static;
+  padding: .55rem .85rem .65rem;
+  color: #213d43;
+  background: transparent;
+  font-size: .8rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+.site-photo small {
+  display: block;
+  margin-top: .2rem;
+  color: #375259;
+  font-size: .73rem;
+}
+.site-photo a {
+  text-decoration: underline;
+  text-underline-offset: .15em;
+}
+.site-photo-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.site-photo-pair .site-photo {
+  border: 1px solid #c8d4d8;
+}
+.coat-guide .site-photo-pair {
+  margin-bottom: 0;
+}
+.feature .site-photo {
+  height: auto;
+}
+.photo-accent-coated { --photo-accent: #ef944a; --photo-tint: #fff2e2; }
+.photo-accent-thermal { --photo-accent: #e2ab29; --photo-tint: #fff5db; }
+.photo-accent-bopp { --photo-accent: #e9786c; --photo-tint: #fff0ee; }
+.photo-accent-pe { --photo-accent: #39a584; --photo-tint: #e9f7f0; }
+.photo-accent-pet { --photo-accent: #459fce; --photo-tint: #eaf5fc; }
+.photo-accent-wood { --photo-accent: #9e7db8; --photo-tint: #f5effa; }
+
+.site-photo-card, .finder-card {
+  min-width: 0;
+  background: white;
+  border: 1px solid #c8d4d8;
+  border-top: 4px solid var(--photo-accent);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.site-photo-card {
+  display: flex;
+  flex-direction: column;
+}
+.site-photo-card > .site-photo, .finder-card > .site-photo {
+  border-radius: 0;
+  background: var(--photo-tint);
+}
+.site-photo-card > .appcard {
+  flex: 1;
+  border: 0;
+  border-radius: 0;
+}
+.site-photo-card > .appcard:hover {
+  background: var(--photo-tint);
+}
+.site-photo-card > .appcard:focus-visible {
+  outline: 3px solid #06686e;
+  outline-offset: -4px;
+}
+.finder-card > .site-photo {
+  margin: -1.2rem -1.2rem .3rem;
+}
+@media (max-width: 640px) {
+  .site-photo-pair {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

@@ -21,24 +21,18 @@ def item(name, detail): return f'<article><h3>{name}</h3><p>{detail}</p></articl
 photographs = json.loads(Path(__file__).with_name('photo-credits.json').read_text())
 
 def photo(slot, index):
-    if slot == 'hero':
-        file = 'hero-rolls.webp'
-        caption = ['Bobinas de papel en Gmund, Alemania', 'Paper rolls at Gmund, Germany', '德國 Gmund 紙廠的紙母卷'][index]
-        dims = 'width="1680" height="1120" fetchpriority="high"'
-    else:
-        file = 'labelstock.webp'
-        caption = ['Detalle del papel base para etiquetas', 'Close-up of label base paper', '標籤基紙實拍細節'][index]
-        dims = 'width="1200" height="900" loading="lazy"'
+    if slot == 'construction':
+        return '<figure data-paper-photo></figure>'
+    file = 'hero-rolls.webp'
+    caption = ['Bobinas de papel en Gmund, Alemania', 'Paper rolls at Gmund, Germany', '德國 Gmund 紙廠的紙母卷'][index]
+    dims = 'width="1680" height="1120" fetchpriority="high"'
     author = next(p['author'] for p in photographs if p['file'] == file)
     return f'<figure><img src="{file}" {dims} alt="{caption}"><figcaption>{caption} · {author}</figcaption></figure>'
 
 def credits(index):
     parts = []
     for p in photographs:
-        if p['file']=='hero-rolls.webp':
-            changes = [p['changes_es'], 'The photographer masked client information. Cropped, resized and converted to WebP.', '原作者已遮蔽客戶資料。網頁版經裁切、縮放及 WebP 轉檔。'][index]
-        else:
-            changes = [p['changes_es'], 'Resized and converted to WebP.', '網頁版經縮放及 WebP 轉檔。'][index]
+        changes = [p['changes_es'], 'The photographer masked client information. Cropped, resized and converted to WebP.', '原作者已遮蔽客戶資料。網頁版經裁切、縮放及 WebP 轉檔。'][index]
         parts.append(f'<p><a href="{p["source"]}">{p["title"]}</a> · {p["author"]} · <a href="{p["license_url"]}">{p["license"]}</a>. {changes}</p>')
     return ''.join(parts)
 

@@ -16,7 +16,13 @@ if (finder) {
   const materialCodes = new Map([
     ['bopp', 'bopp'], ['бопп', 'bopp'], ['pe', 'pe'], ['пэ', 'pe'], ['pet', 'pet'], ['пэт', 'pet'],
   ]);
-  const searchable = cards.map(card => [card, normalize(card.textContent + ' ' + card.dataset.keywords)]);
+  const searchable = cards.map(card => {
+    const productText = Array.from(card.children)
+      .filter(child => !child.matches('.site-photo'))
+      .map(child => child.textContent)
+      .join('');
+    return [card, normalize(productText + ' ' + card.dataset.keywords)];
+  });
 
   const start = new URLSearchParams(location.search);
   q.value = start.get('q') || '';
