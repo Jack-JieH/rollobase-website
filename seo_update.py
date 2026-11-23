@@ -5,10 +5,13 @@ from pathlib import Path
 import re
 from brand_contact import add_brand_pages
 from buyer_content import apply_buyer_content
+from buyer_specifications import apply_buyer_specifications
+from coat_weight_guide import add_coat_weight_guides
 from cold_bopp import GUIDE_DATE, GUIDE_FILE, add_cold_bopp_guide
 from design_update import apply_design, replace_once
 from knowledge import VisibleFAQ, UPDATED
 from localization import LocalizedPage
+from product_catalog import apply_product_catalog
 from public_urls import normalize_asset_links
 from russian import RU_ROUTES
 
@@ -20,6 +23,8 @@ SC_ROUTES = {k:('zh-cn.html' if k=='home' else k+'-zh-cn.html') for k in RU_ROUT
 CONTENT = json.loads((ROOT/'seo-content.json').read_text())
 KEYWORD_REVIEW_DATE = '2026-11-20'
 BUYER_REVIEW_DATE = '2026-11-22'
+COATED_FAQ_DATE = '2026-11-23'
+CATALOG_REVIEW_DATE = '2026-11-23'
 HOME_KEYWORD_LEADS = [
     'Material autoadhesivo sin imprimir en bobinas jumbo para fabricar etiquetas. Compare papel y película por aplicación, confirme frontal, adhesivo sensible a la presión y liner, y prepare una solicitud de muestra con las medidas de su equipo.',
     'Unprinted pressure-sensitive labelstock in jumbo rolls for label converters. Compare paper and film by application, confirm the facestock, adhesive and release liner, then prepare a sample request with your machine dimensions.',
@@ -112,7 +117,16 @@ def apply_editorial(dist, groups, origin):
             if key=='home':
                 html = re.sub(r'<h1>.*?</h1>',lambda m:'<h1>'+escape(CONTENT['headings'][i])+'</h1>',html,count=1)
             rows = [row for row in CONTENT['questions'] if row['page']==key]
-            if rows:
+            if rows and key=='coated':
+                additions = ''.join(
+                    '<article><h3>'+escape(row['q'][i])+'</h3><p>'+escape(row['a'][i])+'</p></article>'
+                    for row in rows
+                )
+                html = replace_once(
+                    r'(<section id="buyer-answers"[^>]*>.*?)</div></section>',
+                    lambda match: match[1]+additions+'</div></section>', html,
+                )
+            elif rows:
                 section = '<section class="questions procurement-questions" id="procurement"><h2>'+escape(CONTENT['section'][i])+'</h2><div>'
                 for row in rows:
                     section += '<details><summary>'+escape(row['q'][i])+'</summary><p>'+escape(row['a'][i])+'</p></details>'
@@ -172,12 +186,24 @@ def apply_spanish_search(dist, groups):
         path.write_text(html)
 
 
+def buyer_answer(item, language_index, groups):
+    question = escape(item['q'][language_index])
+    answer = escape(item['a'][language_index])
+    related = item.get('related')
+    if related:
+        href = related['url'] if 'url' in related else groups[related['page']][language_index]+related.get('fragment','')
+        label = related['labels'][language_index]
+        answer += ' <a href="'+escape(href,quote=True)+'">'+escape(label)+'</a>'
+    return '<details><summary>'+question+'</summary><p>'+answer+'</p></details>'
+
+
 def apply_keyword_research(dist, groups):
     """Add reviewed buyer answers after all five language versions exist."""
     topics = json.loads((ROOT/'keyword-content.json').read_text(encoding='utf-8'))
-    changed = set()
+    dates = {}
     for key in dict.fromkeys(('home', *topics, 'thermal')):
         items = topics.get(key, [])
+        review_date = COATED_FAQ_DATE if key=='coated' else KEYWORD_REVIEW_DATE
         for item in items:
             if any(len(item[field]) != len(LANGUAGES) or not all(item[field]) for field in ('q', 'a')):
                 raise ValueError(f'Incomplete buyer answer translations for {key}')
@@ -193,11 +219,7 @@ def apply_keyword_research(dist, groups):
                     html,
                 )
             if items:
-                answers = ''.join(
-                    '<details><summary>' + escape(item['q'][language_index]) +
-                    '</summary><p>' + escape(item['a'][language_index]) + '</p></details>'
-                    for item in items
-                )
+                answers = ''.join(buyer_answer(item, language_index, groups) for item in items)
                 if 'id="procurement"' in html:
                     html = replace_once(
                         r'(<section class="questions procurement-questions" id="procurement">.*?)</div></section>',
@@ -213,15 +235,15 @@ def apply_keyword_research(dist, groups):
                     html = replace_once(r'<p class="updated">', section + '<p class="updated">', html)
             html = replace_once(
                 r'<time datetime="' + re.escape(UPDATED) + '">' + re.escape(UPDATED) + r'</time>',
-                f'<time datetime="{KEYWORD_REVIEW_DATE}">{KEYWORD_REVIEW_DATE}</time>',
+                f'<time datetime="{review_date}">{review_date}</time>',
                 html,
             )
             title = unescape(re.search(r'<title>(.*?)</title>', html)[1])
             description = unescape(re.search(r'<meta name="description" content="([^"]*)"', html)[1])
-            html = update_schema(html, LANGUAGES[language_index], title, description, modified=KEYWORD_REVIEW_DATE)
+            html = update_schema(html, LANGUAGES[language_index], title, description, modified=review_date)
             path.write_text(html, encoding='utf-8')
-            changed.add(page_name)
-    return changed
+            dates[page_name] = review_date
+    return dates
 
 
 def add_simplified(dist, groups, origin):
@@ -264,7 +286,21 @@ def normalize_page_links(dist, filenames):
         path.write_text(anchor.sub(replace_link, html), encoding='utf-8')
 
 
-def finalize_languages(dist, groups, origin, dates):
+def mark_reviewed(dist, dates, pages, review_date):
+    for page_name in pages:
+        if dates.get(page_name, UPDATED) >= review_date:
+            continue
+        path = dist/page_name
+        html = path.read_text(encoding='utf-8')
+        html = re.sub(r'<time datetime="\d{4}-\d{2}-\d{2}">\d{4}-\d{2}-\d{2}</time>',
+                      f'<time datetime="{review_date}">{review_date}</time>', html, count=1)
+        html = re.sub(r'("dateModified":\s*)"\d{4}-\d{2}-\d{2}"',
+                      rf'\g<1>"{review_date}"', html, count=1)
+        path.write_text(html, encoding='utf-8')
+        dates[page_name] = review_date
+
+
+def finalize_languages(dist, groups, origin, dates, catalog_copy):
     def url(path):
         return origin + canonical_path(path)
     all_paths = []
@@ -280,6 +316,8 @@ def finalize_languages(dist, groups, origin, dates):
             all_paths.append(path)
     add_cold_bopp_guide(dist, groups['bopp'][0], groups['guide'][0], origin)
     all_paths.append(GUIDE_FILE)
+    apply_product_catalog(dist, groups, catalog_copy)
+    mark_reviewed(dist, dates, groups['home']+groups['catalog'], CATALOG_REVIEW_DATE)
     normalize_page_links(dist, all_paths)
     normalize_asset_links(dist, all_paths)
     dates[GUIDE_FILE] = GUIDE_DATE
@@ -298,18 +336,14 @@ def publish_update(dist, original_groups, origin):
     complete_groups = {key:paths+[SC_ROUTES[key]] for key,paths in groups.items()}
     apply_design(dist,complete_groups)
     apply_spanish_search(dist,complete_groups)
-    reviewed_pages = apply_keyword_research(dist, complete_groups)
+    dates = apply_keyword_research(dist, complete_groups)
     buyer_pages = apply_buyer_content(dist, complete_groups)
     buyer_pages.update(complete_groups['request'])
-    for page_name in buyer_pages:
-        path = dist/page_name
-        html = path.read_text(encoding='utf-8')
-        html = re.sub(r'<time datetime="\d{4}-\d{2}-\d{2}">\d{4}-\d{2}-\d{2}</time>',
-                      f'<time datetime="{BUYER_REVIEW_DATE}">{BUYER_REVIEW_DATE}</time>', html, count=1)
-        html = re.sub(r'("dateModified":\s*)"\d{4}-\d{2}-\d{2}"',
-                      rf'\g<1>"{BUYER_REVIEW_DATE}"', html, count=1)
-        path.write_text(html, encoding='utf-8')
+    mark_reviewed(dist, dates, buyer_pages, BUYER_REVIEW_DATE)
+    catalog_copy = json.loads((ROOT/'product-catalog-copy.json').read_text(encoding='utf-8'))
+    reviewed = apply_buyer_specifications(dist, complete_groups)
+    reviewed.update(add_coat_weight_guides(dist, complete_groups, catalog_copy))
+    mark_reviewed(dist, dates, reviewed, CATALOG_REVIEW_DATE)
     complete_groups['about'] = add_brand_pages(dist, complete_groups, origin)
-    dates = {path: KEYWORD_REVIEW_DATE for path in reviewed_pages}
-    dates.update(dict.fromkeys(buyer_pages | set(complete_groups['about']), BUYER_REVIEW_DATE))
-    return finalize_languages(dist,complete_groups,origin,dates)
+    dates.update(dict.fromkeys(complete_groups['about'], BUYER_REVIEW_DATE))
+    return finalize_languages(dist,complete_groups,origin,dates,catalog_copy)

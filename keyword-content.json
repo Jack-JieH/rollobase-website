@@ -106,19 +106,254 @@
   "coated": [
     {
       "q": [
-        "¿Cómo pruebo la sobreimpresión de datos variables en papel semibrillo autoadhesivo?",
-        "How do I test variable data overprinting on semi-gloss labelstock?",
-        "半光紙自黏標籤二次加印可變資料時，要怎麼試印？",
-        "Как проверить допечатку переменных данных на полуглянцевой самоклеящейся бумаге?",
-        "半光纸不干胶标签二次加印可变数据时，该怎么试印？"
+        "Si la cotización solo indica «papel semibrillo de 80 g y adhesivo hot melt permanente», ¿qué especificaciones faltan?",
+        "If the quote only says “80 g semi-gloss paper with permanent hot-melt adhesive,” what specs should I confirm?",
+        "報價只寫「半光紙 80 g、永久熱熔膠」，還要確認哪些規格？",
+        "В предложении указано только «полуглянцевая бумага 80 г, постоянный термоклей». Какие ещё характеристики нужно уточнить?",
+        "报价只写「半光纸 80 g、永久热熔胶」，还要确认哪些规格？"
       ],
       "a": [
-        "Pruebe en la zona donde irá el lote, la fecha o el código de barras, con las tintas y el barniz del diseño real. Compare una zona reservada sin barniz con una barnizada si ambas se consideran para producción. Use el equipo previsto y revise legibilidad y transferencia por roce una vez seca o curada la impresión. Si usa transferencia térmica, confirme en la ficha técnica la compatibilidad del papel con la cinta elegida.",
-        "Test in the intended lot number, date, or barcode area using the actual artwork inks and varnish. If both options are under consideration, compare a reserved unvarnished area with a varnished one. Use the production equipment and check legibility and rub-off after drying or curing. For thermal transfer, confirm compatibility between the paper and the chosen ribbon in the technical data sheet.",
-        "用正式圖稿的油墨和光油打樣，在預定的批號、日期或條碼區加印。若考慮兩種做法，可比較預留未上光區與上光區。使用預定量產設備，待印刷乾燥或固化後檢查字碼辨識度及摩擦掉墨。採用熱轉印時，依技術資料表確認紙張與所選碳帶的相容性。",
-        "Используйте краски и лак из рабочего макета. Нанесите номер партии, дату или штрихкод в предназначенной для них зоне. Если рассматриваются оба варианта, сравните участки с лаком и без него. Проведите пробу на рабочем оборудовании, после сушки или отверждения проверьте читаемость и стирание краски. Для термотрансферной печати уточните совместимость бумаги с выбранным риббоном по технической документации.",
-        "用正式图稿的油墨和光油打样，在预定的批号、日期或条码区加印。若考虑两种做法，可对比预留未上光区和上光区。使用预定量产设备，待印刷干燥或固化后检查字码清晰度和摩擦掉墨。采用热转印时，按技术资料表确认纸张与所选碳带的兼容性。"
+        "Pida el gramaje del frontal, la referencia y el gramaje del adhesivo, el tipo y gramaje del liner, y la ficha técnica (TDS) correspondiente. Si la etiqueta se retirará después, como una promoción en una botella, indique cuánto tiempo estará adherida, si debe poder recolocarse y si se permite dejar residuos.",
+        "Ask for the facestock grammage, adhesive grade and coat weight, release liner type and grammage, and the corresponding technical data sheet (TDS). If the label will be removed later, such as a bottle promotion, specify how long it should stay on, whether it must be repositionable, and whether any adhesive residue is acceptable.",
+        "請供應商列出面材克重、膠黏劑料號與塗膠量、離型底紙種類與克重，並提供對應的技術資料表（TDS）。如果標籤日後要撕下，例如瓶身促銷貼，索樣時要說明預計貼多久、可否重貼，以及是否允許殘膠。",
+        "Попросите поставщика указать массу лицевого материала на единицу площади, артикул клея и массу его нанесения, тип и массу антиадгезионной подложки, а также предоставить соответствующий технический паспорт (TDS). Если этикетку впоследствии потребуется снять, например промоэтикетку с бутылки, при запросе образцов укажите предполагаемый срок наклеивания, нужна ли возможность повторного наклеивания и допустимы ли остатки клея.",
+        "请供应商列出面材克重、胶黏剂料号与涂胶量、离型底纸类型和克重，并提供对应的技术数据表（TDS）。如果标签日后需要撕下，例如瓶身促销贴，索样时要说明预计贴多久、能否重新定位，以及是否允许残胶。"
       ]
+    },
+    {
+      "q": [
+        "¿Se puede usar el mismo adhesivo para etiquetar un empaque de alimentos a temperatura ambiente antes de llevarlo al congelador y para etiquetarlo ya congelado?",
+        "Can I use the same adhesive when labeling food packaging at room temperature before freezer storage and when labeling it already frozen?",
+        "冷凍食品在室溫貼標後進冷庫，和在冷凍包裝上直接貼標，可以用同一款膠嗎？",
+        "Можно ли использовать один клей для этикетирования замороженных продуктов при комнатной температуре перед помещением в морозильную камеру и для наклеивания непосредственно на замороженную упаковку?",
+        "冷冻食品在室温贴标后进冷库，和在冷冻包装上直接贴标，可以用同一款胶吗？"
+      ],
+      "a": [
+        "Confirme por separado la temperatura mínima de aplicación y el rango de temperatura de servicio. Al cotizar indique la temperatura superficial del empaque al etiquetar, la temperatura de la cámara y si hay escarcha o se prevé descongelación. Pida al proveedor muestras para cada condición de aplicación.",
+        "Confirm the minimum application temperature and service temperature range separately. When requesting a quote, provide the package surface temperature at application, the freezer temperature, and whether there is frost or expected thawing. Ask the supplier to recommend trial samples for both application conditions.",
+        "分別確認最低貼標溫度與貼好後的使用溫度範圍。詢價時提供貼標當下的包材表面溫度、冷庫溫度，以及是否結霜或會解凍。請供應商按兩種貼標情境推薦試樣。",
+        "Отдельно уточните минимальную температуру нанесения и диапазон рабочих температур после наклеивания. В запросе укажите температуру поверхности упаковки в момент нанесения, температуру морозильной камеры, наличие инея и возможное размораживание. Попросите поставщика предложить образцы для обоих сценариев.",
+        "分别确认最低贴标温度和贴标后的使用温度范围。询价时提供贴标当下的包材表面温度、冷库温度，以及是否结霜或会解冻。请供应商按两种贴标情形推荐试样。"
+      ],
+      "related": {
+        "url": "https://label.averydennison.com/content/dam/averydennison/lpm/sapssa/docs/adhesives/avery-dennison-sapssa-hotmelt-ebook.pdf#page=4",
+        "labels": [
+          "Guía Avery Dennison, p. 4",
+          "Avery Dennison guide, p. 4",
+          "Avery Dennison 指南第 4 頁",
+          "Руководство Avery Dennison, с. 4",
+          "Avery Dennison 指南第 4 页"
+        ]
+      }
+    },
+    {
+      "q": [
+        "¿Cómo pruebo BOPP blanco y transparente en botellas de bebidas con condensación?",
+        "How do I test white and clear BOPP on beverage bottles with condensation?",
+        "飲料瓶表面有結露，白色和透明 BOPP 要怎麼試？",
+        "Как испытать белый и прозрачный BOPP на бутылке напитка с конденсатом?",
+        "饮料瓶表面有冷凝水，白色和透明 BOPP 怎么试？"
+      ],
+      "a": [
+        "Use botellas reales del mismo tipo en dos grupos. Etiquete uno con la superficie seca antes de refrigerarlo y el otro cuando ya haya condensación. En el BOPP blanco revise la cobertura y el contraste de textos y códigos. En el transparente revise blanqueamiento, burbujas y claridad. Registre en ambos grupos el levantamiento de bordes y el aspecto con la superficie seca.",
+        "Divide identical production bottles into two groups. Label one group dry before refrigeration and the other after condensation has formed. Check opacity and contrast for text and barcodes on white BOPP. Check whitening, bubbles, and clarity on clear BOPP. Record edge lift and the appearance once the bottles are dry in both groups.",
+        "用同款實際瓶身做兩組。一組乾瓶貼標後冷藏，另一組在瓶身已結露時貼標。白色 BOPP 檢查遮蔽與字碼對比，透明 BOPP 檢查泛白、氣泡及清晰度。兩組都要記錄翹邊，以及瓶身乾燥後的外觀。",
+        "Подготовьте две группы одинаковых бутылок, которые будут использоваться в производстве. В первой группе нанесите этикетки на сухие бутылки, затем охладите их. Во второй нанесите этикетки на бутылки с уже образовавшимся конденсатом. Для белого BOPP проверьте укрывистость и контрастность текста и кодов, для прозрачного — побеление, пузыри и прозрачность. В обеих группах фиксируйте отклеивание краёв и внешний вид после высыхания бутылок.",
+        "用同款实际瓶身做两组。一组在干燥瓶身贴标后冷藏，另一组在瓶身已有冷凝水时贴标。白色 BOPP 检查遮盖和字码对比度，透明 BOPP 检查发白、气泡和清晰度。两组都要记录翘边以及瓶身干燥后的外观。"
+      ],
+      "related": {
+        "url": "/guia-bopp-botellas-refrigeradas",
+        "labels": [
+          "Guía de etiquetado de botellas refrigeradas",
+          "Cold-bottle labeling guide (Spanish)",
+          "冷藏瓶標指南（西語）",
+          "Руководство по этикеткам для охлаждённых бутылок (на испанском)",
+          "冷藏瓶贴指南（西语）"
+        ]
+      }
+    },
+    {
+      "q": [
+        "La etiqueta pasó la prueba en PET. ¿Puedo usar el mismo adhesivo en un envase de champú de HDPE o una tapa de PP?",
+        "The label passed on a PET bottle. Can I use the same adhesive on an HDPE shampoo bottle or a PP cap?",
+        "PET 瓶試貼通過，換成 HDPE 洗髮精瓶或 PP 瓶蓋，原來的膠能沿用嗎？",
+        "Клей прошёл испытания на PET-бутылке. Можно ли использовать его для флакона шампуня из HDPE или крышки из PP?",
+        "PET 瓶试贴通过，换成 HDPE 洗发水瓶或 PP 瓶盖，原来的胶能沿用吗？"
+      ],
+      "a": [
+        "Indique el material exacto, la textura y el tratamiento superficial. Repita la prueba sobre los envases reales de producción. Al cotizar, informe si hay residuos de desmoldante, una película de aceite o un PVC flexible que pueda contener plastificantes. Programe una revisión tras un tiempo de reposo o un ensayo de envejecimiento.",
+        "Specify the exact container material, surface texture, and treatment, and retest on actual production containers. When requesting a quote, disclose any mold release residue or oil film, or whether flexible PVC may contain plasticizers. Plan a check after a defined dwell time or an aging test.",
+        "請提供容器的確切材質、表面紋理與處理方式，並用實際量產容器複驗。若有脫模劑、油膜，或軟質 PVC 可能含塑化劑，詢價時一併說明，安排貼後放置或老化試驗。",
+        "Укажите точный материал тары, фактуру и способ обработки поверхности. Повторите испытания на таре, предназначенной для серийного производства. Если на поверхности есть разделительная смазка или масляная плёнка либо мягкий PVC может содержать пластификаторы, сообщите об этом при запросе и предусмотрите испытания после выдержки или старения наклеенных этикеток.",
+        "请提供容器的准确材质、表面纹理和处理方式，并用实际量产容器复验。如果有脱模剂、油膜，或者软质 PVC 可能含增塑剂，询价时一并说明，安排贴后放置或老化试验。"
+      ],
+      "related": {
+        "url": "https://label.averydennison.com/content/dam/averydennison/lpm/sapssa/docs/adhesives/avery-dennison-sapssa-hotmelt-ebook.pdf#page=8",
+        "labels": [
+          "Guía Avery Dennison, p. 8",
+          "Avery Dennison guide, p. 8",
+          "Avery Dennison 指南第 8 頁",
+          "Руководство Avery Dennison, с. 8",
+          "Avery Dennison 指南第 8 页"
+        ]
+      }
+    },
+    {
+      "q": [
+        "¿Qué opción A–D de papel sin estucar solicito primero para cajas lisas y cajas de cartón corrugado rugoso?",
+        "Which A–D uncoated paper option should I try first on smooth retail cartons and rough corrugated shipping boxes?",
+        "平滑彩盒和粗面瓦楞物流箱，模造紙 A～D 應該先索哪一組？",
+        "Какие варианты немелованной бумаги A–D сначала запросить для гладких цветных коробок и шероховатых транспортных коробов из гофрокартона?",
+        "平滑彩盒和粗面瓦楞物流箱，书写纸 A～D 应该先索哪一组？"
+      ],
+      "a": [
+        "Para cajas lisas y secas, empiece con A o C de 14 g/m² como prueba inicial. Para cartón corrugado rugoso, solicite A y B o C y D para comparar 14 y 20 g/m². Cada par tiene el mismo frontal y liner. Confirme que también coincida la formulación del adhesivo. Compare el contacto y el levantamiento de bordes en cajas del mismo tipo con igual presión de aplicación, temperatura y tiempo de reposo.",
+        "For smooth, dry cartons, try A or C at 14 g/m² as a screening starting point. For rough corrugated board, request A and B or C and D to compare 14 and 20 g/m². Each pair has the same facestock and liner. Confirm that the adhesive formulation also matches. Compare contact and edge lift on the same carton stock at identical application pressure, temperature, and dwell time.",
+        "平滑、乾燥的彩盒可從 A 或 C 的 14 g/m² 做初測。粗面瓦楞箱可同時索 A／B 或 C／D，比較 14 與 20 g/m²。同一對的面材及底紙相同，再確認膠配方也相同，用同款紙箱、相同貼壓、溫度和靜置時間比較貼合與翹邊。",
+        "Для гладких сухих коробок можно начать с вариантов A или C с нанесением клея 14 г/м². Для шероховатого гофрокартона можно одновременно запросить пары A/B или C/D, чтобы сравнить нанесение 14 и 20 г/м². В каждой паре лицевой материал и подложка одинаковы. Дополнительно подтвердите одинаковый состав клея и сравните приклеивание и отклеивание краёв на одинаковых коробах при одинаковом давлении нанесения, температуре и времени выдержки.",
+        "平滑、干燥的彩盒可从 A 或 C 的 14 g/m² 开始试。粗面瓦楞箱可同时索取 A／B 或 C／D，对比 14 和 20 g/m²。同一对的面材与底纸相同，再确认胶配方也相同，用同款纸箱和相同的贴标压力、温度与静置时间对比贴合和翘边。"
+      ],
+      "related": {
+        "page": "woodfree",
+        "fragment": "#compare",
+        "labels": [
+          "Comparación A–D",
+          "A–D comparison",
+          "模造紙 A～D 比較表",
+          "Таблица вариантов A–D",
+          "书写纸 A～D 对比表"
+        ]
+      }
+    },
+    {
+      "q": [
+        "La etiqueta se levanta en botellas estrechas o se arruga al apretar un envase flexible. ¿Pruebo otro adhesivo u otro frontal?",
+        "My label lifts on a narrow round bottle or wrinkles on a squeeze bottle. Should I try another adhesive or facestock?",
+        "標籤貼在細圓瓶會翹起，擠壓瓶貼好後會起皺，應該先換膠還是換面材？",
+        "На узкой круглой бутылке края этикетки отклеиваются, а на сжимаемом флаконе появляются складки. Сначала менять клей или лицевой материал?",
+        "标签贴在细圆瓶会翘起，挤压瓶贴好后会起皱，应先换胶还是换面材？"
+      ],
+      "a": [
+        "En la solicitud de muestra indique el diámetro del envase, el tamaño de la etiqueta, la posición de aplicación y si el envase se deforma. Compare con el proveedor la flexibilidad del frontal y la formulación del adhesivo. En botellas estrechas revise si se levantan los bordes después de aplicar. En envases flexibles llenos repita la compresión y observe arrugas, recuperación de la forma y levantamiento de bordes.",
+        "Include the bottle diameter, label dimensions, application position, and whether the bottle deforms in the sample request. Work with the supplier to compare facestock flexibility and adhesive formulation. Check whether edges lift on narrow bottles. Repeatedly squeeze filled bottles and observe wrinkling, shape recovery, and edge lift.",
+        "索樣時提供瓶徑、標籤長寬、黏貼位置和容器是否會變形。請供應商一起比較面材柔順性和膠配方。細瓶檢查貼後邊緣回翹，擠壓瓶用裝填後的瓶身反覆擠壓，觀察皺褶、回彈和翹邊。",
+        "При запросе образцов укажите диаметр бутылки, длину и ширину этикетки, место нанесения и возможность деформации тары. Попросите поставщика оценить вместе гибкость лицевого материала и состав клея. На узкой бутылке проверьте отгибание краёв после нанесения. Наполненный сжимаемый флакон многократно сожмите, наблюдая за складками, восстановлением формы и отклеиванием краёв.",
+        "索样时提供瓶径、标签长宽、贴标位置以及容器是否会变形。请供应商一并比较面材柔顺性与胶配方。细瓶检查贴后边缘回翘，挤压瓶用装填后的瓶身反复挤压，观察皱褶、回弹和翘边。"
+      ],
+      "related": {
+        "url": "https://label.averydennison.com/content/dam/averydennison/lpm/sapssa/docs/adhesives/avery-dennison-sapssa-hotmelt-ebook.pdf#page=9",
+        "labels": [
+          "Guía Avery Dennison, p. 9",
+          "Avery Dennison guide, p. 9",
+          "Avery Dennison 指南第 9 頁",
+          "Руководство Avery Dennison, с. 9",
+          "Avery Dennison 指南第 9 页"
+        ]
+      }
+    },
+    {
+      "q": [
+        "Si la muestra se adhiere bien a mano, ¿qué debo comprobar en una etiquetadora automática de alta velocidad?",
+        "A hand-applied sample sticks well. What should I still check on a high-speed automatic labeler?",
+        "手貼樣品很黏，換到高速自動貼標機時還要驗證什麼？",
+        "При ручном нанесении образец хорошо приклеивается. Что ещё проверить на высокоскоростном автоматическом этикетировщике?",
+        "手贴样品很黏，换到高速自动贴标机时还要验证什么？"
+      ],
+      "a": [
+        "Indique el modelo de etiquetadora, el tamaño de etiqueta, la velocidad prevista y el liner. A esa velocidad, compruebe la regularidad de la dispensación, la posición de la etiqueta, si puede recolocarse cuando sea necesario y si se levantan los bordes después de la aplicación. Guarde un registro de la prueba manual y otro de la prueba en máquina.",
+        "Provide the labeler model, label size, target speed, and liner. At target speed, check consistent dispensing, placement, repositioning where needed, and edge lift after application. Keep separate records for the hand-applied and machine-applied trials.",
+        "提供貼標機型、標籤尺寸、目標速度及底紙。用預定速度檢查出標是否穩定、貼標是否偏移、能否按需要調整位置，以及貼後邊緣是否翹起。手貼試樣與上機試樣各留一份紀錄。",
+        "Укажите модель этикетировщика, размеры этикетки, целевую скорость и подложку. На запланированной скорости проверьте стабильность отделения и подачи этикеток, точность их нанесения, возможность корректировки положения при необходимости и отклеивание краёв после нанесения. Сохраните отдельные записи результатов ручного и машинного нанесения.",
+        "提供贴标机型、标签尺寸、目标速度和底纸。用预定速度检查出标是否稳定、贴标是否偏移、能否按需要调整位置，以及贴后边缘是否翘起。手贴与上机试样各保留一份记录。"
+      ],
+      "related": {
+        "page": "printing",
+        "labels": [
+          "Guía de pruebas de impresión",
+          "Printing compatibility guide",
+          "印刷相容性指南",
+          "Руководство по испытаниям печати",
+          "印刷兼容性指南"
+        ]
+      }
+    },
+    {
+      "q": [
+        "¿Qué datos debo dar al cotizar etiquetas expuestas al calor durante el transporte, al sol o a la limpieza con detergente?",
+        "What do I include in a quote request for labels exposed to hot transport, outdoor sun, or cleaning products?",
+        "標籤會經過夏季高溫運輸、戶外日曬，或需要用清潔劑擦拭，該如何詢價？",
+        "Этикетки будут перевозиться в летнюю жару, находиться на солнце или протираться чистящим средством. Что указать в запросе?",
+        "标签会经过夏季高温运输、户外日晒，或需要用清洁剂擦拭，该如何询价？"
+      ],
+      "a": [
+        "Detalle la temperatura máxima de servicio y su duración, la exposición al sol o a la lluvia y el tipo de limpiador y la frecuencia de contacto. Pida al proveedor que proponga frontal y adhesivo para esas condiciones. Después del ensayo compruebe la adhesión y la legibilidad del texto y del código de barras.",
+        "List the maximum service temperature and duration, exposure to sunlight or rain, and the cleaner type and contact frequency. Ask the supplier to recommend a facestock and adhesive for those conditions. After the trial, check adhesion, text legibility, and barcode readability.",
+        "分開列出最高使用溫度、持續時間、日曬或淋雨情形，以及清潔劑種類與接觸頻率。請供應商按實際條件建議膠種和面材，並確認試驗後的黏著、字跡及條碼表現。",
+        "Отдельно укажите максимальную рабочую температуру и продолжительность её воздействия, условия воздействия солнца или дождя, тип чистящего средства и частоту контакта с ним. Попросите поставщика подобрать клей и лицевой материал для фактических условий и проверить после испытаний адгезию, читаемость текста и считывание штрихкода.",
+        "分开列出最高使用温度、持续时间、日晒或淋雨情况，以及清洁剂类型与接触频率。请供应商按实际条件建议胶种和面材，并确认试验后的粘接、字迹和条码表现。"
+      ],
+      "related": {
+        "url": "https://label.averydennison.com/content/dam/averydennison/lpm/sapssa/docs/adhesives/avery-dennison-sapssa-hotmelt-ebook.pdf#page=8",
+        "labels": [
+          "Guía Avery Dennison, p. 8",
+          "Avery Dennison guide, p. 8",
+          "Avery Dennison 指南第 8 頁",
+          "Руководство Avery Dennison, с. 8",
+          "Avery Dennison 指南第 8 页"
+        ]
+      }
+    },
+    {
+      "q": [
+        "¿Qué datos envío al proveedor si sale adhesivo por los cantos de la bobina o la matriz se rompe al acelerar el troquelado?",
+        "What should I send the supplier if adhesive oozes at the roll ends or the waste matrix breaks when die-cutting speeds up?",
+        "母卷端面有溢膠，或加速模切後排廢常斷，要向供應商提供什麼？",
+        "На торцах материнского рулона выступает клей или при повышении скорости высечки часто рвётся облой. Какие данные передать поставщику?",
+        "母卷端面有溢胶，或提高模切速度后排废常断，要向供应商提供什么？"
+      ],
+      "a": [
+        "Registre la referencia, el lote y el número de bobina. Tome fotos de los cantos. Adjunte las condiciones de almacenamiento, la tensión de desbobinado y rebobinado, el ajuste del troquel, la velocidad y el punto de rotura. Con esos datos pueden decidir si conviene ajustar el proceso o probar otra estructura.",
+        "Record the material reference, lot and roll ID, and photograph the roll ends. Include storage conditions, unwind and rewind tension, die settings, speed, and break location. These details help both sides decide whether to adjust converting settings or trial a different construction.",
+        "先保留問題卷的料號、批號、卷號與端面照片，再附上儲存條件、開卷及收卷張力、刀具設定、機速和斷裂位置。這些資料能幫雙方判斷應先調整加工條件，還是另試一款材料結構。",
+        "Сохраните артикул, номер партии, номер проблемного рулона и фотографии его торцов. Добавьте условия хранения, натяжение при размотке и намотке, настройки инструмента, скорость машины и место разрыва. Эти данные помогут обеим сторонам определить, следует ли сначала скорректировать условия переработки или испытать другую конструкцию материала.",
+        "先保留问题卷的料号、批号、卷号和端面照片，再附上储存条件、放卷及收卷张力、刀具设置、机速和断裂位置，帮助双方判断应先调整加工条件，还是另试一种材料结构。"
+      ],
+      "related": {
+        "url": "https://label.averydennison.com/content/dam/averydennison/lpm/sapssa/docs/adhesives/avery-dennison-sapssa-hotmelt-ebook.pdf#page=6",
+        "labels": [
+          "Guía Avery Dennison, p. 6",
+          "Avery Dennison guide, p. 6",
+          "Avery Dennison 指南第 6 頁",
+          "Руководство Avery Dennison, с. 6",
+          "Avery Dennison 指南第 6 页"
+        ]
+      }
+    },
+    {
+      "q": [
+        "La muestra se adhiere bien. ¿Cómo documento el resultado en la orden de compra para producción y recepción?",
+        "The sample adheres well. How should I record the result on the purchase order for production and incoming inspection?",
+        "試樣貼得住，怎麼把結果寫進採購單，讓量產和驗收有依據？",
+        "Образец хорошо держится. Как зафиксировать результаты в заказе, чтобы использовать их при серийном производстве и приёмке?",
+        "试样贴得住，怎么把结果写进采购单，让量产和验收有依据？"
+      ],
+      "a": [
+        "Incluya el número de la bobina de prueba aprobada, la referencia completa del material, la versión de la TDS, la superficie, las condiciones de aplicación y los criterios de aceptación. Puede verificar la posición al aplicar, el levantamiento de bordes tras el tiempo acordado y la lectura del código después de refrigeración o frote. En recepción, coteje lote, número de bobina y registro de inspección.",
+        "Include the approved trial roll ID, complete material reference, TDS revision, application surface and conditions, and acceptance criteria. Checks can include placement at application, edge lift after the agreed dwell time, and barcode readability after chilling or rubbing. On receipt, match the lot and roll ID to the inspection record.",
+        "把通過的樣卷編號、完整材料料號、技術資料表（TDS）版本、被貼物、貼標條件及驗收項目寫進採購單。驗收項目可包括貼標當下的定位、約定時間後的翹邊，以及冷藏或摩擦後的條碼掃讀。到貨時再用批號、卷號與檢驗紀錄核對。",
+        "Укажите в заказе номер одобренного пробного рулона, полный артикул материала, версию технического паспорта (TDS), поверхность нанесения, условия этикетирования и критерии приёмки. Критерии могут включать положение этикетки при нанесении, отклеивание краёв через согласованное время и считывание штрихкода после охлаждения или трения. При получении сверьте номера партий и рулонов с записями контроля.",
+        "把通过的样卷编号、完整材料料号、技术数据表（TDS）版本、被贴物、贴标条件及验收项目写入采购单。验收可包括贴标当下的定位、约定时间后的翘边，以及冷藏或摩擦后的条码识读。到货时用批号、卷号与检验记录核对。"
+      ],
+      "related": {
+        "page": "quality",
+        "labels": [
+          "Calidad y trazabilidad",
+          "Quality and traceability",
+          "品質與逐卷追溯",
+          "Качество и прослеживаемость",
+          "品质与逐卷追溯"
+        ]
+      }
     }
   ],
   "thermal": [

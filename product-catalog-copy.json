@@ -1,0 +1,277 @@
+{
+  "es-419": {
+    "labels": {
+      "title": "Encuentre el material para sus etiquetas",
+      "intro": "Busque una bobina madre autoadhesiva por material, aplicación o combinación A–D.",
+      "search_label": "Buscar material",
+      "placeholder": "BOPP transparente, semigloss o 60/14/50",
+      "family_label": "Familia de material",
+      "all": "Todas",
+      "paper": "Papel",
+      "film": "Película",
+      "application_label": "Aplicación",
+      "print": "Etiquetas impresas a color",
+      "logistics": "Logística y códigos de barras",
+      "rigid": "Botellas rígidas",
+      "squeeze": "Envases flexibles y botellas exprimibles",
+      "equipment": "Identificación de equipos",
+      "a_d": "Comparación A–D",
+      "view": "Ver material",
+      "sample": "Preparar solicitud de muestra",
+      "rows_status": "Resultados: {count}",
+      "none": "No encontramos coincidencias. Pruebe otro término o quite un filtro.",
+      "reset": "Limpiar filtros",
+      "wood_note": "Compare opciones con 14 y 20 g/m² de adhesivo termofusible y consulte la guía de muestreo.",
+      "coat_title": "Cómo elegir la primera muestra",
+      "coat_intro": "A y C llevan 14 g/m² de adhesivo termofusible. B y D llevan 20 g/m². Compare A con B o C con D. En cada par coinciden el frontal y el liner, y cambia el gramaje del adhesivo. Confirme que la formulación sea la misma.",
+      "coat_smooth_title": "Cartón liso y seco",
+      "coat_smooth": "Pruebe primero 14 g/m² como punto de partida. Observe la adhesión inicial y si se levantan los bordes tras el reposo.",
+      "coat_rough_title": "Cartón corrugado rugoso",
+      "coat_rough": "Pruebe A y B o C y D con la misma superficie, presión, temperatura y tiempo de reposo. Compare el contacto y el levantamiento de bordes.",
+      "coat_special_title": "Condensación, temperaturas extremas, PE o PP",
+      "coat_special": "Confirme el adhesivo específico y pruébelo sobre el envase real en las condiciones de aplicación y uso.",
+      "adhesive_guide": "Guía de selección del adhesivo",
+      "nav": "Catálogo de productos"
+    },
+    "products": {
+      "coated": {
+        "keywords": "semigloss semi gloss papel semibrillo semibrillante estucado couché papel ilustración papel autoadherible etiquetas a color"
+      },
+      "thermal": {
+        "keywords": "papel térmico directo térmico directo eco top código de barras logística balanza sin ribbon"
+      },
+      "bopp": {
+        "keywords": "bopp blanco transparente polipropileno biorientado autoadherible botella rígida refrigeración condensación"
+      },
+      "pe": {
+        "keywords": "pe polietileno envase flexible botella exprimible botella flexible champú"
+      },
+      "pet": {
+        "keywords": "pet poliéster película autoadherible identificación de equipos etiqueta de activo"
+      },
+      "wood": {
+        "keywords": "papel sin estucar no estucado sin recubrimiento papel mate woodfree hot melt glassine a–d 60/14/50 60/20/50 70/14/60 70/20/60"
+      }
+    }
+  },
+  "en": {
+    "labels": {
+      "title": "Find your label material",
+      "intro": "Search self-adhesive jumbo rolls by material, application, or A–D construction.",
+      "search_label": "Search materials",
+      "placeholder": "Clear BOPP, semi-gloss, or 60/14/50",
+      "family_label": "Material family",
+      "all": "All",
+      "paper": "Paper",
+      "film": "Film",
+      "application_label": "Application",
+      "print": "Color printed labels",
+      "logistics": "Logistics and barcodes",
+      "rigid": "Rigid bottles",
+      "squeeze": "Flexible and squeezable containers",
+      "equipment": "Equipment identification",
+      "a_d": "A–D comparison",
+      "view": "View material",
+      "sample": "Prepare a sample request",
+      "rows_status": "Results: {count}",
+      "none": "No matches. Try a different term or clear a filter.",
+      "reset": "Clear filters",
+      "wood_note": "Compare 14 and 20 g/m² hot-melt coat weights and see the sampling guide.",
+      "coat_title": "How to choose a first sample",
+      "coat_intro": "A and C have 14 g/m² of hot-melt adhesive. B and D have 20 g/m². Compare A with B or C with D. Each pair has the same facestock and liner and varies the adhesive coat weight. Confirm that the adhesive formulation is the same.",
+      "coat_smooth_title": "Smooth, dry cardboard",
+      "coat_smooth": "Use 14 g/m² as a starting point for screening. Check initial tack and edge lift after the agreed dwell time.",
+      "coat_rough_title": "Rough corrugated board",
+      "coat_rough": "Compare A and B or C and D on the same surface at the same pressure, temperature, and dwell time. Check contact and edge lift.",
+      "coat_special_title": "Condensation, extreme temperatures, PE or PP",
+      "coat_special": "Confirm the adhesive grade and test it on the actual package under expected application and service conditions.",
+      "adhesive_guide": "Adhesive selection guide",
+      "nav": "Product catalog"
+    },
+    "products": {
+      "coated": {
+        "keywords": "semi-gloss semigloss semi gloss coated paper labelstock color printing"
+      },
+      "thermal": {
+        "keywords": "direct thermal paper DT thermal labelstock eco top barcode shipping scale label ribbonless"
+      },
+      "bopp": {
+        "keywords": "BOPP white clear transparent biaxially oriented polypropylene rigid bottle refrigeration condensation"
+      },
+      "pe": {
+        "keywords": "PE polyethylene flexible packaging squeezable bottle shampoo container"
+      },
+      "pet": {
+        "keywords": "PET polyester film equipment identification asset label"
+      },
+      "wood": {
+        "keywords": "woodfree uncoated paper labelstock matte paper hot melt glassine A–D 60/14/50 60/20/50 70/14/60 70/20/60"
+      }
+    }
+  },
+  "zh-Hant": {
+    "labels": {
+      "title": "找適合的標籤材料",
+      "intro": "依面材、用途或 A～D 組合查找自黏標籤母卷。",
+      "search_label": "搜尋材料",
+      "placeholder": "透明 BOPP、半光銅版紙或 60/14/50",
+      "family_label": "材料類別",
+      "all": "全部",
+      "paper": "紙類",
+      "film": "薄膜",
+      "application_label": "應用",
+      "print": "彩色印刷標籤",
+      "logistics": "物流與條碼",
+      "rigid": "硬質瓶身",
+      "squeeze": "軟包裝與可擠壓瓶身",
+      "equipment": "設備識別",
+      "a_d": "A～D 規格比較",
+      "view": "查看材料",
+      "sample": "準備索樣需求單",
+      "rows_status": "符合條件：{count} 項",
+      "none": "找不到符合條件的材料。請換個搜尋詞或清除篩選條件。",
+      "reset": "清除篩選",
+      "wood_note": "可比較 14／20 g/m² 兩種熱熔膠塗膠量，並查看首輪試樣建議。",
+      "coat_title": "如何選擇首輪樣品",
+      "coat_intro": "A、C 的熱熔膠塗膠量為 14 g/m²，B、D 為 20 g/m²。比較 A 與 B 或 C 與 D。各組對照的面材、底紙相同，塗膠量不同。請確認兩款樣品採用相同膠配方。",
+      "coat_smooth_title": "乾燥平滑的紙板",
+      "coat_smooth": "可先用 14 g/m² 做初測。檢查初黏，並在約定靜置時間後觀察邊緣是否翹起。",
+      "coat_rough_title": "表面粗糙的瓦楞紙板",
+      "coat_rough": "在相同紙板、貼標壓力、溫度和靜置時間下，比較 A 與 B 或 C 與 D 的貼合與翹邊情形。",
+      "coat_special_title": "冷凝、冷凍、高溫或 PE、PP",
+      "coat_special": "先確認適用的膠種，再用實際包裝重現貼標與使用條件進行測試。",
+      "adhesive_guide": "膠黏劑選型指南",
+      "nav": "產品清單"
+    },
+    "products": {
+      "coated": {
+        "keywords": "半光紙 半光銅版紙 銅版紙 塗佈紙 半光銅板紙 semigloss 彩色印刷"
+      },
+      "thermal": {
+        "keywords": "熱感紙 感熱紙 直接熱感紙 熱敏紙 物流 條碼 秤重 無碳帶 Eco Top"
+      },
+      "bopp": {
+        "keywords": "BOPP 白色BOPP 透明BOPP 雙向延伸聚丙烯 硬瓶 冷藏 冷凝"
+      },
+      "pe": {
+        "keywords": "PE 聚乙烯 薄膜 軟包裝 軟瓶 擠壓瓶 洗髮精"
+      },
+      "pet": {
+        "keywords": "PET 聚酯 聚酯薄膜 設備識別 資產標籤"
+      },
+      "wood": {
+        "keywords": "模造紙 模造 書寫紙 未塗佈紙 熱熔膠 格拉辛 A～D 60/14/50 60/20/50 70/14/60 70/20/60"
+      }
+    }
+  },
+  "zh-Hans": {
+    "labels": {
+      "title": "查找适合的标签材料",
+      "intro": "按面材、用途或 A～D 组合查找不干胶标签母卷。",
+      "search_label": "搜索材料",
+      "placeholder": "透明 BOPP、半光铜版纸或 60/14/50",
+      "family_label": "材料类别",
+      "all": "全部",
+      "paper": "纸类",
+      "film": "薄膜",
+      "application_label": "应用",
+      "print": "彩色印刷标签",
+      "logistics": "物流与条码",
+      "rigid": "硬质瓶身",
+      "squeeze": "软包装与可挤压瓶身",
+      "equipment": "设备标识",
+      "a_d": "A～D 规格对比",
+      "view": "查看材料",
+      "sample": "准备索样需求单",
+      "rows_status": "符合条件：{count} 项",
+      "none": "未找到符合条件的材料。请换个搜索词或清除筛选条件。",
+      "reset": "清除筛选",
+      "wood_note": "可对比 14／20 g/m² 两种热熔胶涂胶量，并查看首轮试样建议。",
+      "coat_title": "如何选择首轮样品",
+      "coat_intro": "A、C 的热熔胶涂胶量为 14 g/m²，B、D 为 20 g/m²。对比 A 与 B 或 C 与 D。每组对比的面材、底纸相同，涂胶量不同。请确认两款样品采用相同胶水配方。",
+      "coat_smooth_title": "干燥平滑的纸板",
+      "coat_smooth": "可以先用 14 g/m² 做初测。检查初粘，并在约定静置时间后观察边缘是否翘起。",
+      "coat_rough_title": "表面粗糙的瓦楞纸板",
+      "coat_rough": "在相同纸板、贴标压力、温度和静置时间下，对比 A 与 B 或 C 与 D 的贴合和翘边情况。",
+      "coat_special_title": "冷凝、冷冻、高温或 PE、PP",
+      "coat_special": "先确认适用的胶型，再用实际包装复现贴标和使用条件进行测试。",
+      "adhesive_guide": "胶粘剂选型指南",
+      "nav": "产品清单"
+    },
+    "products": {
+      "coated": {
+        "keywords": "半光纸 半光铜版纸 铜版纸 涂布纸 半光铜板纸 semigloss 彩色印刷"
+      },
+      "thermal": {
+        "keywords": "热敏纸 直接热敏纸 热感纸 物流 条码 称重 无碳带 Eco Top"
+      },
+      "bopp": {
+        "keywords": "BOPP 白色BOPP 透明BOPP 双向拉伸聚丙烯 硬瓶 冷藏 冷凝"
+      },
+      "pe": {
+        "keywords": "PE 聚乙烯 薄膜 软包装 软瓶 挤压瓶 洗发水"
+      },
+      "pet": {
+        "keywords": "PET 聚酯 聚酯薄膜 设备标识 资产标签"
+      },
+      "wood": {
+        "keywords": "书写纸 模造纸 未涂布纸 热熔胶 格拉辛 A～D 60/14/50 60/20/50 70/14/60 70/20/60"
+      }
+    }
+  },
+  "ru": {
+    "labels": {
+      "title": "Подберите материал для этикеток",
+      "intro": "Найдите самоклеящийся материал в джамбо-рулонах по типу, применению или варианту A–D.",
+      "search_label": "Поиск материала",
+      "placeholder": "Прозрачный БОПП, термобумага или 60/14/50",
+      "family_label": "Группа материалов",
+      "all": "Все",
+      "paper": "Бумага",
+      "film": "Плёнка",
+      "application_label": "Применение",
+      "print": "Цветные этикетки",
+      "logistics": "Логистика и штрихкоды",
+      "rigid": "Жёсткие бутылки",
+      "squeeze": "Гибкая упаковка и сжимаемые флаконы",
+      "equipment": "Маркировка оборудования",
+      "a_d": "Сравнение вариантов A–D",
+      "view": "Смотреть материал",
+      "sample": "Подготовить запрос образца",
+      "rows_status": "Найдено: {count}",
+      "none": "Совпадений нет. Измените запрос или снимите фильтр.",
+      "reset": "Сбросить фильтры",
+      "wood_note": "Сравните расход термоклея 14 и 20 г/м² и посмотрите рекомендации по испытаниям.",
+      "coat_title": "Как выбрать первый образец",
+      "coat_intro": "Варианты A и C содержат 14 г/м² термоклея, варианты B и D — 20 г/м². Сравните A с B или C с D. В каждой паре лицевой материал и подложка одинаковы, а масса клеевого покрытия различается. Уточните, совпадает ли состав клея.",
+      "coat_smooth_title": "Гладкий сухой картон",
+      "coat_smooth": "Начните пробу с 14 г/м². Проверьте начальную липкость и осмотрите края после согласованного времени выдержки.",
+      "coat_rough_title": "Шероховатый гофрокартон",
+      "coat_rough": "Сравните A и B или C и D на одинаковом картоне при одинаковом давлении, температуре и времени выдержки. Проверьте прилегание и отслоение краёв.",
+      "coat_special_title": "Конденсат, заморозка, нагрев, ПЭ или ПП",
+      "coat_special": "Уточните марку клея и испытайте его на фактической упаковке при заданных условиях нанесения и эксплуатации.",
+      "adhesive_guide": "Руководство по выбору клея",
+      "nav": "Каталог продукции"
+    },
+    "products": {
+      "coated": {
+        "keywords": "полуглянцевая мелованная бумага полуглянец семиглянец semigloss цветная печать"
+      },
+      "thermal": {
+        "keywords": "термобумага прямая термопечать штрихкод логистика весы без риббона Eco Top"
+      },
+      "bopp": {
+        "keywords": "БОПП BOPP белая прозрачная полипропиленовая плёнка жёсткая бутылка конденсат охлаждение"
+      },
+      "pe": {
+        "keywords": "ПЭ PE полиэтилен гибкая упаковка сжимаемый флакон шампунь"
+      },
+      "pet": {
+        "keywords": "ПЭТ PET полиэстер полиэфирная плёнка маркировка оборудования"
+      },
+      "wood": {
+        "keywords": "немелованная бумага матовая бумага woodfree термоклей глассин A–D 60/14/50 60/20/50 70/14/60 70/20/60"
+      }
+    }
+  }
+}
