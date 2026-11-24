@@ -36,4 +36,6 @@ if os.environ['SITE_ORIGIN'] == 'https://rollobase-materials.onrender.com':
     homepage.write_text(homepage.read_text(encoding='utf-8').replace('</head>', verification + '</head>', 1), encoding='utf-8')
 from catalog_expansion import apply
 apply(dist, os.environ['SITE_ORIGIN'])
+from catalog_layout import apply_catalog_layout
+apply_catalog_layout(dist)
 print('Built',len(list(dist.glob('*.html'))),'pages for',os.environ['SITE_ORIGIN'])
