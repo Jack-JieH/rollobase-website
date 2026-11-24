@@ -30,7 +30,6 @@ def photo_html(key, media, copy):
             f'<figure class="site-photo site-photo-cutout{style}">'
             f'<img src="{src}" width="{width}" height="{height}" alt="{caption}" loading="lazy" decoding="async">'
             f'<figcaption>{escape(copy["display_only"])} · {caption}'
-            f'<small><a href="{escape(photo["page"])}">{escape(copy["edited_credit"])}</a></small>'
             '</figcaption></figure>'
         )
     cropped = f' · {escape(copy["cropped"])}' if photo.get('cropped') else ''
