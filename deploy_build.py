@@ -38,4 +38,6 @@ from catalog_expansion import apply
 apply(dist, os.environ['SITE_ORIGIN'])
 from catalog_layout import apply_catalog_layout
 apply_catalog_layout(dist)
+from news import apply_news
+apply_news(dist, os.environ['SITE_ORIGIN'])
 print('Built',len(list(dist.glob('*.html'))),'pages for',os.environ['SITE_ORIGIN'])
