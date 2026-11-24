@@ -33,5 +33,11 @@ def apply_unified_layout(dist):
   s=re.sub(r'<link rel="stylesheet" href="/catalog-layout.css[^\"]*">','',s)
   s=s.replace('</head>','<link rel="stylesheet" href="/catalog-layout.css"><link rel="stylesheet" href="/unified-layout.css"></head>')
   if path.name not in paths:s=s.replace('</body>',"<script>if(matchMedia('(max-width:760px)').matches)document.querySelector('.category-menu').open=false;</script></body>")
+  phone_labels=['Llamar a RolloBase','Call RolloBase','電話聯絡 RolloBase','Позвонить в RolloBase','电话联系 RolloBase']
+  wa_labels=['Contactar por WhatsApp','Contact on WhatsApp','透過 WhatsApp 聯絡','Связаться через WhatsApp','通过 WhatsApp 联系']
+  phone_icon='<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-3l-5-2-2 2a15 15 0 0 1-7-7l2-2-2-5Z"/></svg>'
+  wa_icon='<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.5L3 20.5l1.3-4.8A8.5 8.5 0 1 1 20.5 11.7Z"/><path d="m8.1 7.4-1 .6c-.7.5.4 3.4 2.5 5.4 2 2 4.5 2.9 5.2 2.2l.7-1.3-2.5-1.2-.8 1c-1.5-.6-2.7-1.8-3.3-3.3l.8-.8-1.6-2.6Z"/></svg>'
+  dock='<div class="contact-icons" role="group" aria-label="'+e(['Contacto','Contact','聯絡方式','Контакты','联系方式'][i])+'"><a class="contact-whatsapp" href="https://wa.me/8618588600270" target="_blank" rel="noopener noreferrer" aria-label="'+wa_labels[i]+'" title="'+wa_labels[i]+'">'+wa_icon+'</a><a class="contact-phone" href="tel:+8618588600270" aria-label="'+phone_labels[i]+'" title="'+phone_labels[i]+'">'+phone_icon+'</a></div>'
+  s=s.replace('</body>',dock+'</body>')
   (dist/path.name).write_text(s)
  (dist/'unified-layout.css').write_text(Path(__file__).with_name('unified-layout.css').read_text())
