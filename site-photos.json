@@ -81,6 +81,114 @@
         960,
         640
       ]
+    },
+    "jumbo-coated": {
+      "page": "https://haoyangpaper.com/zh/products/",
+      "file": "jumbo-coated.webp",
+      "size": [
+        880,
+        660
+      ],
+      "authorized_cutout": true
+    },
+    "jumbo-thermal": {
+      "page": "https://haoyangpaper.com/zh/products/",
+      "file": "jumbo-thermal.webp",
+      "size": [
+        880,
+        660
+      ],
+      "authorized_cutout": true
+    },
+    "jumbo-bopp": {
+      "page": "https://haoyangpaper.com/zh/products/",
+      "file": "jumbo-bopp.webp",
+      "size": [
+        880,
+        660
+      ],
+      "authorized_cutout": true
+    },
+    "jumbo-pet": {
+      "page": "https://haoyangpaper.com/zh/products/",
+      "file": "jumbo-pet.webp",
+      "size": [
+        880,
+        660
+      ],
+      "authorized_cutout": true
+    },
+    "jumbo-color-thermal": {
+      "page": "https://haoyangpaper.com/zh/products/",
+      "file": "jumbo-color-thermal.webp",
+      "size": [
+        880,
+        660
+      ],
+      "authorized_cutout": true
+    },
+    "jumbo-color-coated": {
+      "page": "https://haoyangpaper.com/zh/products/",
+      "file": "jumbo-color-coated.webp",
+      "size": [
+        880,
+        660
+      ],
+      "authorized_cutout": true
+    },
+    "jumbo-synthetic": {
+      "page": "https://haoyangpaper.com/zh/products/",
+      "file": "jumbo-synthetic.webp",
+      "size": [
+        880,
+        660
+      ],
+      "authorized_cutout": true
+    },
+    "release-liner": {
+      "page": "https://haoyangpaper.com/zh/products/",
+      "file": "release-liner.webp",
+      "size": [
+        880,
+        660
+      ],
+      "authorized_cutout": true
+    },
+    "ribbon-wax": {
+      "page": "https://haoyangpaper.com/zh/products/",
+      "file": "ribbon-wax.webp",
+      "size": [
+        660,
+        660
+      ],
+      "authorized_cutout": true
+    },
+    "ribbon-wax-resin": {
+      "page": "https://haoyangpaper.com/zh/products/",
+      "file": "ribbon-wax-resin.webp",
+      "size": [
+        880,
+        660
+      ],
+      "authorized_cutout": true
+    },
+    "ribbon-resin": {
+      "page": "https://haoyangpaper.com/zh/products/",
+      "file": "ribbon-resin.webp",
+      "size": [
+        800,
+        596
+      ],
+      "authorized_cutout": true
+    },
+    "label-applicator": {
+      "page": "https://haoyangpaper.com/zh/products/",
+      "file": "label-applicator.webp",
+      "size": [
+        880,
+        660
+      ],
+      "authorized_cutout": true
     }
   },
   "copy": {
@@ -94,7 +202,22 @@
       "photo_bottle": "Botella fría sin etiqueta, referencia de envase",
       "photo_rigid": "Envases de champú de colores, sin etiqueta",
       "photo_squeeze": "Envases flexibles para salsas",
-      "photo_parcel": "Etiqueta de envío sobre una caja de cartón"
+      "photo_parcel": "Etiqueta de envío sobre una caja de cartón",
+      "photo_jumbo-coated": "Bobina jumbo de papel estucado",
+      "photo_jumbo-thermal": "Bobina jumbo de papel térmico",
+      "photo_jumbo-bopp": "Bobina jumbo de película BOPP",
+      "photo_jumbo-pet": "Bobina jumbo de película PET",
+      "photo_jumbo-color-thermal": "Bobinas de papel térmico de color",
+      "photo_jumbo-color-coated": "Bobinas de papel estucado de color",
+      "photo_jumbo-synthetic": "Bobina de papel sintético",
+      "photo_release-liner": "Bobina de soporte siliconado",
+      "photo_ribbon-wax": "Cintas de transferencia térmica de cera",
+      "photo_ribbon-wax-resin": "Cintas de transferencia térmica de cera-resina",
+      "photo_ribbon-resin": "Cintas de transferencia térmica de resina",
+      "photo_label-applicator": "Etiquetadora de sobremesa",
+      "materials_gallery": "Bobinas de referencia y soporte siliconado",
+      "printing_gallery": "Cintas de transferencia térmica y etiquetado",
+      "edited_credit": "Foto original editada con autorización"
     },
     "en": {
       "source": "Photo source",
@@ -106,7 +229,22 @@
       "photo_bottle": "Unlabelled cold bottle, shown as a container reference",
       "photo_rigid": "Colourful unlabelled shampoo bottles",
       "photo_squeeze": "Squeezable condiment bottles",
-      "photo_parcel": "Shipping label on a cardboard box"
+      "photo_parcel": "Shipping label on a cardboard box",
+      "photo_jumbo-coated": "Coated paper jumbo roll",
+      "photo_jumbo-thermal": "Direct thermal paper jumbo roll",
+      "photo_jumbo-bopp": "BOPP film jumbo roll",
+      "photo_jumbo-pet": "PET film jumbo roll",
+      "photo_jumbo-color-thermal": "Coloured direct thermal paper rolls",
+      "photo_jumbo-color-coated": "Coloured coated paper rolls",
+      "photo_jumbo-synthetic": "Synthetic paper roll",
+      "photo_release-liner": "Release liner roll",
+      "photo_ribbon-wax": "Wax thermal-transfer ribbons",
+      "photo_ribbon-wax-resin": "Wax-resin thermal-transfer ribbons",
+      "photo_ribbon-resin": "Resin thermal-transfer ribbons",
+      "photo_label-applicator": "Tabletop label applicator",
+      "materials_gallery": "Reference rolls and release liner",
+      "printing_gallery": "Thermal-transfer ribbons and label application",
+      "edited_credit": "Original photo edited with permission"
     },
     "zh-Hant": {
       "source": "照片來源",
@@ -118,7 +256,22 @@
       "photo_bottle": "無標籤的冷藏瓶身，供容器外觀參考",
       "photo_rigid": "無標籤的彩色洗髮精瓶",
       "photo_squeeze": "可擠壓的調味料瓶",
-      "photo_parcel": "紙箱上的物流標籤"
+      "photo_parcel": "紙箱上的物流標籤",
+      "photo_jumbo-coated": "銅版紙母卷",
+      "photo_jumbo-thermal": "直熱感紙母卷",
+      "photo_jumbo-bopp": "BOPP 薄膜母卷",
+      "photo_jumbo-pet": "PET 薄膜母卷",
+      "photo_jumbo-color-thermal": "彩色熱感紙母卷",
+      "photo_jumbo-color-coated": "彩色銅版紙母卷",
+      "photo_jumbo-synthetic": "合成紙母卷",
+      "photo_release-liner": "離型底紙卷",
+      "photo_ribbon-wax": "蠟基熱轉印碳帶",
+      "photo_ribbon-wax-resin": "混合基熱轉印碳帶",
+      "photo_ribbon-resin": "樹脂基熱轉印碳帶",
+      "photo_label-applicator": "桌上型貼標設備",
+      "materials_gallery": "母卷與離型底材參考照片",
+      "printing_gallery": "熱轉印碳帶與貼標設備",
+      "edited_credit": "原照經授權去背換色"
     },
     "zh-Hans": {
       "source": "照片来源",
@@ -130,7 +283,22 @@
       "photo_bottle": "无标签的冷藏瓶身，供容器外观参考",
       "photo_rigid": "无标签的彩色洗发水瓶",
       "photo_squeeze": "可挤压的调味料瓶",
-      "photo_parcel": "纸箱上的物流标签"
+      "photo_parcel": "纸箱上的物流标签",
+      "photo_jumbo-coated": "Рулон мелованной бумаги",
+      "photo_jumbo-thermal": "Рулон термобумаги",
+      "photo_jumbo-bopp": "Рулон плёнки БОПП",
+      "photo_jumbo-pet": "Рулон плёнки ПЭТ",
+      "photo_jumbo-color-thermal": "Рулоны цветной термобумаги",
+      "photo_jumbo-color-coated": "Рулоны цветной мелованной бумаги",
+      "photo_jumbo-synthetic": "Рулон синтетической бумаги",
+      "photo_release-liner": "Рулон антиадгезионной бумаги",
+      "photo_ribbon-wax": "Восковые термотрансферные ленты",
+      "photo_ribbon-wax-resin": "Восково-смоляные термотрансферные ленты",
+      "photo_ribbon-resin": "Смоляные термотрансферные ленты",
+      "photo_label-applicator": "Настольный аппликатор этикеток",
+      "materials_gallery": "母卷与离型底材参考照片",
+      "printing_gallery": "热转印碳带与贴标设备",
+      "edited_credit": "原照经授权去背换色"
     },
     "ru": {
       "source": "Источник фото",
@@ -142,7 +310,22 @@
       "photo_bottle": "Охлаждённая бутылка без этикетки, пример тары",
       "photo_rigid": "Цветные флаконы для шампуня без этикеток",
       "photo_squeeze": "Мягкие бутылки для соусов",
-      "photo_parcel": "Транспортная этикетка на картонной коробке"
+      "photo_parcel": "Транспортная этикетка на картонной коробке",
+      "photo_jumbo-coated": "铜版纸母卷",
+      "photo_jumbo-thermal": "直热敏纸母卷",
+      "photo_jumbo-bopp": "BOPP 薄膜母卷",
+      "photo_jumbo-pet": "PET 薄膜母卷",
+      "photo_jumbo-color-thermal": "彩色热敏纸母卷",
+      "photo_jumbo-color-coated": "彩色铜版纸母卷",
+      "photo_jumbo-synthetic": "合成纸母卷",
+      "photo_release-liner": "离型底纸卷",
+      "photo_ribbon-wax": "蜡基热转印碳带",
+      "photo_ribbon-wax-resin": "混合基热转印碳带",
+      "photo_ribbon-resin": "树脂基热转印碳带",
+      "photo_label-applicator": "台式贴标设备",
+      "materials_gallery": "Примеры рулонов и антиадгезионной подложки",
+      "printing_gallery": "Термотрансферные ленты и аппликатор этикеток",
+      "edited_credit": "Фон изменён с разрешения правообладателя"
     }
   }
 }

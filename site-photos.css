@@ -97,3 +97,25 @@
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+.site-photo-cutout img {
+  background: #cfdcb1;
+  object-fit: contain;
+}
+
+.site-photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.site-photo-gallery .site-photo {
+  border: 1px solid #c8d4d8;
+}
+
+@media (max-width: 640px) {
+  .site-photo-gallery {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

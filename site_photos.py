@@ -13,8 +13,8 @@ from product_catalog import LOCALES, PRODUCTS
 
 ROOT = Path(__file__).parent
 CARD_PHOTOS = {
-    'coated': 'pack', 'thermal': 'parcel', 'bopp': 'rigid',
-    'pe': 'squeeze', 'pet': 'press', 'wood': 'roll',
+    'coated': 'jumbo-coated', 'thermal': 'jumbo-thermal', 'bopp': 'jumbo-bopp',
+    'pe': 'squeeze', 'pet': 'jumbo-pet', 'wood': 'roll',
 }
 
 
@@ -25,6 +25,14 @@ def photo_html(key, media, copy):
     width, height = photo['size']
     caption = escape(copy[f'photo_{key}'])
     style = f' site-photo-{key}'
+    if photo.get('authorized_cutout'):
+        return (
+            f'<figure class="site-photo site-photo-cutout{style}">'
+            f'<img src="{src}" width="{width}" height="{height}" alt="{caption}" loading="lazy" decoding="async">'
+            f'<figcaption>{escape(copy["display_only"])} · {caption}'
+            f'<small><a href="{escape(photo["page"])}">{escape(copy["edited_credit"])}</a></small>'
+            '</figcaption></figure>'
+        )
     cropped = f' · {escape(copy["cropped"])}' if photo.get('cropped') else ''
     return (
         f'<figure class="site-photo{style}"><img src="{src}" width="{width}" height="{height}" '
@@ -49,6 +57,13 @@ def add_site_photos(dist, groups):
 
         def pair(first, second):
             return '<div class="site-photo-pair">' + photo(first) + photo(second) + '</div>'
+
+        def gallery(title, section_id, photo_keys):
+            figures = ''.join(photo(key) for key in photo_keys)
+            return (
+                f'<section id="{section_id}"><h2>{escape(copy[title])}</h2>'
+                f'<div class="site-photo-gallery">{figures}</div></section>'
+            )
 
         def home_cards(section):
             html = section[0]
@@ -87,11 +102,26 @@ def add_site_photos(dist, groups):
 
         for page, first, second in (
             ('about', 'roll', 'press'), ('sourcing', 'press', 'pack'),
-            ('bopp', 'rigid', 'bottle'), ('coated', 'roll', 'pack'),
+            ('bopp', 'jumbo-bopp', 'bottle'), ('coated', 'jumbo-coated', 'pack'),
+            ('thermal', 'jumbo-thermal', 'parcel'), ('pet', 'jumbo-pet', 'press'),
         ):
             path = dist / groups[page][index]
             html = replace_once(
                 r'</section>', '</section>' + pair(first, second), path.read_text(encoding='utf-8'),
+            )
+            write_photos(path, html)
+
+        photo_galleries = (
+            ('guide', 'materials_gallery', 'material-photo-reference',
+             ('jumbo-color-thermal', 'jumbo-color-coated', 'jumbo-synthetic', 'release-liner')),
+            ('printing', 'printing_gallery', 'ribbons-equipment',
+             ('ribbon-wax', 'ribbon-wax-resin', 'ribbon-resin', 'label-applicator')),
+        )
+        for page, title, section_id, keys in photo_galleries:
+            path = dist / groups[page][index]
+            html = replace_once(
+                r'<p class="updated">', lambda marker: gallery(title, section_id, keys) + marker[0],
+                path.read_text(encoding='utf-8'),
             )
             write_photos(path, html)
 
