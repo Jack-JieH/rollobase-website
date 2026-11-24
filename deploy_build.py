@@ -34,4 +34,6 @@ if os.environ['SITE_ORIGIN'] == 'https://rollobase-materials.onrender.com':
     homepage = dist/'index.html'
     verification = '<meta name="google-site-verification" content="BxAOcnRNOY8abPEE5USKcO1PO-CD7UU5JoSyb8Jwb-I">'
     homepage.write_text(homepage.read_text(encoding='utf-8').replace('</head>', verification + '</head>', 1), encoding='utf-8')
+from catalog_expansion import apply
+apply(dist, os.environ['SITE_ORIGIN'])
 print('Built',len(list(dist.glob('*.html'))),'pages for',os.environ['SITE_ORIGIN'])
