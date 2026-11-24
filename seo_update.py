@@ -9,6 +9,7 @@ from buyer_specifications import apply_buyer_specifications
 from coat_weight_guide import add_coat_weight_guides
 from cold_bopp import GUIDE_DATE, GUIDE_FILE, add_cold_bopp_guide
 from design_update import apply_design, replace_once
+from editorial_guides import add_editorial_guides
 from knowledge import VisibleFAQ, UPDATED
 from localization import LocalizedPage
 from product_catalog import apply_product_catalog
@@ -323,6 +324,10 @@ def finalize_languages(dist, groups, origin, dates, catalog_copy):
     add_site_photos(dist, groups)
     normalize_page_links(dist, all_paths)
     normalize_asset_links(dist, all_paths)
+    reviewed = add_editorial_guides(dist, groups, LANGUAGES, canonical_path)
+    specification_groups = ('catalog', 'coated', 'thermal', 'bopp', 'pe', 'pet', 'woodfree', 'guide', 'quality', 'request')
+    reviewed.update(path for group in specification_groups for path in groups[group])
+    mark_reviewed(dist, dates, reviewed, '2026-11-24')
     dates[GUIDE_FILE] = GUIDE_DATE
     entries = ''.join(
         '<url><loc>' + url(path) + '</loc><lastmod>' + dates.get(path, UPDATED) + '</lastmod></url>'

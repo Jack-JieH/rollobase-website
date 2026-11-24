@@ -27,7 +27,7 @@ def labels(t):
         stock=t('Combinaciones de consulta. Disponibilidad y tolerancias sujetas a confirmación.','Inquiry constructions. Availability and tolerances require supplier confirmation.','以下為詢價組合，可供範圍及允差待供應商確認。'),
         specs=t('Construcción y datos para la prueba','Construction and trial specifications','三層結構與打樣規格'),
         TDS=t('Ficha técnica (TDS)','Technical data sheet (TDS)','技術資料表（TDS）'),
-        extra=t('Solicite el código del proveedor, la versión de la ficha, el método de ensayo, las tolerancias y las condiciones de almacenamiento y embalaje.','Request the supplier SKU, dated data sheet, test method, tolerances, storage conditions and packing specification.','請索取供應商料號、資料表版本、測試方法、允差、儲存條件及包裝規格。'),
+        extra=t('Solicite la versión de la ficha, el método de ensayo, las tolerancias y las condiciones de almacenamiento y embalaje.','Request the dated data sheet, test method, tolerances, storage conditions and packing specification.','請索取資料表版本、測試方法、允差、儲存條件及包裝規格。'),
     )
 
 def extra_pages(i,t,rows,keys,apps,guide,home,fields):
@@ -112,7 +112,7 @@ def extra_pages(i,t,rows,keys,apps,guide,home,fields):
     controls=select('mode',t('Solicitud','Request','需求'),[('sample',l['sample']),('quote',l['quote'])])
     controls+=select('material',l['face'],[('',t('Elegir material','Choose material','選擇材料')),*names.items()])
     controls+=select('option',t('Combinación','Construction','模造紙組合'),[('',l['pending'])]+[(k,k+' · '+'/'.join(map(str,v))+' g/m²') for k,v in options.items()])
-    specs=[('sku',t('Referencia del proveedor (si se conoce)','Supplier SKU (if known)','供應商料號（如有）')),('width',t('Ancho útil','Usable width','可用幅寬')+' (mm)'),('length',t('Longitud','Roll length','卷長')+' (m)'),('diameter',t('Diámetro exterior máximo','Maximum roll OD','最大卷外徑')+' (mm)'),('core',t('Diámetro interior del núcleo','Core ID','紙管內徑')+' (mm)'),('quantity',t('Superficie requerida','Required area','需求面積')+' (m²)'),('port',t('País y puerto de destino','Destination country and port','目的國與港口')),('surface',t('Superficie de aplicación','Application surface','被貼物表面')),('press',fields[4]),('temperature',fields[2]),('test',fields[-1])]
+    specs=[('width',t('Ancho útil','Usable width','可用幅寬')+' (mm)'),('length',t('Longitud','Roll length','卷長')+' (m)'),('diameter',t('Diámetro exterior máximo','Maximum roll OD','最大卷外徑')+' (mm)'),('core',t('Diámetro interior del núcleo','Core ID','紙管內徑')+' (mm)'),('quantity',t('Superficie requerida','Required area','需求面積')+' (m²)'),('port',t('País y puerto de destino','Destination country and port','目的國與港口')),('surface',t('Superficie de aplicación','Application surface','被貼物表面')),('press',fields[4]),('temperature',fields[2]),('test',fields[-1])]
     for k,n in specs:
         typ='type="number" min="0.01" step="any"' if k in ('width','length','diameter','core','quantity') else 'type="text"'
         controls+=f'<label>{n}<input name="{k}" {typ}></label>'

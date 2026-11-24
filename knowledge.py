@@ -26,7 +26,7 @@ META = {
   ['Revise la lista de empaque por bobina, CBM, peso neto y bruto. Acuerde medición del metraje, tolerancias y cálculo de faltantes antes del pedido.', 'Check roll-level packing lists, pallet CBM and net/gross weight. Agree length measurement, tolerances and shortage calculations before ordering.', '逐卷核對料號、批號、裝箱單、棧板 CBM 與淨毛重。透過卷長複驗步驟及有條件算例，事先約定允差、短碼折讓和索賠資料。']),
  'quality': (
   ['TDS, COA y trazabilidad de material autoadhesivo | RolloBase', 'Labelstock TDS, COA & roll traceability checklist | RolloBase', '不乾膠母卷 TDS、COA 與逐卷品質追溯 | RolloBase'],
-  ['Vincule referencia, lote, número de bobina, TDS y resultados de inspección. Sepa qué verificar en documentos FSC y declaraciones de uso alimentario.', 'Link SKU, batch, roll ID, TDS revision and inspection results. Learn what to check in FSC records and food-use documentation before approval.', '將供應商料號、批號、卷號、TDS 版本與 COA 檢驗結果串聯，查核 FSC 與食品用途文件的適用範圍，建立可追溯的採購紀錄。']),
+  ['Vincule lote, número de bobina, TDS y resultados de inspección. Sepa qué verificar en documentos FSC y declaraciones de uso alimentario.', 'Link batch, roll ID, TDS revision and inspection results. Learn what to check in FSC records and food-use documentation before approval.', '將批號、卷號、TDS 版本與 COA 檢驗結果串聯，查核 FSC 與食品用途文件的適用範圍，建立可追溯的採購紀錄。']),
  'printing': (
   ['Pruebas de impresión y compatibilidad de etiquetas | RolloBase', 'Labelstock printing compatibility & trial checklist | RolloBase', '不乾膠材料印刷相容性與試印驗證 | RolloBase'],
   ['Defina modelo, tinta o ribbon, referencia y ajustes antes de probar. Revise impresión, secado, códigos de barras, troquelado y aplicación.', 'Specify printer model, ink or ribbon, material SKU and settings. Check print, cure, barcodes, die-cutting and application before claiming compatibility.', '依精確機型、油墨或碳帶、材料料號與設定試印，檢查乾燥固化、條碼、模切排廢與實際試貼，保留相容性驗證紀錄。']),
@@ -55,8 +55,8 @@ QA = {
  'catalog': [
   (['¿Cómo elegir papel semibrillo, térmico directo o BOPP?', 'How do I choose coated paper, direct thermal or BOPP?', '銅版紙、熱感紙與 BOPP 如何選？'],
    ['Empiece por el uso: gráficos en envases secos, papel semibrillo; datos variables sin ribbon, térmico directo; etiquetas de botellas rígidas, BOPP. Después confirme impresión, adhesivo, humedad y temperatura con una muestra.', 'Start with the application: coated paper for graphics on dry packs, direct thermal for variable data without a ribbon, and BOPP for rigid bottles. Then trial the printing, adhesive, moisture and temperature conditions.', '先看用途：乾燥包裝圖文可評估銅版紙，免碳帶可變資料可評估熱感紙，硬質瓶標可評估 BOPP；接著以樣品確認印刷、膠種、潮濕與溫度條件。']),
-  (['¿El catálogo confirma existencias o un SKU?', 'Does this catalog confirm stock or a supplier SKU?', '目錄是否代表已有庫存或正式料號？'],
-   ['El catálogo organiza familias para consulta. La referencia del proveedor, TDS, ancho, longitud, tolerancias, MOQ y disponibilidad se confirman por escrito antes de aceptar el pedido.', 'The catalog organizes material families for inquiry. Supplier SKU, TDS, width, length, tolerances, MOQ and availability require written confirmation before order acceptance.', '此目錄用於材料選型與詢價。供應商料號、TDS、幅寬、卷長、允差、MOQ 與可供狀態，須在接單前逐項書面確認。']),
+  (['¿Cómo confirmo las existencias?', 'How do I confirm stock availability?', '如何確認供貨狀態？'],
+   ['El catálogo sirve para elegir el material y pedir cotización. Antes de confirmar el pedido, verifique por escrito la ficha técnica (TDS), el ancho, el metraje, las tolerancias, el pedido mínimo y la disponibilidad.', 'Use the catalog to select materials and request a quote. Confirm the TDS, roll width and length, tolerances, minimum order and availability in writing before order acceptance.', '此目錄供選材與詢價。接單前請以書面確認 TDS、幅寬、卷長、允差、起訂量及供貨狀態。']),
  ],
  'request': [
   (['¿Qué información necesita una muestra lista para probar?', 'What information is needed for a press-ready sample?', '索樣時要提供哪些資料？'],
@@ -127,8 +127,8 @@ QA = {
    ['No. Evalúe la etiqueta completa: película, adhesivo, impresión y protección superficial. Pruebe los líquidos, tiempos y temperaturas reales sobre el acabado del equipo; solicite resultados para la referencia elegida.', 'No. Assess the complete label: film, adhesive, printing and surface protection. Test the actual fluids, durations and temperatures on the equipment finish and request results for the chosen SKU.', '不能。應評估面膜、膠層、印刷及表面保護的完整標籤；以設備實際塗裝面、液體、接觸時間與溫度試驗，索取所選料號的結果。']),
  ],
  'woodfree': [
-  (['¿Las opciones A–D son referencias de stock?', 'Are A–D confirmed stock SKUs?', 'A～D 是正式庫存料號嗎？'],
-   ['A–D identifican combinaciones para solicitar prueba y cotización. Confirme referencia del proveedor, tolerancias, disponibilidad y TDS antes de ordenar. Los valores de la tabla son gramajes por capa, no espesores.', 'A–D identify constructions for sample and quote requests. Confirm supplier SKU, tolerances, availability and TDS before ordering. The table values are layer grammages, not thicknesses.', 'A～D 是用於索樣與詢價的組合代號。下單前須確認供應商料號、允差、供貨與 TDS。表格數值是各層克重，不是厚度。']),
+  (['¿Las opciones A–D están en stock?', 'Are A–D available from stock?', 'A～D 有現貨嗎？'],
+   ['A–D identifican combinaciones para solicitar prueba y cotización. Confirme tolerancias, disponibilidad y TDS antes de ordenar. Los valores de la tabla son gramajes por capa, no espesores.', 'A–D identify constructions for sample and quote requests. Confirm tolerances, availability and TDS before ordering. The table values are layer grammages, not thicknesses.', 'A～D 是用於索樣與詢價的組合代號。下單前須確認允差、供貨與 TDS。表格數值是各層克重，不是厚度。']),
  ],
 }
 
@@ -170,8 +170,8 @@ def enrich(key, i, body, routes, home, guide):
         body = body.replace('<section id="materials">', hub+'<section id="materials">', 1)
     body += faq_section(key, i)
     if key in ('coated','thermal','bopp','pe','pet','woodfree','guide','catalog'):
-        title=t('Datos que faltan para aprobar una referencia','Data needed to approve a material SKU','確認正式料號前的必備資料')
-        text=t('Solicite referencia y TDS vigente, ancho y longitud, tolerancias, temperatura mínima de aplicación, rango de servicio y condiciones de conservación. Los datos aún no verificados se mantienen por confirmar.', 'Request the supplier SKU and current TDS, width/length, tolerances, minimum application temperature, service range and storage conditions. Unverified values remain subject to confirmation.', '索取供應商料號與現行 TDS、寬長、允差、最低貼標溫度、使用溫度範圍及儲存條件。未經核實的數值仍須逐項確認。')
+        title=t('Datos que debe confirmar antes de comprar','Specifications to confirm before ordering','下單前應確認的規格')
+        text=t('Solicite la ficha técnica vigente (TDS), ancho y longitud, tolerancias, temperatura mínima de aplicación, rango de servicio y condiciones de conservación. Los datos aún no verificados se mantienen por confirmar.', 'Request the current TDS, width/length, tolerances, minimum application temperature, service range and storage conditions. Unverified values remain subject to confirmation.', '索取現行 TDS、寬長、允差、最低貼標溫度、使用溫度範圍及儲存條件。未經核實的數值仍須逐項確認。')
         body+=f'<section class="record-callout"><h2>{title}</h2><p>{text}</p><div class="toc"><a href="{routes["quality"][i]}">{t("Documentos y trazabilidad","Documents and traceability","文件與品質追溯")}</a><a href="{routes["printing"][i]}">{t("Plan de prueba de impresión","Printing trial checklist","印刷試驗清單")}</a></div></section>'
     body+=f'<p class="updated">{t("Contenido revisado", "Content reviewed", "內容更新")}：<time datetime="{UPDATED}">{UPDATED}</time></p>'
     return body
