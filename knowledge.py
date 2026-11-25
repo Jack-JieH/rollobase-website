@@ -131,7 +131,6 @@ QA = {
 }
 
 SOURCES = {
- 'request': [('ICC: Incoterms® 2020', 'https://iccwbo.org/business-solutions/incoterms-rules/incoterms-2020/'), ('ICC: choosing a rule', 'https://library.iccwbo.org/content/clp/Others/incoterms_2020_checklist_2024-update.pdf')],
  'sourcing': [('International Trade Administration: export documents', 'https://www.trade.gov/common-export-documents')],
  'quality': [('FSC: certificate search', 'https://connect.fsc.org/fsc-public-certificate-search'), ('European Commission: food contact materials', 'https://food.ec.europa.eu/food-safety/chemical-safety/food-contact-materials/legislation_en')],
  'printing': [('Zebra: direct thermal and thermal transfer', 'https://cpws.zebra.com/cpws/docs/general/direct_thermal.htm'), ('UPM: digital printing materials', 'https://www.adhesivematerials.upm.com/label-solutions/label-types/digital-printing/')],
