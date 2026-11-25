@@ -42,4 +42,6 @@ from news import apply_news
 apply_news(dist, os.environ['SITE_ORIGIN'])
 from unified_layout import apply_unified_layout
 apply_unified_layout(dist)
+from professional_update import apply_professional_update
+apply_professional_update(dist)
 print('Built',len(list(dist.glob('*.html'))),'pages for',os.environ['SITE_ORIGIN'])

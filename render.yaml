@@ -59,16 +59,6 @@
         },
         {
           "type": "rewrite",
-          "source": "/catalog-zh-cn",
-          "destination": "/catalog-zh-cn.html"
-        },
-        {
-          "type": "rewrite",
-          "source": "/catalog-zh",
-          "destination": "/catalog-zh.html"
-        },
-        {
-          "type": "rewrite",
           "source": "/coated-ru",
           "destination": "/coated-ru.html"
         },
@@ -111,21 +101,6 @@
           "type": "rewrite",
           "source": "/guide-zh-cn",
           "destination": "/guide-zh-cn.html"
-        },
-        {
-          "type": "rewrite",
-          "source": "/materiales",
-          "destination": "/materiales.html"
-        },
-        {
-          "type": "rewrite",
-          "source": "/materials-ru",
-          "destination": "/materials-ru.html"
-        },
-        {
-          "type": "rewrite",
-          "source": "/materials",
-          "destination": "/materials.html"
         },
         {
           "type": "rewrite",
@@ -356,6 +331,81 @@
           "type": "rewrite",
           "source": "/zh",
           "destination": "/zh.html"
+        },
+        {
+          "type": "redirect",
+          "source": "/materiales",
+          "destination": "/materiales-autoadhesivos-bobinas-madre"
+        },
+        {
+          "type": "redirect",
+          "source": "/materiales.html",
+          "destination": "/materiales-autoadhesivos-bobinas-madre"
+        },
+        {
+          "type": "rewrite",
+          "source": "/materiales-autoadhesivos-bobinas-madre",
+          "destination": "/materiales-autoadhesivos-bobinas-madre.html"
+        },
+        {
+          "type": "redirect",
+          "source": "/materials",
+          "destination": "/self-adhesive-labelstock-jumbo-rolls"
+        },
+        {
+          "type": "redirect",
+          "source": "/materials.html",
+          "destination": "/self-adhesive-labelstock-jumbo-rolls"
+        },
+        {
+          "type": "rewrite",
+          "source": "/self-adhesive-labelstock-jumbo-rolls",
+          "destination": "/self-adhesive-labelstock-jumbo-rolls.html"
+        },
+        {
+          "type": "redirect",
+          "source": "/catalog-zh",
+          "destination": "/labelstock-jumbo-rolls-zh"
+        },
+        {
+          "type": "redirect",
+          "source": "/catalog-zh.html",
+          "destination": "/labelstock-jumbo-rolls-zh"
+        },
+        {
+          "type": "rewrite",
+          "source": "/labelstock-jumbo-rolls-zh",
+          "destination": "/labelstock-jumbo-rolls-zh.html"
+        },
+        {
+          "type": "redirect",
+          "source": "/materials-ru",
+          "destination": "/labelstock-jumbo-rolls-ru"
+        },
+        {
+          "type": "redirect",
+          "source": "/materials-ru.html",
+          "destination": "/labelstock-jumbo-rolls-ru"
+        },
+        {
+          "type": "rewrite",
+          "source": "/labelstock-jumbo-rolls-ru",
+          "destination": "/labelstock-jumbo-rolls-ru.html"
+        },
+        {
+          "type": "redirect",
+          "source": "/catalog-zh-cn",
+          "destination": "/labelstock-jumbo-rolls-zh-cn"
+        },
+        {
+          "type": "redirect",
+          "source": "/catalog-zh-cn.html",
+          "destination": "/labelstock-jumbo-rolls-zh-cn"
+        },
+        {
+          "type": "rewrite",
+          "source": "/labelstock-jumbo-rolls-zh-cn",
+          "destination": "/labelstock-jumbo-rolls-zh-cn.html"
         }
       ]
     }

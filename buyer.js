@@ -14,6 +14,20 @@ if (searchBox) {
 document.querySelector('.print-sheet')?.addEventListener('click', () => window.print())
 const form = document.querySelector('#inquiry')
 if (form) {
+  const whatsapp = document.querySelector('#send-whatsapp')
+  function requestLines() {
+    const lines = ['RolloBase', document.querySelector('main h1').textContent, '']
+    for (const field of form.querySelectorAll('input,select')) {
+      if (field.disabled || !field.value.trim()) continue
+      const value = field.selectedOptions ? field.selectedOptions[0].textContent : field.value
+      lines.push(field.labels[0].firstChild.textContent.trim() + ': ' + value)
+    }
+    if (form.dataset.contact) lines.push('', form.dataset.contact)
+    return lines
+  }
+  function updateWhatsapp() {
+    if (whatsapp) whatsapp.href = 'https://wa.me/8618588600270?text=' + encodeURIComponent(requestLines().join('\n'))
+  }
   const params = new URLSearchParams(location.search)
   for (const select of form.querySelectorAll('select')) {
     const wanted = params.get(select.name)
@@ -41,18 +55,14 @@ if (form) {
       url.search = query
       link.href = url
     }
+    updateWhatsapp()
   }
   update()
   form.addEventListener('change', update)
+  form.addEventListener('input', updateWhatsapp)
   form.addEventListener('submit', event => {
     event.preventDefault()
-    const lines = ['RolloBase',document.querySelector('main h1').textContent,'']
-    for (const field of form.querySelectorAll('input,select')) {
-      if (field.disabled || !field.value.trim()) continue
-      const value = field.selectedOptions ? field.selectedOptions[0].textContent : field.value
-      lines.push(field.labels[0].firstChild.textContent.trim()+': '+value)
-    }
-    if (form.dataset.contact) lines.push('', form.dataset.contact)
+    const lines = requestLines()
     const blob = new Blob(['\uFEFF'+lines.join('\n')+'\n'],{type:'text/plain;charset=utf-8'})
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
