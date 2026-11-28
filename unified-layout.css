@@ -98,3 +98,26 @@ html{background:#fff;color:#163338;font:15px/1.7 Arial,'Noto Sans TC',sans-serif
     outline: 2px solid var(--teal);
     outline-offset: 2px;
 }
+
+@media (max-width: 760px) {
+    #inquiry .sample-specs {
+        margin-top: 1rem;
+        border-block: 1px solid #dce4df;
+    }
+
+    #inquiry .sample-specs summary {
+        padding: .85rem .25rem;
+        color: var(--teal);
+        cursor: pointer;
+        font-weight: 700;
+    }
+
+    #inquiry .sample-specs summary:focus-visible {
+        outline: 2px solid var(--teal);
+        outline-offset: 2px;
+    }
+
+    #inquiry .sample-specs[open] .fieldgrid {
+        padding-bottom: 1rem;
+    }
+}

@@ -9,202 +9,7 @@
       "routes": [
         {
           "type": "redirect",
-          "source": "/abastecimiento.html",
-          "destination": "/abastecimiento"
-        },
-        {
-          "type": "redirect",
-          "source": "/about-ru.html",
-          "destination": "/about-ru"
-        },
-        {
-          "type": "redirect",
-          "source": "/about-zh-cn.html",
-          "destination": "/about-zh-cn"
-        },
-        {
-          "type": "redirect",
-          "source": "/about-zh.html",
-          "destination": "/about-zh"
-        },
-        {
-          "type": "redirect",
-          "source": "/about.html",
-          "destination": "/about"
-        },
-        {
-          "type": "redirect",
-          "source": "/bopp-film.html",
-          "destination": "/bopp-film"
-        },
-        {
-          "type": "redirect",
-          "source": "/bopp-ru.html",
-          "destination": "/bopp-ru"
-        },
-        {
-          "type": "redirect",
-          "source": "/bopp-zh-cn.html",
-          "destination": "/bopp-zh-cn"
-        },
-        {
-          "type": "redirect",
-          "source": "/bopp-zh.html",
-          "destination": "/bopp-zh"
-        },
-        {
-          "type": "redirect",
-          "source": "/calidad-trazabilidad.html",
-          "destination": "/calidad-trazabilidad"
-        },
-        {
-          "type": "redirect",
-          "source": "/catalog-zh",
-          "destination": "/labelstock-jumbo-rolls-zh"
-        },
-        {
-          "type": "redirect",
-          "source": "/catalog-zh-cn",
-          "destination": "/labelstock-jumbo-rolls-zh-cn"
-        },
-        {
-          "type": "redirect",
-          "source": "/catalog-zh-cn.html",
-          "destination": "/labelstock-jumbo-rolls-zh-cn"
-        },
-        {
-          "type": "redirect",
-          "source": "/catalog-zh.html",
-          "destination": "/labelstock-jumbo-rolls-zh"
-        },
-        {
-          "type": "redirect",
-          "source": "/coated-ru.html",
-          "destination": "/coated-ru"
-        },
-        {
-          "type": "redirect",
-          "source": "/coated-zh-cn.html",
-          "destination": "/coated-zh-cn"
-        },
-        {
-          "type": "redirect",
-          "source": "/coated-zh.html",
-          "destination": "/coated-zh"
-        },
-        {
-          "type": "redirect",
-          "source": "/color-coated-en.html",
-          "destination": "/color-coated-en"
-        },
-        {
-          "type": "redirect",
-          "source": "/color-coated-es.html",
-          "destination": "/color-coated-es"
-        },
-        {
-          "type": "redirect",
-          "source": "/color-coated-ru.html",
-          "destination": "/color-coated-ru"
-        },
-        {
-          "type": "redirect",
-          "source": "/color-coated-zh-cn.html",
-          "destination": "/color-coated-zh-cn"
-        },
-        {
-          "type": "redirect",
-          "source": "/color-coated-zh.html",
-          "destination": "/color-coated-zh"
-        },
-        {
-          "type": "redirect",
-          "source": "/color-thermal-en.html",
-          "destination": "/color-thermal-en"
-        },
-        {
-          "type": "redirect",
-          "source": "/color-thermal-es.html",
-          "destination": "/color-thermal-es"
-        },
-        {
-          "type": "redirect",
-          "source": "/color-thermal-ru.html",
-          "destination": "/color-thermal-ru"
-        },
-        {
-          "type": "redirect",
-          "source": "/color-thermal-zh-cn.html",
-          "destination": "/color-thermal-zh-cn"
-        },
-        {
-          "type": "redirect",
-          "source": "/color-thermal-zh.html",
-          "destination": "/color-thermal-zh"
-        },
-        {
-          "type": "redirect",
-          "source": "/cotizacion-muestras.html",
-          "destination": "/cotizacion-muestras"
-        },
-        {
-          "type": "redirect",
-          "source": "/direct-thermal-paper.html",
-          "destination": "/direct-thermal-paper"
-        },
-        {
-          "type": "redirect",
-          "source": "/empresa.html",
-          "destination": "/empresa"
-        },
-        {
-          "type": "redirect",
-          "source": "/en.html",
-          "destination": "/en"
-        },
-        {
-          "type": "redirect",
-          "source": "/guia-bopp-botellas-refrigeradas.html",
-          "destination": "/guia-bopp-botellas-refrigeradas"
-        },
-        {
-          "type": "redirect",
-          "source": "/guide-zh-cn.html",
-          "destination": "/guide-zh-cn"
-        },
-        {
-          "type": "redirect",
-          "source": "/index",
-          "destination": "/"
-        },
-        {
-          "type": "redirect",
-          "source": "/index.html",
-          "destination": "/"
-        },
-        {
-          "type": "redirect",
-          "source": "/labelstock-jumbo-rolls-ru.html",
-          "destination": "/labelstock-jumbo-rolls-ru"
-        },
-        {
-          "type": "redirect",
-          "source": "/labelstock-jumbo-rolls-zh-cn.html",
-          "destination": "/labelstock-jumbo-rolls-zh-cn"
-        },
-        {
-          "type": "redirect",
-          "source": "/labelstock-jumbo-rolls-zh.html",
-          "destination": "/labelstock-jumbo-rolls-zh"
-        },
-        {
-          "type": "redirect",
           "source": "/materiales",
-          "destination": "/materiales-autoadhesivos-bobinas-madre"
-        },
-        {
-          "type": "redirect",
-          "source": "/materiales-autoadhesivos-bobinas-madre.html",
           "destination": "/materiales-autoadhesivos-bobinas-madre"
         },
         {
@@ -219,6 +24,21 @@
         },
         {
           "type": "redirect",
+          "source": "/materials.html",
+          "destination": "/self-adhesive-labelstock-jumbo-rolls"
+        },
+        {
+          "type": "redirect",
+          "source": "/catalog-zh",
+          "destination": "/labelstock-jumbo-rolls-zh"
+        },
+        {
+          "type": "redirect",
+          "source": "/catalog-zh.html",
+          "destination": "/labelstock-jumbo-rolls-zh"
+        },
+        {
+          "type": "redirect",
           "source": "/materials-ru",
           "destination": "/labelstock-jumbo-rolls-ru"
         },
@@ -229,468 +49,28 @@
         },
         {
           "type": "redirect",
-          "source": "/materials.html",
-          "destination": "/self-adhesive-labelstock-jumbo-rolls"
+          "source": "/catalog-zh-cn",
+          "destination": "/labelstock-jumbo-rolls-zh-cn"
         },
         {
           "type": "redirect",
-          "source": "/news-bopp-vs-pe-en.html",
-          "destination": "/news-bopp-vs-pe-en"
+          "source": "/catalog-zh-cn.html",
+          "destination": "/labelstock-jumbo-rolls-zh-cn"
         },
         {
           "type": "redirect",
-          "source": "/news-bopp-vs-pe-es.html",
-          "destination": "/news-bopp-vs-pe-es"
+          "source": "/index.html",
+          "destination": "/"
         },
         {
           "type": "redirect",
-          "source": "/news-bopp-vs-pe-ru.html",
-          "destination": "/news-bopp-vs-pe-ru"
+          "source": "/index",
+          "destination": "/"
         },
         {
           "type": "redirect",
-          "source": "/news-bopp-vs-pe-zh-cn.html",
-          "destination": "/news-bopp-vs-pe-zh-cn"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-bopp-vs-pe-zh.html",
-          "destination": "/news-bopp-vs-pe-zh"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-choose-labelstock-en.html",
-          "destination": "/news-choose-labelstock-en"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-choose-labelstock-es.html",
-          "destination": "/news-choose-labelstock-es"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-choose-labelstock-ru.html",
-          "destination": "/news-choose-labelstock-ru"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-choose-labelstock-zh-cn.html",
-          "destination": "/news-choose-labelstock-zh-cn"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-choose-labelstock-zh.html",
-          "destination": "/news-choose-labelstock-zh"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-en.html",
-          "destination": "/news-en"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-es.html",
-          "destination": "/news-es"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-label-adhesion-troubleshooting-en.html",
-          "destination": "/news-label-adhesion-troubleshooting-en"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-label-adhesion-troubleshooting-es.html",
-          "destination": "/news-label-adhesion-troubleshooting-es"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-label-adhesion-troubleshooting-ru.html",
-          "destination": "/news-label-adhesion-troubleshooting-ru"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-label-adhesion-troubleshooting-zh-cn.html",
-          "destination": "/news-label-adhesion-troubleshooting-zh-cn"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-label-adhesion-troubleshooting-zh.html",
-          "destination": "/news-label-adhesion-troubleshooting-zh"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-master-roll-quotation-en.html",
-          "destination": "/news-master-roll-quotation-en"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-master-roll-quotation-es.html",
-          "destination": "/news-master-roll-quotation-es"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-master-roll-quotation-ru.html",
-          "destination": "/news-master-roll-quotation-ru"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-master-roll-quotation-zh-cn.html",
-          "destination": "/news-master-roll-quotation-zh-cn"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-master-roll-quotation-zh.html",
-          "destination": "/news-master-roll-quotation-zh"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-ru.html",
-          "destination": "/news-ru"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-thermal-vs-semigloss-en.html",
-          "destination": "/news-thermal-vs-semigloss-en"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-thermal-vs-semigloss-es.html",
-          "destination": "/news-thermal-vs-semigloss-es"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-thermal-vs-semigloss-ru.html",
-          "destination": "/news-thermal-vs-semigloss-ru"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-thermal-vs-semigloss-zh-cn.html",
-          "destination": "/news-thermal-vs-semigloss-zh-cn"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-thermal-vs-semigloss-zh.html",
-          "destination": "/news-thermal-vs-semigloss-zh"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-woodfree-a-d-en.html",
-          "destination": "/news-woodfree-a-d-en"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-woodfree-a-d-es.html",
-          "destination": "/news-woodfree-a-d-es"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-woodfree-a-d-ru.html",
-          "destination": "/news-woodfree-a-d-ru"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-woodfree-a-d-zh-cn.html",
-          "destination": "/news-woodfree-a-d-zh-cn"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-woodfree-a-d-zh.html",
-          "destination": "/news-woodfree-a-d-zh"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-zh-cn.html",
-          "destination": "/news-zh-cn"
-        },
-        {
-          "type": "redirect",
-          "source": "/news-zh.html",
-          "destination": "/news-zh"
-        },
-        {
-          "type": "redirect",
-          "source": "/papel-no-estucado.html",
-          "destination": "/papel-no-estucado"
-        },
-        {
-          "type": "redirect",
-          "source": "/papel-semibrillante.html",
-          "destination": "/papel-semibrillante"
-        },
-        {
-          "type": "redirect",
-          "source": "/papel-termico-directo.html",
-          "destination": "/papel-termico-directo"
-        },
-        {
-          "type": "redirect",
-          "source": "/pe-film.html",
-          "destination": "/pe-film"
-        },
-        {
-          "type": "redirect",
-          "source": "/pe-ru.html",
-          "destination": "/pe-ru"
-        },
-        {
-          "type": "redirect",
-          "source": "/pe-zh-cn.html",
-          "destination": "/pe-zh-cn"
-        },
-        {
-          "type": "redirect",
-          "source": "/pe-zh.html",
-          "destination": "/pe-zh"
-        },
-        {
-          "type": "redirect",
-          "source": "/pelicula-bopp.html",
-          "destination": "/pelicula-bopp"
-        },
-        {
-          "type": "redirect",
-          "source": "/pelicula-pe.html",
-          "destination": "/pelicula-pe"
-        },
-        {
-          "type": "redirect",
-          "source": "/pelicula-pet.html",
-          "destination": "/pelicula-pet"
-        },
-        {
-          "type": "redirect",
-          "source": "/pet-film.html",
-          "destination": "/pet-film"
-        },
-        {
-          "type": "redirect",
-          "source": "/pet-ru.html",
-          "destination": "/pet-ru"
-        },
-        {
-          "type": "redirect",
-          "source": "/pet-zh-cn.html",
-          "destination": "/pet-zh-cn"
-        },
-        {
-          "type": "redirect",
-          "source": "/pet-zh.html",
-          "destination": "/pet-zh"
-        },
-        {
-          "type": "redirect",
-          "source": "/printing-compatibility.html",
-          "destination": "/printing-compatibility"
-        },
-        {
-          "type": "redirect",
-          "source": "/printing-ru.html",
-          "destination": "/printing-ru"
-        },
-        {
-          "type": "redirect",
-          "source": "/printing-zh-cn.html",
-          "destination": "/printing-zh-cn"
-        },
-        {
-          "type": "redirect",
-          "source": "/printing-zh.html",
-          "destination": "/printing-zh"
-        },
-        {
-          "type": "redirect",
-          "source": "/productos.html",
-          "destination": "/productos"
-        },
-        {
-          "type": "redirect",
-          "source": "/products-ru.html",
-          "destination": "/products-ru"
-        },
-        {
-          "type": "redirect",
-          "source": "/products-zh.html",
-          "destination": "/products-zh"
-        },
-        {
-          "type": "redirect",
-          "source": "/products.html",
-          "destination": "/products"
-        },
-        {
-          "type": "redirect",
-          "source": "/pruebas-impresion.html",
-          "destination": "/pruebas-impresion"
-        },
-        {
-          "type": "redirect",
-          "source": "/quality-ru.html",
-          "destination": "/quality-ru"
-        },
-        {
-          "type": "redirect",
-          "source": "/quality-traceability.html",
-          "destination": "/quality-traceability"
-        },
-        {
-          "type": "redirect",
-          "source": "/quality-zh-cn.html",
-          "destination": "/quality-zh-cn"
-        },
-        {
-          "type": "redirect",
-          "source": "/quality-zh.html",
-          "destination": "/quality-zh"
-        },
-        {
-          "type": "redirect",
-          "source": "/quote-sample.html",
-          "destination": "/quote-sample"
-        },
-        {
-          "type": "redirect",
-          "source": "/release-paper-en.html",
-          "destination": "/release-paper-en"
-        },
-        {
-          "type": "redirect",
-          "source": "/release-paper-es.html",
-          "destination": "/release-paper-es"
-        },
-        {
-          "type": "redirect",
-          "source": "/release-paper-ru.html",
-          "destination": "/release-paper-ru"
-        },
-        {
-          "type": "redirect",
-          "source": "/release-paper-zh-cn.html",
-          "destination": "/release-paper-zh-cn"
-        },
-        {
-          "type": "redirect",
-          "source": "/release-paper-zh.html",
-          "destination": "/release-paper-zh"
-        },
-        {
-          "type": "redirect",
-          "source": "/request-ru.html",
-          "destination": "/request-ru"
-        },
-        {
-          "type": "redirect",
-          "source": "/request-zh-cn.html",
-          "destination": "/request-zh-cn"
-        },
-        {
-          "type": "redirect",
-          "source": "/request-zh.html",
-          "destination": "/request-zh"
-        },
-        {
-          "type": "redirect",
-          "source": "/ru.html",
-          "destination": "/ru"
-        },
-        {
-          "type": "redirect",
-          "source": "/self-adhesive-labelstock-jumbo-rolls.html",
-          "destination": "/self-adhesive-labelstock-jumbo-rolls"
-        },
-        {
-          "type": "redirect",
-          "source": "/semi-gloss-coated-paper.html",
-          "destination": "/semi-gloss-coated-paper"
-        },
-        {
-          "type": "redirect",
-          "source": "/sourcing-ru.html",
-          "destination": "/sourcing-ru"
-        },
-        {
-          "type": "redirect",
-          "source": "/sourcing-zh-cn.html",
-          "destination": "/sourcing-zh-cn"
-        },
-        {
-          "type": "redirect",
-          "source": "/sourcing-zh.html",
-          "destination": "/sourcing-zh"
-        },
-        {
-          "type": "redirect",
-          "source": "/sourcing.html",
-          "destination": "/sourcing"
-        },
-        {
-          "type": "redirect",
-          "source": "/synthetic-paper-en.html",
-          "destination": "/synthetic-paper-en"
-        },
-        {
-          "type": "redirect",
-          "source": "/synthetic-paper-es.html",
-          "destination": "/synthetic-paper-es"
-        },
-        {
-          "type": "redirect",
-          "source": "/synthetic-paper-ru.html",
-          "destination": "/synthetic-paper-ru"
-        },
-        {
-          "type": "redirect",
-          "source": "/synthetic-paper-zh-cn.html",
-          "destination": "/synthetic-paper-zh-cn"
-        },
-        {
-          "type": "redirect",
-          "source": "/synthetic-paper-zh.html",
-          "destination": "/synthetic-paper-zh"
-        },
-        {
-          "type": "redirect",
-          "source": "/thermal-ru.html",
-          "destination": "/thermal-ru"
-        },
-        {
-          "type": "redirect",
-          "source": "/thermal-zh-cn.html",
-          "destination": "/thermal-zh-cn"
-        },
-        {
-          "type": "redirect",
-          "source": "/thermal-zh.html",
-          "destination": "/thermal-zh"
-        },
-        {
-          "type": "redirect",
-          "source": "/uncoated-woodfree.html",
-          "destination": "/uncoated-woodfree"
-        },
-        {
-          "type": "redirect",
-          "source": "/woodfree-ru.html",
-          "destination": "/woodfree-ru"
-        },
-        {
-          "type": "redirect",
-          "source": "/woodfree-zh-cn.html",
-          "destination": "/woodfree-zh-cn"
-        },
-        {
-          "type": "redirect",
-          "source": "/woodfree-zh.html",
-          "destination": "/woodfree-zh"
-        },
-        {
-          "type": "redirect",
-          "source": "/zh-cn.html",
-          "destination": "/zh-cn"
-        },
-        {
-          "type": "redirect",
-          "source": "/zh.html",
-          "destination": "/zh"
+          "source": "/:page.html",
+          "destination": "/:page"
         },
         {
           "type": "rewrite",
@@ -699,8 +79,758 @@
         },
         {
           "type": "rewrite",
-          "source": "/:page",
-          "destination": "/_pages/:page.htm"
+          "source": "/abastecimiento",
+          "destination": "/_pages/abastecimiento.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/about",
+          "destination": "/_pages/about.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/about-ja",
+          "destination": "/_pages/about-ja.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/about-ru",
+          "destination": "/_pages/about-ru.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/about-zh",
+          "destination": "/_pages/about-zh.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/about-zh-cn",
+          "destination": "/_pages/about-zh-cn.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/bopp-film",
+          "destination": "/_pages/bopp-film.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/bopp-ja",
+          "destination": "/_pages/bopp-ja.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/bopp-ru",
+          "destination": "/_pages/bopp-ru.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/bopp-zh",
+          "destination": "/_pages/bopp-zh.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/bopp-zh-cn",
+          "destination": "/_pages/bopp-zh-cn.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/calidad-trazabilidad",
+          "destination": "/_pages/calidad-trazabilidad.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/coated-ja",
+          "destination": "/_pages/coated-ja.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/coated-ru",
+          "destination": "/_pages/coated-ru.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/coated-zh",
+          "destination": "/_pages/coated-zh.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/coated-zh-cn",
+          "destination": "/_pages/coated-zh-cn.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/cold-bopp-ja",
+          "destination": "/_pages/cold-bopp-ja.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/color-coated-en",
+          "destination": "/_pages/color-coated-en.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/color-coated-es",
+          "destination": "/_pages/color-coated-es.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/color-coated-ja",
+          "destination": "/_pages/color-coated-ja.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/color-coated-ru",
+          "destination": "/_pages/color-coated-ru.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/color-coated-zh",
+          "destination": "/_pages/color-coated-zh.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/color-coated-zh-cn",
+          "destination": "/_pages/color-coated-zh-cn.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/color-thermal-en",
+          "destination": "/_pages/color-thermal-en.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/color-thermal-es",
+          "destination": "/_pages/color-thermal-es.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/color-thermal-ja",
+          "destination": "/_pages/color-thermal-ja.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/color-thermal-ru",
+          "destination": "/_pages/color-thermal-ru.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/color-thermal-zh",
+          "destination": "/_pages/color-thermal-zh.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/color-thermal-zh-cn",
+          "destination": "/_pages/color-thermal-zh-cn.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/cotizacion-muestras",
+          "destination": "/_pages/cotizacion-muestras.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/direct-thermal-paper",
+          "destination": "/_pages/direct-thermal-paper.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/empresa",
+          "destination": "/_pages/empresa.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/en",
+          "destination": "/_pages/en.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/guia-bopp-botellas-refrigeradas",
+          "destination": "/_pages/guia-bopp-botellas-refrigeradas.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/guide-zh-cn",
+          "destination": "/_pages/guide-zh-cn.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/ja",
+          "destination": "/_pages/ja.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/labelstock-jumbo-rolls-ru",
+          "destination": "/_pages/labelstock-jumbo-rolls-ru.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/labelstock-jumbo-rolls-zh",
+          "destination": "/_pages/labelstock-jumbo-rolls-zh.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/labelstock-jumbo-rolls-zh-cn",
+          "destination": "/_pages/labelstock-jumbo-rolls-zh-cn.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/materiales-autoadhesivos-bobinas-madre",
+          "destination": "/_pages/materiales-autoadhesivos-bobinas-madre.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/materials-ja",
+          "destination": "/_pages/materials-ja.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-bopp-vs-pe-en",
+          "destination": "/_pages/news-bopp-vs-pe-en.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-bopp-vs-pe-es",
+          "destination": "/_pages/news-bopp-vs-pe-es.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-bopp-vs-pe-ja",
+          "destination": "/_pages/news-bopp-vs-pe-ja.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-bopp-vs-pe-ru",
+          "destination": "/_pages/news-bopp-vs-pe-ru.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-bopp-vs-pe-zh",
+          "destination": "/_pages/news-bopp-vs-pe-zh.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-bopp-vs-pe-zh-cn",
+          "destination": "/_pages/news-bopp-vs-pe-zh-cn.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-choose-labelstock-en",
+          "destination": "/_pages/news-choose-labelstock-en.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-choose-labelstock-es",
+          "destination": "/_pages/news-choose-labelstock-es.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-choose-labelstock-ja",
+          "destination": "/_pages/news-choose-labelstock-ja.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-choose-labelstock-ru",
+          "destination": "/_pages/news-choose-labelstock-ru.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-choose-labelstock-zh",
+          "destination": "/_pages/news-choose-labelstock-zh.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-choose-labelstock-zh-cn",
+          "destination": "/_pages/news-choose-labelstock-zh-cn.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-en",
+          "destination": "/_pages/news-en.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-es",
+          "destination": "/_pages/news-es.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-ja",
+          "destination": "/_pages/news-ja.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-label-adhesion-troubleshooting-en",
+          "destination": "/_pages/news-label-adhesion-troubleshooting-en.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-label-adhesion-troubleshooting-es",
+          "destination": "/_pages/news-label-adhesion-troubleshooting-es.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-label-adhesion-troubleshooting-ja",
+          "destination": "/_pages/news-label-adhesion-troubleshooting-ja.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-label-adhesion-troubleshooting-ru",
+          "destination": "/_pages/news-label-adhesion-troubleshooting-ru.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-label-adhesion-troubleshooting-zh",
+          "destination": "/_pages/news-label-adhesion-troubleshooting-zh.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-label-adhesion-troubleshooting-zh-cn",
+          "destination": "/_pages/news-label-adhesion-troubleshooting-zh-cn.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-master-roll-quotation-en",
+          "destination": "/_pages/news-master-roll-quotation-en.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-master-roll-quotation-es",
+          "destination": "/_pages/news-master-roll-quotation-es.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-master-roll-quotation-ja",
+          "destination": "/_pages/news-master-roll-quotation-ja.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-master-roll-quotation-ru",
+          "destination": "/_pages/news-master-roll-quotation-ru.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-master-roll-quotation-zh",
+          "destination": "/_pages/news-master-roll-quotation-zh.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-master-roll-quotation-zh-cn",
+          "destination": "/_pages/news-master-roll-quotation-zh-cn.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-ru",
+          "destination": "/_pages/news-ru.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-thermal-vs-semigloss-en",
+          "destination": "/_pages/news-thermal-vs-semigloss-en.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-thermal-vs-semigloss-es",
+          "destination": "/_pages/news-thermal-vs-semigloss-es.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-thermal-vs-semigloss-ja",
+          "destination": "/_pages/news-thermal-vs-semigloss-ja.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-thermal-vs-semigloss-ru",
+          "destination": "/_pages/news-thermal-vs-semigloss-ru.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-thermal-vs-semigloss-zh",
+          "destination": "/_pages/news-thermal-vs-semigloss-zh.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-thermal-vs-semigloss-zh-cn",
+          "destination": "/_pages/news-thermal-vs-semigloss-zh-cn.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-woodfree-a-d-en",
+          "destination": "/_pages/news-woodfree-a-d-en.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-woodfree-a-d-es",
+          "destination": "/_pages/news-woodfree-a-d-es.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-woodfree-a-d-ja",
+          "destination": "/_pages/news-woodfree-a-d-ja.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-woodfree-a-d-ru",
+          "destination": "/_pages/news-woodfree-a-d-ru.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-woodfree-a-d-zh",
+          "destination": "/_pages/news-woodfree-a-d-zh.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-woodfree-a-d-zh-cn",
+          "destination": "/_pages/news-woodfree-a-d-zh-cn.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-zh",
+          "destination": "/_pages/news-zh.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/news-zh-cn",
+          "destination": "/_pages/news-zh-cn.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/papel-no-estucado",
+          "destination": "/_pages/papel-no-estucado.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/papel-semibrillante",
+          "destination": "/_pages/papel-semibrillante.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/papel-termico-directo",
+          "destination": "/_pages/papel-termico-directo.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/pe-film",
+          "destination": "/_pages/pe-film.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/pe-ja",
+          "destination": "/_pages/pe-ja.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/pe-ru",
+          "destination": "/_pages/pe-ru.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/pe-zh",
+          "destination": "/_pages/pe-zh.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/pe-zh-cn",
+          "destination": "/_pages/pe-zh-cn.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/pelicula-bopp",
+          "destination": "/_pages/pelicula-bopp.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/pelicula-pe",
+          "destination": "/_pages/pelicula-pe.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/pelicula-pet",
+          "destination": "/_pages/pelicula-pet.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/pet-film",
+          "destination": "/_pages/pet-film.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/pet-ja",
+          "destination": "/_pages/pet-ja.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/pet-ru",
+          "destination": "/_pages/pet-ru.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/pet-zh",
+          "destination": "/_pages/pet-zh.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/pet-zh-cn",
+          "destination": "/_pages/pet-zh-cn.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/printing-compatibility",
+          "destination": "/_pages/printing-compatibility.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/printing-ja",
+          "destination": "/_pages/printing-ja.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/printing-ru",
+          "destination": "/_pages/printing-ru.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/printing-zh",
+          "destination": "/_pages/printing-zh.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/printing-zh-cn",
+          "destination": "/_pages/printing-zh-cn.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/productos",
+          "destination": "/_pages/productos.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/products",
+          "destination": "/_pages/products.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/products-ja",
+          "destination": "/_pages/products-ja.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/products-ru",
+          "destination": "/_pages/products-ru.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/products-zh",
+          "destination": "/_pages/products-zh.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/pruebas-impresion",
+          "destination": "/_pages/pruebas-impresion.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/quality-ja",
+          "destination": "/_pages/quality-ja.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/quality-ru",
+          "destination": "/_pages/quality-ru.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/quality-traceability",
+          "destination": "/_pages/quality-traceability.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/quality-zh",
+          "destination": "/_pages/quality-zh.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/quality-zh-cn",
+          "destination": "/_pages/quality-zh-cn.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/quote-sample",
+          "destination": "/_pages/quote-sample.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/release-paper-en",
+          "destination": "/_pages/release-paper-en.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/release-paper-es",
+          "destination": "/_pages/release-paper-es.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/release-paper-ja",
+          "destination": "/_pages/release-paper-ja.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/release-paper-ru",
+          "destination": "/_pages/release-paper-ru.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/release-paper-zh",
+          "destination": "/_pages/release-paper-zh.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/release-paper-zh-cn",
+          "destination": "/_pages/release-paper-zh-cn.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/request-ja",
+          "destination": "/_pages/request-ja.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/request-ru",
+          "destination": "/_pages/request-ru.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/request-zh",
+          "destination": "/_pages/request-zh.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/request-zh-cn",
+          "destination": "/_pages/request-zh-cn.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/ru",
+          "destination": "/_pages/ru.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/self-adhesive-labelstock-jumbo-rolls",
+          "destination": "/_pages/self-adhesive-labelstock-jumbo-rolls.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/semi-gloss-coated-paper",
+          "destination": "/_pages/semi-gloss-coated-paper.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/sourcing",
+          "destination": "/_pages/sourcing.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/sourcing-ja",
+          "destination": "/_pages/sourcing-ja.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/sourcing-ru",
+          "destination": "/_pages/sourcing-ru.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/sourcing-zh",
+          "destination": "/_pages/sourcing-zh.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/sourcing-zh-cn",
+          "destination": "/_pages/sourcing-zh-cn.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/synthetic-paper-en",
+          "destination": "/_pages/synthetic-paper-en.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/synthetic-paper-es",
+          "destination": "/_pages/synthetic-paper-es.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/synthetic-paper-ja",
+          "destination": "/_pages/synthetic-paper-ja.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/synthetic-paper-ru",
+          "destination": "/_pages/synthetic-paper-ru.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/synthetic-paper-zh",
+          "destination": "/_pages/synthetic-paper-zh.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/synthetic-paper-zh-cn",
+          "destination": "/_pages/synthetic-paper-zh-cn.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/thermal-ja",
+          "destination": "/_pages/thermal-ja.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/thermal-ru",
+          "destination": "/_pages/thermal-ru.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/thermal-zh",
+          "destination": "/_pages/thermal-zh.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/thermal-zh-cn",
+          "destination": "/_pages/thermal-zh-cn.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/uncoated-woodfree",
+          "destination": "/_pages/uncoated-woodfree.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/woodfree-ja",
+          "destination": "/_pages/woodfree-ja.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/woodfree-ru",
+          "destination": "/_pages/woodfree-ru.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/woodfree-zh",
+          "destination": "/_pages/woodfree-zh.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/woodfree-zh-cn",
+          "destination": "/_pages/woodfree-zh-cn.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/zh",
+          "destination": "/_pages/zh.htm"
+        },
+        {
+          "type": "rewrite",
+          "source": "/zh-cn",
+          "destination": "/_pages/zh-cn.htm"
         }
       ]
     }

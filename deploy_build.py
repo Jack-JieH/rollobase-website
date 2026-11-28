@@ -1,9 +1,9 @@
-"""Build the five-language site using the URL assigned by its host."""
+"""Build the multilingual site using the URL assigned by its host."""
 import os
 import json
 from pathlib import Path
 import runpy
-from shutil import copyfile
+from shutil import copyfile, rmtree
 from urllib.parse import urlsplit
 from zipfile import ZipFile
 
@@ -16,7 +16,11 @@ if parts.scheme != 'https' or not parts.netloc or parts.path not in ('','/') or 
 os.environ['SITE_ORIGIN'] = origin.rstrip('/')
 root = Path(__file__).parent
 dist = root/'dist'
-dist.mkdir(exist_ok=True)
+# dist contains generated files only. Start clean so renamed and removed pages
+# cannot survive a rebuild, shadowing a permanent redirect.
+if dist.exists():
+    rmtree(dist)
+dist.mkdir()
 photos = json.loads((root/'site-photos.json').read_text(encoding='utf-8'))['photos']
 photo_files = {'photos/' + photo['file'] for key, photo in photos.items() if key != 'pack'}
 (dist/'photos').mkdir(exist_ok=True)
@@ -44,5 +48,7 @@ from unified_layout import apply_unified_layout
 apply_unified_layout(dist)
 from professional_update import apply_professional_update
 apply_professional_update(dist)
+from japanese import add_japanese
+add_japanese(dist, os.environ['SITE_ORIGIN'])
 from publish_paths import publish_pages
 print('Built', publish_pages(dist, os.environ['SITE_ORIGIN']), 'pages for', os.environ['SITE_ORIGIN'])

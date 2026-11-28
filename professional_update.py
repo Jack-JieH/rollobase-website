@@ -102,6 +102,12 @@ def update_request(html, index):
     form_end = html.index('</form>', grid_start)
     button_at = html.index('<button class="button">', grid_start, form_end)
     cta = f'<a id="send-whatsapp" class="button whatsapp-inquiry" href="https://wa.me/8618588600270" target="_blank" rel="noopener noreferrer">{button} ↗</a><p class="whatsapp-note">{note}</p>'
+    if index == 0:
+        cta = (
+            '<details class="sample-specs" hidden>'
+            '<summary>Empresa y especificaciones opcionales</summary>'
+            '<div class="fieldgrid"></div></details>' + cta
+        )
     html = html[:button_at] + cta + html[button_at:]
     html = html.replace('<select name="material" required>', '<select name="material">', 1)
     return html
@@ -132,7 +138,10 @@ def apply_professional_update(dist):
         page = dist / name
         html = update_request(page.read_text(encoding='utf-8'), index)
         html = html.replace('2026-11-24', '2026-11-25')
-        html = re.sub(r'/buyer\.js(?:\?[^" ]+)?', '/buyer.js?v=20261125-professional', html)
+        script_version = '20261128-muestra' if index == 0 else '20261125-professional'
+        html = re.sub(r'/buyer\.js(?:\?[^" ]+)?', '/buyer.js?v=' + script_version, html)
+        if index == 0:
+            html = re.sub(r'/unified-layout\.css(?:\?[^" ]+)?', '/unified-layout.css?v=20261128-muestra', html)
         html = html.replace('href="/unified-layout.css"', 'href="/unified-layout.css?v=20261125-professional"')
         page.write_text(html, encoding='utf-8')
     for page in dist.glob('*.html'):

@@ -2,7 +2,6 @@
 import json
 import re
 from pathlib import Path
-from shutil import copyfile
 from urllib.parse import urlsplit
 
 from professional_update import CATALOG_URLS
@@ -51,16 +50,18 @@ def normalize_urls(dist, origin):
 
 
 def render_routes(pages):
-    redirects = {'/index': '/'}
-    redirects.update({'/' + page.name: canonical_path(page.name) for page in pages})
+    redirects = {}
     for old, new in CATALOG_URLS.items():
         redirects['/' + old] = redirects['/' + old + '.html'] = '/' + new
+    redirects.update({'/index.html': '/', '/index': '/', '/:page.html': '/:page'})
+    # Only known paths may be rewritten. Render returns an empty 200 if a
+    # catch-all rewrite points to a missing file, obscuring real 404s.
     return [
         {'type': 'redirect', 'source': src, 'destination': dest}
-        for src, dest in sorted(redirects.items())
+        for src, dest in redirects.items()
     ] + [
-        {'type': 'rewrite', 'source': '/', 'destination': '/_pages/index.htm'},
-        {'type': 'rewrite', 'source': '/:page', 'destination': '/_pages/:page.htm'},
+        {'type': 'rewrite', 'source': canonical_path(page.name), 'destination': f'/_pages/{page.stem}.htm'}
+        for page in sorted(pages, key=lambda p: canonical_path(p.name))
     ]
 
 
@@ -72,7 +73,7 @@ def publish_pages(dist, origin):
     backing = dist / '_pages'
     backing.mkdir(exist_ok=True)
     for page in pages:
-        copyfile(page, backing / (page.stem + '.htm'))
+        page.replace(backing / (page.stem + '.htm'))
     return len(pages)
 
 
@@ -81,6 +82,8 @@ if __name__ == '__main__':
     config = root / 'render.yaml'
     data = json.loads(config.read_text())
     pages = list((root / 'dist').glob('*.html'))
+    if not pages:
+        pages = [p.with_suffix('.html') for p in (root / 'dist' / '_pages').glob('*.htm')]
     if not pages:
         raise SystemExit('Build the site before refreshing its routes.')
     data['services'][0]['routes'] = render_routes(pages)

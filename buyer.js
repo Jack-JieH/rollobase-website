@@ -15,6 +15,30 @@ document.querySelector('.print-sheet')?.addEventListener('click', () => window.p
 const form = document.querySelector('#inquiry')
 if (form) {
   const whatsapp = document.querySelector('#send-whatsapp')
+  const specs = form.querySelector('.sample-specs')
+  const mobile = window.matchMedia('(max-width: 760px)')
+  const fieldsGrid = form.querySelector('.fieldgrid')
+  const fields = [...fieldsGrid.children]
+  const quickFields = new Set(['buyer_contact', 'application', 'mode', 'material', 'option',
+    'bopp_face', 'bopp_container', 'bopp_surface', 'port'])
+  const dock = document.querySelector('.contact-whatsapp')
+  const dockUrl = dock?.href
+
+  function updateSampleLayout() {
+    if (!specs) return
+    const compact = mobile.matches && form.elements.mode.value === 'sample'
+    if (compact === !specs.hidden) return
+    if (compact) {
+      const optionalGrid = specs.querySelector('.fieldgrid')
+      for (const label of fields) {
+        if (!quickFields.has(label.control.name)) optionalGrid.append(label)
+      }
+    } else {
+      // Restore the original desktop and quote order, keeping entered field values.
+      fieldsGrid.append(...fields)
+    }
+    specs.hidden = !compact
+  }
   function requestLines() {
     const lines = ['RolloBase', document.querySelector('main h1').textContent, '']
     for (const field of form.querySelectorAll('input,select')) {
@@ -27,6 +51,7 @@ if (form) {
   }
   function updateWhatsapp() {
     if (whatsapp) whatsapp.href = 'https://wa.me/8618588600270?text=' + encodeURIComponent(requestLines().join('\n'))
+    if (specs && whatsapp && dock) dock.href = specs.hidden ? dockUrl : whatsapp.href
   }
   const params = new URLSearchParams(location.search)
   for (const select of form.querySelectorAll('select')) {
@@ -55,9 +80,11 @@ if (form) {
       url.search = query
       link.href = url
     }
+    updateSampleLayout()
     updateWhatsapp()
   }
   update()
+  if (specs) mobile.addEventListener('change', update)
   form.addEventListener('change', update)
   form.addEventListener('input', updateWhatsapp)
   form.addEventListener('submit', event => {
