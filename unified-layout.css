@@ -9,3 +9,92 @@ html{background:#fff;color:#163338;font:15px/1.7 Arial,'Noto Sans TC',sans-serif
 .whatsapp-inquiry:hover,.whatsapp-inquiry:focus{background:#07574f;color:#fff}
 .whatsapp-note{max-width:52rem;font-size:.92rem;line-height:1.5;color:#4f5b5b}
 @media(max-width:760px){.whatsapp-inquiry{display:flex;width:100%;margin-right:0}}
+
+.unified-site .language-picker {
+    position: relative;
+    display: block;
+    flex: none;
+}
+
+.language-picker summary {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    min-height: 44px;
+    padding: 0 10px;
+    border: 1px solid #dce4df;
+    border-radius: 6px;
+    background: #fff;
+    color: var(--ink);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    list-style: none;
+}
+
+.language-picker summary::-webkit-details-marker {
+    display: none;
+}
+
+.language-flag {
+    display: block;
+    flex: none;
+    width: 28px;
+    height: 21px;
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px #16333820;
+}
+
+.language-chevron {
+    width: 7px;
+    height: 7px;
+    margin: -4px 2px 0 2px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(45deg);
+}
+
+.language-picker[open] .language-chevron {
+    margin-top: 4px;
+    transform: rotate(225deg);
+}
+
+.language-options {
+    position: absolute;
+    z-index: 60;
+    top: calc(100% + 6px);
+    right: 0;
+    width: max-content;
+    min-width: 168px;
+    max-width: calc(100vw - 32px);
+    padding: 4px;
+    border: 1px solid #dce4df;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 8px 25px #16333824;
+}
+
+.unified-site .language-picker .language-options a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 44px;
+    padding: 6px 10px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 15px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.unified-site .language-picker .language-options a:hover,
+.unified-site .language-picker .language-options a[aria-current="page"] {
+    background: #edf4f1;
+    color: var(--teal);
+}
+
+.language-picker summary:focus-visible,
+.language-picker a:focus-visible {
+    outline: 2px solid var(--teal);
+    outline-offset: 2px;
+}
