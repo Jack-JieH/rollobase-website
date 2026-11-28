@@ -44,4 +44,5 @@ from unified_layout import apply_unified_layout
 apply_unified_layout(dist)
 from professional_update import apply_professional_update
 apply_professional_update(dist)
-print('Built',len(list(dist.glob('*.html'))),'pages for',os.environ['SITE_ORIGIN'])
+from publish_paths import publish_pages
+print('Built', publish_pages(dist, os.environ['SITE_ORIGIN']), 'pages for', os.environ['SITE_ORIGIN'])
